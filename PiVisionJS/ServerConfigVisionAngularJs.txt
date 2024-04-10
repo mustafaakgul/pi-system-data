@@ -1,0 +1,24 @@
+SERVER INFO
+Cors Header   accept,content-type,requestverificationtoken,x-requested-with
+Cors Exposed   Allow,Content-Encoding,Content-Length,Date,Location
+https://vi4develop,https://vi4develop.kmt.local
+pidev expo  Allow,Content-Encoding,Content-Length,Date,Location
+
+Internet explorer logon prompt ile not supported anymore automatic log in
+disable csfr enable disable
+iis auothentication enable windows basic
+
+DEPLOYMENT
+npm install -g @angular/cli
+ng new my-app
+cd my-app
+ng serve --open
+
+http-server "dizin"
+https://www.jetbrains.com/help/webstorm/angular.html
+
+CHROME AUTOMATIC SESSION INTERNET EXPLORER SETTING DEN KAPATILDI
+DELETE ALL SESSION AND COOKIE DATA BEFORE LOG IN VISION
+$HTTP ANGULARJS ANGULARJS $HTTP (GET EXAMPLE) HEADER WITH AUTHORIZATION AUTHENTICATION ANGUARJS $HTTP AUTHENTICATION EXAMPLE
+ANGULARJS $HTTP VERFY FALSE ANGULARJS $HTTP IGNORING SSL
+ANGULARJS HEADERS ANGULAR $HTTP GET WITH HEADERS

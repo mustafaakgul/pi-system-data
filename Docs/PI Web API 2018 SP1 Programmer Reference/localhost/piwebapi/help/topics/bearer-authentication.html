@@ -1,0 +1,616 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/bearer-authentication by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:09 GMT -->
+<head>
+    <title>PI Web API</title>
+    <link rel="stylesheet" type="text/css" href="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/base.css" />
+    <script type ="application/javascript" src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/style.js"></script>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="https://rverhoeff7480.osisoft.int/piwebapi/help">
+            <img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/logo.png" />
+        </a>
+        <h2>
+            <a href="https://rverhoeff7480.osisoft.int/piwebapi/help" style="text-decoration: none">PI Web API Help</a>
+        </h2>
+        <h3>
+            <a href="../getting-started.html">Getting Started</a>
+        </h3>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Changelogs</h3>
+        <ul>
+                <li>
+                    <a href="../changelog/pi-web-api.html">
+                        PI Web API
+                    </a>
+                </li>
+                <li>
+                    <a href="../changelog/pi-web-api-indexed-search.html">
+                        PI Web API Indexed Search
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Controllers</h3>
+        <ul>
+                <li>
+                    <a href="../controllers/analysis.html">
+                        Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysiscategory.html">
+                        AnalysisCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisrule.html">
+                        AnalysisRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisruleplugin.html">
+                        AnalysisRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysistemplate.html">
+                        AnalysisTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetdatabase.html">
+                        AssetDatabase
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetserver.html">
+                        AssetServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attribute.html">
+                        Attribute
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributecategory.html">
+                        AttributeCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetemplate.html">
+                        AttributeTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetrait.html">
+                        AttributeTrait
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/batch.html">
+                        Batch
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/calculation.html">
+                        Calculation
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/channel.html">
+                        Channel
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/configuration.html">
+                        Configuration
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/dataserver.html">
+                        DataServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/element.html">
+                        Element
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementcategory.html">
+                        ElementCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementtemplate.html">
+                        ElementTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationset.html">
+                        EnumerationSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationvalue.html">
+                        EnumerationValue
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/eventframe.html">
+                        EventFrame
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationcontacttemplate.html">
+                        NotificationContactTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationplugin.html">
+                        NotificationPlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrule.html">
+                        NotificationRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrulesubscriber.html">
+                        NotificationRuleSubscriber
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationruletemplate.html">
+                        NotificationRuleTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/point.html">
+                        Point
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/search.html">
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securityidentity.html">
+                        SecurityIdentity
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securitymapping.html">
+                        SecurityMapping
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/stream.html">
+                        Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/streamset.html">
+                        StreamSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/system.html">
+                        System
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/table.html">
+                        Table
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/tablecategory.html">
+                        TableCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timerule.html">
+                        TimeRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timeruleplugin.html">
+                        TimeRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unit.html">
+                        Unit
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unitclass.html">
+                        UnitClass
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible " onclick="toggleCollapse(this)"><span></span>Topics</h3>
+        <ul>
+
+                <li>
+                    Core Services
+                    <ul>
+                            <li>
+                                <a href="associations.html">
+                                    Associations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attribute-trait.html">
+                                    Attribute Trait
+                                </a>
+                            </li>
+                            <li>
+                                <a href="boundary-type.html">
+                                    Boundary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="buffer-option.html">
+                                    Buffer Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calculation-basis.html">
+                                    Calculation Basis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="channels.html">
+                                    Channels
+                                </a>
+                            </li>
+                            <li>
+                                <a href="data-server-licenses.html">
+                                    Data Server Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="element-type.html">
+                                    Element Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="event-frame.html">
+                                    Event Frame
+                                </a>
+                            </li>
+                            <li>
+                                <a href="export-mode.html">
+                                    Export Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="import-mode.html">
+                                    Import Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="include-mode.html">
+                                    Include Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="path-syntax.html">
+                                    Path Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="performance-equations.html">
+                                    Performance Equations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reference-type.html">
+                                    Reference Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="retrieval-mode.html">
+                                    Retrieval Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sample-type.html">
+                                    Sample Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-field.html">
+                                    Search Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-mode.html">
+                                    Search Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-operator.html">
+                                    Search Operator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-query-syntax.html">
+                                    Search Query Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-item.html">
+                                    Security Item
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-rights.html">
+                                    Security Rights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="selected-fields.html">
+                                    Selected Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="severity.html">
+                                    Severity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-field.html">
+                                    Sort Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-order.html">
+                                    Sort Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream.html">
+                                    Stream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream-updates.html">
+                                    Stream Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-duration.html">
+                                    Summary Duration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-type.html">
+                                    Summary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="supported-attribute-data-types.html">
+                                    Supported Attribute Data Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sync-time.html">
+                                    Sync Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-strings.html">
+                                    Time Strings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-type.html">
+                                    Time Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-zone.html">
+                                    Time Zone
+                                </a>
+                            </li>
+                            <li>
+                                <a href="update-option.html">
+                                    Update Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user-identity.html">
+                                    User Identity
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    Global
+                    <ul>
+                            <li>
+                                <a href="bearer-authentication.html">
+                                    Bearer Authentication
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cross-origin-resource-sharing.html">
+                                    Cross-Origin Resource Sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dictionary-parameters.html">
+                                    Dictionary Parameters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="error-handling.html">
+                                    Error Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="impersonation-level.html">
+                                    Impersonation Level
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multipart-requests.html">
+                                    Multipart Requests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="query-string.html">
+                                    Query String
+                                </a>
+                            </li>
+                            <li>
+                                <a href="run-state.html">
+                                    Run State
+                                </a>
+                            </li>
+                            <li>
+                                <a href="url-encoding.html">
+                                    URL Encoding
+                                </a>
+                            </li>
+                            <li>
+                                <a href="value-types.html">
+                                    Value Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid.html">
+                                    WebID
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid-type.html">
+                                    WebID Type
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    PI Web API Indexed Search
+                    <ul>
+                            <li>
+                                <a href="common-error-codes.html">
+                                    Common Error Codes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-configuration.html">
+                                    Crawler Configuration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-finalizing-phases.html">
+                                    Crawler Finalizing Phases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="getting-started.html">
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-queries.html">
+                                    Search Queries
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <h3>
+            <a href="http://livelibrary.osisoft.com/">PI Live Library</a>
+        </h3>
+    </header>
+    <div id="content">
+        
+    <h2>Bearer Authentication</h2>
+<p>This topic explains setting up Bearer authentication that supports the OpenID Connect protocol.</p>
+<h4>Background</h4>
+<p>OpenID Connect is a protocol for authentication and is supported by various identity providers. When configured, PI Web API supports access tokens in the Authentication header of a request that provides claims based on the identity configured with the provider. The configured UPN claim is used to obtain a Windows identity using the Claims to Windows Token Service (C2WTS) that is setup on the PI Web API server. The Windows identity is then used as with the other authentication protocols to control access to the AF and Data Archive servers.</p>
+<p>Clients provide an access token either from a browser using hybrid code flow or from a server using resource owner code flow. When making requests an authorization header is added in similar manner as Basic authentication. This is an example of a browser based call using an already obtained access token:</p>
+<pre><code>    var url = &quot;https://localhost/piwebapi/system/userinfo&quot;;
+    var xhr = new XMLHttpRequest();
+    xhr.open(&quot;GET&quot;, url);
+    xhr.onload = function () {
+        log(xhr.status, JSON.parse(xhr.responseText));
+    }
+    xhr.setRequestHeader(&quot;Authorization&quot;, &quot;Bearer &quot; + user.access_token);
+    xhr.send();
+</code></pre>
+
+<p>More information about OpenID Connect can be found here:</p>
+<ul>
+<li><a href="http://openid.net/">OpenID Foundation</a></li>
+<li><a href="http://openid.net/developers/specs/">OpenID Specifications and Developer Information</a></li>
+</ul>
+<p>A JavaScript client library for OpenID Connect can be found here:</p>
+<ul>
+<li><a href="https://github.com/IdentityModel/oidc-client-js">oidc-client-js</a></li>
+</ul>
+<p>Access tokens that are JWT that contain the embedded claims are supported by enabling a flag. Otherwise the access token is used to call the UserInfo endpoint to get the set of user claims.</p>
+<h4>Support for identity providers that do not support CORS for metadata</h4>
+<p>When using an identity provider that cannot be configured with CORS to return metadata for browser based calls, PI Web API can act as a relay to get the configuration and jwks information from the identity provider. The browser can obtain these by configuring the BearerIssuer setting.</p>
+<h4>Configuration Settings</h4>
+<p>By default, Bearer authentication is disabled in PI Web API. To use, the Claims To Windows Token Service must be started and configured on the PI Web API server. To enable Bearer authentication or change authentication settings, choose one of the following actions:</p>
+<ul>
+<li>Change the Bearer authentication related attributes in the AF configuration database under the element OSIsoft &gt; 
+PI Web API &gt; (Your PI Web API Instance Name) &gt; System Configuration.</li>
+<li>Use the PUT action in the <a href="../controllers/configuration/actions/put.html">Configuration controller</a>.</li>
+</ul>
+<p>The following Bearer authentication configuration items are available in PI Web API:</p>
+<ul>
+<li>
+<h4>AuthenticationMethods (default: string array containing Kerberos)</h4>
+<p>AuthenticationMethods is an array of allowed authentication protocols. By default, it contains a single entry for Kerberos.
+To enable Bearer authentication with OpenId Connect, add a Bearer entry. It may be used in combination with all other settings except Anonymous.</p>
+</li>
+<li>
+<h4>BearerIssuer (default: null, required)</h4>
+<p>The url to the authentication provider. For example, https://sts.windows.net/{Guid}/. Also allows the PI Web API to relay calls for metadata information from the identity provider. </p>
+</li>
+<li>
+<h4>BearerEnableJwt (default: false, optional)</h4>
+<p>When true the access token is treated as a JWT with embedded claims.</p>
+</li>
+<li>
+<h4>BearerValidAudiences (default: null, optional)</h4>
+<p>Used to check the audience of the user with JWT to verify that it is for use with PI Web API. If empty, no check is made.</p>
+</li>
+<li>
+<h4>BearerValidIssuer (default: null, optional)</h4>
+<p>Used to check the issuer with JWT to verify that it is for use with PI Web API. May not be the same as the BearerIssuer url. If empty, no check is made.</p>
+</li>
+<li>
+<h4>BearerOpenIdConfigurationRefreshInterval (default: 7200, optional)</h4>
+<p>Used to specify the refresh interval of the OpenIDConfiguration cache in minutes. 5 days is the default.</p>
+</li>
+<li>
+<h4>BearerUpnClaimType (default: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn)</h4>
+<p>The claim type of for the UPN to get the Windows identity.  Can be overridden if the identity provider cannot be configured to provide the default claim type name.</p>
+</li>
+</ul>
+
+        
+    </div>
+</body>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/bearer-authentication by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:09 GMT -->
+</html>

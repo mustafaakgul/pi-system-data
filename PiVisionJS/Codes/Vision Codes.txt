@@ -1,0 +1,16 @@
+Color 4 XY
+columnTemplate.adapter.add("fill", function (fill, target) {
+    var dataItem = target.dataItem;
+    if (dataItem.valueY > 6000) {
+        return am4core.color("#78b711");
+    }
+    else {
+        return am4core.color("#a8b3b7");
+    }
+})
+chart.data = [{
+    "name": "John",
+    "points": 35654,
+    "color": am4core.color("red"),
+    "bullet": "https://www.amcharts.com/lib/images/faces/A04.png"
+},

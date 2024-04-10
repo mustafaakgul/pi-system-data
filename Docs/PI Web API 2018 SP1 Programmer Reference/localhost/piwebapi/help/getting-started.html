@@ -1,0 +1,872 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/getting-started by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:18:47 GMT -->
+<head>
+    <title>PI Web API</title>
+    <link rel="stylesheet" type="text/css" href="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/base.css" />
+    <script type ="application/javascript" src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/style.js"></script>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="https://rverhoeff7480.osisoft.int/piwebapi/help">
+            <img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/logo.png" />
+        </a>
+        <h2>
+            <a href="https://rverhoeff7480.osisoft.int/piwebapi/help" style="text-decoration: none">PI Web API Help</a>
+        </h2>
+        <h3>
+            <a href="getting-started.html">Getting Started</a>
+        </h3>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Changelogs</h3>
+        <ul>
+                <li>
+                    <a href="changelog/pi-web-api.html">
+                        PI Web API
+                    </a>
+                </li>
+                <li>
+                    <a href="changelog/pi-web-api-indexed-search.html">
+                        PI Web API Indexed Search
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Controllers</h3>
+        <ul>
+                <li>
+                    <a href="controllers/analysis.html">
+                        Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/analysiscategory.html">
+                        AnalysisCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/analysisrule.html">
+                        AnalysisRule
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/analysisruleplugin.html">
+                        AnalysisRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/analysistemplate.html">
+                        AnalysisTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/assetdatabase.html">
+                        AssetDatabase
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/assetserver.html">
+                        AssetServer
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/attribute.html">
+                        Attribute
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/attributecategory.html">
+                        AttributeCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/attributetemplate.html">
+                        AttributeTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/attributetrait.html">
+                        AttributeTrait
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/batch.html">
+                        Batch
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/calculation.html">
+                        Calculation
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/channel.html">
+                        Channel
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/configuration.html">
+                        Configuration
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/dataserver.html">
+                        DataServer
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/element.html">
+                        Element
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/elementcategory.html">
+                        ElementCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/elementtemplate.html">
+                        ElementTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/enumerationset.html">
+                        EnumerationSet
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/enumerationvalue.html">
+                        EnumerationValue
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/eventframe.html">
+                        EventFrame
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/notificationcontacttemplate.html">
+                        NotificationContactTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/notificationplugin.html">
+                        NotificationPlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/notificationrule.html">
+                        NotificationRule
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/notificationrulesubscriber.html">
+                        NotificationRuleSubscriber
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/notificationruletemplate.html">
+                        NotificationRuleTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/point.html">
+                        Point
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/search.html">
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/securityidentity.html">
+                        SecurityIdentity
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/securitymapping.html">
+                        SecurityMapping
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/stream.html">
+                        Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/streamset.html">
+                        StreamSet
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/system.html">
+                        System
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/table.html">
+                        Table
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/tablecategory.html">
+                        TableCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/timerule.html">
+                        TimeRule
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/timeruleplugin.html">
+                        TimeRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/unit.html">
+                        Unit
+                    </a>
+                </li>
+                <li>
+                    <a href="controllers/unitclass.html">
+                        UnitClass
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Topics</h3>
+        <ul>
+
+                <li>
+                    Core Services
+                    <ul>
+                            <li>
+                                <a href="topics/associations.html">
+                                    Associations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/attribute-trait.html">
+                                    Attribute Trait
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/boundary-type.html">
+                                    Boundary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/buffer-option.html">
+                                    Buffer Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/calculation-basis.html">
+                                    Calculation Basis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/channels.html">
+                                    Channels
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/data-server-licenses.html">
+                                    Data Server Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/element-type.html">
+                                    Element Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/event-frame.html">
+                                    Event Frame
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/export-mode.html">
+                                    Export Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/import-mode.html">
+                                    Import Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/include-mode.html">
+                                    Include Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/path-syntax.html">
+                                    Path Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/performance-equations.html">
+                                    Performance Equations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/reference-type.html">
+                                    Reference Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/retrieval-mode.html">
+                                    Retrieval Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/sample-type.html">
+                                    Sample Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/search-field.html">
+                                    Search Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/search-mode.html">
+                                    Search Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/search-operator.html">
+                                    Search Operator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/search-query-syntax.html">
+                                    Search Query Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/security-item.html">
+                                    Security Item
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/security-rights.html">
+                                    Security Rights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/selected-fields.html">
+                                    Selected Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/severity.html">
+                                    Severity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/sort-field.html">
+                                    Sort Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/sort-order.html">
+                                    Sort Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/stream.html">
+                                    Stream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/stream-updates.html">
+                                    Stream Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/summary-duration.html">
+                                    Summary Duration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/summary-type.html">
+                                    Summary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/supported-attribute-data-types.html">
+                                    Supported Attribute Data Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/sync-time.html">
+                                    Sync Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/time-strings.html">
+                                    Time Strings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/time-type.html">
+                                    Time Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/time-zone.html">
+                                    Time Zone
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/update-option.html">
+                                    Update Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/user-identity.html">
+                                    User Identity
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    Global
+                    <ul>
+                            <li>
+                                <a href="topics/bearer-authentication.html">
+                                    Bearer Authentication
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/cross-origin-resource-sharing.html">
+                                    Cross-Origin Resource Sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/dictionary-parameters.html">
+                                    Dictionary Parameters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/error-handling.html">
+                                    Error Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/impersonation-level.html">
+                                    Impersonation Level
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/multipart-requests.html">
+                                    Multipart Requests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/query-string.html">
+                                    Query String
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/run-state.html">
+                                    Run State
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/url-encoding.html">
+                                    URL Encoding
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/value-types.html">
+                                    Value Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/webid.html">
+                                    WebID
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/webid-type.html">
+                                    WebID Type
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    PI Web API Indexed Search
+                    <ul>
+                            <li>
+                                <a href="topics/common-error-codes.html">
+                                    Common Error Codes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/crawler-configuration.html">
+                                    Crawler Configuration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/crawler-finalizing-phases.html">
+                                    Crawler Finalizing Phases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/getting-started.html">
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="topics/search-queries.html">
+                                    Search Queries
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <h3>
+            <a href="http://livelibrary.osisoft.com/">PI Live Library</a>
+        </h3>
+    </header>
+    <div id="content">
+        
+    <h2>Getting Started with the PI Web API</h2>
+<p>The PI Web API is a RESTful interface to the PI system. It gives
+client applications read and write access to their AF and PI data
+over HTTPS. This getting started guide starts with an overview of
+the constructs and principles that you'll encounter as you use
+the API, moves on to examples in the form of sample requests and
+a simple demo application, and concludes with
+a discussion of some more specific topics that may enrich your
+understanding of the API.</p>
+<h3>REST Principles</h3>
+<p>REST stands for 'representational state transfer.' In the
+context of the PI Web API, this means that the API is:</p>
+<ul>
+<li>
+<h4>Stateless</h4>
+<p>The PI Web API is stateless. This means that the service
+retains no observable knowledge of clients across requests. Each
+request is an independent transaction between the client and the
+server. One important consequence of this property is that the
+check out - make changes - check in transaction pattern found
+in many database-related APIs (e.g. the AFSDK) is not exposed
+by the PI Web API. Rather, each request encapsulates this pattern
+internally.</p>
+</li>
+<li>
+<h4>Resource-oriented</h4>
+<p>Interaction with the PI Web API is organized around resources.
+A resource is a structured piece of data that represents an
+object in one of the PI Systems connected to the Web API. Most
+important PI and AF objects, such as Asset Servers, Data Servers,
+points, elements, attributes, event frames, and so on, map to
+resources in the PI Web API. Four primary operations are used
+to interact with these resources: create, read, update, and
+delete (often abbreviated as CRUD).</p>
+</li>
+<li>
+<h4>Navigable by links</h4>
+<p>Links (also called hypermedia) capture the organization of
+the resources exposed by the Web API. You're probably familiar
+with the hierarchical structure of AF objects:
+Asset Servers contain databases, which contain elements, which
+contain attributes, and so on. Links express these relationships.
+For example, an Asset Server resource links to the collection of
+databases it contains, and each database links to its parent Asset
+Server.</p>
+</li>
+</ul>
+<h3>WebID</h3>
+<p>Resources that support CRUD operations are the primary objects in
+the PI Web API. To allow clients to address these resources, the PI
+Web API must identify them in a way that is both persistent (so that
+clients can address known resources consistently over time)
+and URL-safe (since resources are specified by URLs). Every primary
+resource in the PI Web API is associated with a WebID, which
+is an identifier that meets these criteria. Client applications
+should treat WebIDs as opaque identifiers. Because they are
+persistent, clients may cache URLs containing WebIDs.</p>
+<h3>HATEOAS</h3>
+<p>As discussed above, the resources exposed by the PI Web API
+are connected by links. This means that client applications
+should rarely need to construct resource URLs. Rather, they should
+use Hypermedia as the Engine of Application State (HATEOAS). There
+are several entry points to the application, including the root
+of the API and the various GetByPath methods. Once 'inside' the system,
+the client application should access related resources via the links.</p>
+<h3>HTTP Verbs</h3>
+<p>Every resource exposed by the PI Web API supports some subset of the
+CRUD operations discussed above. Create corresponds to POST,
+read to GET, update to PUT (when the method requires the complete resource
+definition) or PATCH (when the method accepts a partial resource
+definition), and delete to DELETE.</p>
+<h3>URL Parameters</h3>
+<p>Several PI Web API GET methods accept URL query parameters. In general,
+these specify options or serve as filters on the response.
+For example, element search (GET assetdatabase/{webId}/elements)
+takes various parameters that specify which elements to return and how
+to order the returned elements.</p>
+<h3>JSON</h3>
+<p>JavaScript Object Notation (JSON) is the primary media type supported
+by the PI Web API. You can get a feel for JSON by examining the
+samples provided in the documentation and exploring the API in your
+browser. Most common client application languages and frameworks
+provide libraries to convert between language/framework primitives
+and JSON strings.</p>
+<h3>Status Codes</h3>
+<p>HTTP status codes provide information about the success or failure
+of a request. The PI Web API adheres to the standard semantics of
+these codes as closely as possible. A coarse distinction is that
+200-level status codes indicate success, 400-level status codes
+indicate user error, and 500-level status codes indicate server
+error. 400- and 500-level codes are generally accompanied by
+a response body providing a friendly error message to assist with
+debugging. One special case worth noting is that the 201 status
+code is returned in response to a POST, when a resource has been
+created. In this case, the response will contain a Location header
+with the WebID-based URL, which the client may use to access
+the newly-created resource.</p>
+<h3>The Structure of a PI Web API Request</h3>
+<p>In this section, we'll look at a GET request to the PI Web API.
+Client applications will generally use libraries to take care of the
+details of constructing HTTP requests, but an understanding of the
+information contained in a request, coupled with a request inspector
+like Fiddler, is useful for debugging. The following is a complete
+GET request to the API:</p>
+<pre><code>GET https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg HTTP/1.1
+Host: myserver
+Accept: application/json
+</code></pre>
+
+<p>The first line specifies the GET method, the resource URL, and the
+protocol version. The next two lines are request headers.
+The second line specifies the host addressed by the client,
+and the third line specifies that the client expects to receive a
+response formatted as JSON. The response looks like this:</p>
+<pre><code>HTTP/1.1 200 OK
+Content-Length: 1783
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+Date: Wed, 01 Oct 2014 14:24:13 GMT
+
+{
+  &quot;WebId&quot;: &quot;D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg&quot;,
+  &quot;Id&quot;: &quot;e759b840-d40a-4cf9-910d-09f307fcc654&quot;,
+  &quot;Name&quot;: &quot;NuGreen&quot;,
+  &quot;Description&quot;: &quot;PI BI Project Asset Model&quot;,
+  &quot;Path&quot;: &quot;\\\\MyAFServer\\NuGreen&quot;,
+  &quot;Links&quot;: {
+    &quot;Self&quot;: &quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg&quot;,
+    &quot;Elements&quot;:&quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg/elements&quot;,
+    &quot;ElementTemplates&quot;:&quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg/elementtemplates&quot;,
+    &quot;EventFrames&quot;:&quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg/eventframes&quot;,
+    &quot;AssetServer&quot;:&quot;https://myserver/piwebapi/assetservers/S0NxzXSxtlKkGzAhZfHOB-KAUEhMQUZTMDQ&quot;,
+    &quot;ElementCategories&quot;:&quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg/elementcategories&quot;,
+    &quot;AttributeCategories&quot;:&quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg/attributecategories&quot;,
+    &quot;TableCategories&quot;:&quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg/tablecategories&quot;,
+    &quot;EnumerationSets&quot;:&quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg/enumerationsets&quot;,
+    &quot;Tables&quot;:&quot;https://myserver/piwebapi/assetdatabases/D0NxzXSxtlKkGzAhZfHOB-KAQLhZ5wrU-UyRDQnzB_zGVAUEhMQUZTMDRcTlVHUkVFTg/tables&quot;
+  }
+}
+</code></pre>
+
+<p>The first line specifies the protocol version and the response status
+code and reason phrase, indicating the overall success or failure
+of the request. The following four lines are response headers.
+Lines 2-3 provide information about the content of the response.
+Lines 4-5 contain information about the server and the time of the
+request. Below the headers is the response body, a JSON string
+providing information about the database. Notice the WebID and
+the links specifying the URLs of related resources and resource
+collections.</p>
+<h3>A Simple Application</h3>
+<p>In this section, we'll develop a JavaScript application for
+exploring the AF hierarchy of your PI System. A basic knowledge
+of JavaScript, HTML, and CSS is assumed. The following is the complete
+code. A lightly-modified version is hosted <a href="demo.html">here</a>.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;AF Hierarchy Viewer&lt;/title&gt;
+  &lt;script src=&quot;jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var childrenMap = {
+      PISystems: ['AssetServers'],
+      AssetServers: ['Databases'],
+      Databases: ['Elements'],
+      Elements: ['Elements', 'Attributes'],
+      Attributes: ['Attributes']
+    };
+
+    function node(name, type, links, parentDiv) {
+      this.type = type;
+      this.links = links;
+      this.flipper = $('&lt;span class=&quot;flipper&quot;&gt;+&lt;/span&gt;').click(flip.bind(this, this));
+      parentDiv.append(this.flipper).append('&lt;span class=&quot;' + type + '&quot;&gt; ' + name + '&lt;/span&gt;&lt;br /&gt;');
+      this.div = $('&lt;div&gt;&lt;/div&gt;').hide().appendTo(parentDiv);
+    }
+
+    function loadChildren(n) {
+      n.loaded = true;
+      childrenMap[n.type].forEach(function(childCollection) {
+        $.get(n.links[childCollection], function(collection) {
+          n[childCollection] = collection.Items.map(function (item) {
+            return new node(item.Name, childCollection, item.Links, n.div);
+          });
+        });
+      });
+    }
+
+    function flip(n) {
+      if (!n.loaded) { loadChildren(n); }
+      n.flipper.html(n.flipper.html() == '+' ? '-' : '+');
+      n.div.toggle();
+    }
+
+    $(function() {
+      root = new node('PI Systems', 'PISystems',
+        { AssetServers: 'https://myserver/piwebapi/assetservers' }, $(&quot;#root&quot;));
+    });
+  &lt;/script&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    div {
+      left: 10px;
+      position: relative;
+    }
+    .flipper {
+      cursor: pointer;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>The first few lines contain HTML boilerplate to set up the page and
+load jQuery. The section containing the JavaScript is the meat of
+the application.</p>
+<p><code>childrenMap</code> is a map from collection type to children
+collection types. For example, an 'AssetServers' collection contains
+objects (Asset Servers) whose child collections are 'Databases'.
+Note that the values in this map are chosen to correspond to the
+keys in the links collections returned by the Web API.</p>
+<p><code>node</code> creates a new node in the displayed AF hierarchy.
+It stores the collection type and links associated with the object
+used to create the node, then appends a new expandable element to
+the DOM.</p>
+<p><code>loadChildren</code> performs the AJAX GET requests to load the
+given node's children into the application. JavaScript automatically
+maps the JSON responses from the WebID to native JavaScript objects
+that we can access as in <code>collection.Items</code> and
+<code>item.Name</code>. A new node is created for each child object.
+As mentioned above, the values in <code>childrenMap</code> correspond
+to keys in the links collections. This property is used when
+determining the resource for the GET request:
+<code>n.links[childCollection]</code>.</p>
+<p><code>flip</code> is the callback associated with clicking the '+'/'-'
+symbol next to each expandable node. If the node's children haven't
+been loaded yet, they are. Then, the '+'/'-' symbol and visibility of
+the child div are toggled.</p>
+<p>The last bit of the script, <code>$(function() {...</code>, executes
+as soon as the page is loaded. It establishes the root node of the
+AF hierarchy. The page's source ends with some basic CSS styling and
+the HTML to set up the root node.</p>
+<p>In this example, we can see several of the PI Web API principles
+listed above in action. Notice that the only hard-coded URL is the
+Asset Servers root. All other resources are retrieved by following
+links. You can use your browser console to examine the AJAX requests
+made by the application. You'll see the structure of the JSON objects
+returned by the Web API, including the links collections. You'll also
+notice the WebIDs embedded in the URLs. A richer application might
+include create, update, or delete functionality, the ability to do
+filtered reads using query parameters, and more robust error handling
+(the sample application fails silently for non-200-class responses).</p>
+<h3>Other Concepts</h3>
+<h4>Caching and Concurrency</h4>
+<p>The PI Web API caches AF data to improve performance. It maintains up to two
+caches for each recently-connected user: one for reads and one for writes.
+The read cache can service multiple simultaneous requests, but each
+write request requires exclusive access to the write cache. Some notable
+consequences and caveats around this design are:</p>
+<ul>
+<li>If you're using anonymous authentication, every read/write request is
+served from the same read/write cache.</li>
+<li>The <code>Cache-Control: no-cache</code> request header can be used
+to force the AF cache to refresh from the backend Asset Server. This
+operation requires an exclusive lock on the cache, however, so it
+should be used sparingly.</li>
+<li>A request that writes time series data is not a writer request,
+because time series data reads and writes are always served directly
+from the backend Data Server.</li>
+</ul>
+<h4>Timezones</h4>
+<p>On output, the PI Web API always displays times as ISO 8601 UTC
+strings. On input, several options are available. You may specify
+any ISO 8601 string as UTC, or with or without an offset.
+You may also specify PI times, such as '*' or 'T'. Time
+strings specified as UTC or with an offset are stored
+unaltered. Times without an offset and PI times are resolved relative to
+the timezone of the backend server on which the data is stored
+(i.e., not relative to the time zone of the client or the PI Web API).</p>
+<h4>Streams and Values</h4>
+<p>Data retrieval from attributes with a data reference and PI points
+is unified under the /streams... and /streamsets... (for bulk
+retrieval) endpoints. Use stream methods to retrieve recorded, plot,
+interpolated, and summary values for time series data. Values of
+attributes that do not reference time series data can be retrieved
+from /attributes/{webId}/value.</p>
+<h4>Stream Sets</h4>
+<p>For most use cases, the standard single-resource CRUD operations
+exposed by the PI Web API should be sufficient. To accommodate
+advanced use cases that require reading from or writing to
+multiple streams in a single request, the PI Web API exposes
+stream set resources. A stream set is a set of streams related
+by a common ancestor element, event frame, or attribute. The
+stream set endpoints allow reads and writes of time-series
+data to be made against multiple streams in a single call. The
+PI Web API also exposes 'ad-hoc' stream set endpoints, which
+permit reading and writing of data against multiple independent
+streams (i.e. streams that don't necessarily share a common ancestor).</p>
+<h3>Additional Resources</h3>
+<p>Additional information related to using and administering the PI
+Web API is available from the following sources:</p>
+<ul>
+<li>
+<p>The <a href="https://pisquare.osisoft.com/community/developers-club">PI Developers Club</a> 
+community, which has subscription-based resources to help you with the 
+programming and integration of OSIsoft products, including tutorials,
+forums, and sample code. Many samples and tutorials hosted on PI Developers Club
+assume the presence of the <em>NuGreen</em> database, which you can run
+yourself by importing the <a href="https://rverhoeff7480.osisoft.int/piwebapi/admin/NuGreen.xml">NuGreen XML</a>
+into your PI Asset Server. </p>
+</li>
+<li>
+<p>The PI Web API Users Guide, hosted in the 
+<a href="http://livelibrary.osisoft.com/">PI Live Library</a>,
+contains detailed information on how to run and administer
+the product. The PI Live Library also contains information
+on how to install, configure, maintain, and use other
+components in the PI System.</p>
+</li>
+</ul>
+
+        
+    </div>
+</body>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/getting-started by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:18:48 GMT -->
+</html>

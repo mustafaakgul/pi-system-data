@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="test">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script>
+		angular.module('test', [])
+		.controller('TestCtrl', function ($scope, $http) {
+			$scope.data = [];
+			$http.get("https://api.github.com/users").then(function(res) {
+				$scope.data = res.data; // genen verileri data değişkenine attık.
+			});
+		});
+	</script>
+</head>
+<body ng-controller="TestCtrl">
+	<table>
+		<tr>
+			<td>Resim</td>
+			<td>Kullanıcı adı</td>
+			<td>Profil</td>
+		</tr>
+		<tr ng-repeat="item in data">
+			<td><img ng-src="{{item.avatar_url}}" width="50px" /></td> <!-- Kullanıcının resmi -->
+			<td>{{item.login}}</td> <!-- kullanıcının kullanıcı adı -->
+			<td><a href="{{item.html_url}}" target="_blank">{{item.html_url}}</a></td> <!-- Kullanıcının profil linki -->
+		</tr>
+	</table>
+</body>
+</html>

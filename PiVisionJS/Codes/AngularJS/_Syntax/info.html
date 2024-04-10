@@ -1,0 +1,388 @@
+//AUTHENTICATION
+
+
+http.get<ProjectedBalance>(requestUrl, {headers: new HttpHeaders().set('Authorization', 'my-auth-token')}router := mux.NewRouter()
+
+
+router.HandleFunc("/home/{endDate}", GetProjBalance).Methods("GET", "OPTIONS")
+headersOk := handlers.AllowedHeaders([]string{"X-Requested-With, Content-Type, Authorization"})
+originsOk := handlers.AllowedOrigins([]string{"*"})
+methodsOk := handlers.AllowedMethods([]string{"GET", "HEAD", "POST", "PUT", "OPTIONS"})
+//start server on port
+log.Fatal(http.ListenAndServe(":5000", handlers.CORS(originsOk, headersOk, methodsOk)(router)))
+
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+import { Observable } from 'rxjs/Observable';
+
+import { AuthService } from './auth.service';
+
+@Injectable()
+export class AuthInterceptor implements HttpInterceptor {
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    req = req.clone({
+      setHeaders: {
+        'Content-Type' : 'application/json; charset=utf-8',
+        'Accept'       : 'application/json',
+        'Authorization': `Bearer ${AuthService.getToken()}`,
+      },
+    });
+
+    return next.handle(req);
+  }
+}
+
+var header = {
+  headers: new HttpHeaders()
+    .set('Authorization',  `Basic ${btoa(AuthService.getToken())}`)
+}
+
+this.http.get(url, header)
+
+this.http
+        .get(url, return new RequestOptions({
+          headers: new Headers({
+            Authorization: `Bearer ${authtoken}`
+          }),
+        }))
+        .map(res => res.json());
+
+
+public IsClientCreditCardExits(companyId: string, token: any) {
+    let header = new Headers({ 'Authorization': `Bearer ${token}` });
+    const options = new RequestOptions({
+       headers: header,
+    });
+    return this._http.get(this.ApiURL + "api/Subscriptions/IsClientCreditCardExits/" + companyId + "/", options);    
+}
+
+
+var myApp = angular.module('myApp', []);
+myApp.controller('myController', function($scope, $http){
+    $http.get('sample_json.js')
+		.then(function (response){
+			$scope.jsondata = response.data;
+			console.log("status:" + response.status);
+		}).catch(function(response) {
+		  console.error('Error occurred:', response.status, response.data);
+		}).finally(function() {
+			 console.log("Task Finished.");
+		});
+}); 
+
+
+var myApp = angular
+    .module('myApp', []);
+    controller('myController', function($scope, $http){
+    $http.get('sample_json.js')
+		.then(function (response){
+			$scope.jsondata = response.data;
+			console.log("status:" + response.status);
+		}).catch(function(response) {
+		  console.error('Error occurred:', response.status, response.data);
+		}).finally(function() {
+			 console.log("Task Finished.");
+		});
+}); 
+
+
+angular
+    .module('myApp', ['base64'])
+    .config(function($httpProvider, $base64) {
+        var auth = $base64.encode("foo:bar");
+        $httpProvider.defaults.headers.common['Authorization'] = 'Basic ' + auth;
+    })
+
+
+var auth = $base64.encode("foo:bar"), 
+    headers = {"Authorization": "Basic " + auth};
+$http.get(url, {headers: headers}).then(function (response) {
+
+
+window.btoa("user:pass")
+
+
+
+app.js:
+
+angular.module('TravelerApp', [
+    'TravelerApp.controllers',
+    'TravelerApp.services'
+]);
+services.js:
+
+angular.module('TravelerApp.services', [])
+.factory('TravelerAPIService', function($http) {
+    var travelerAPI = {};
+
+    $http.defaults.headers.common.Authorization = 'Basic ABC743HFEd...=';
+
+    travelerAPI.getTravelers = function() {
+        return $http({
+            method: 'GET',
+            url: 'https://api.my.domain.com/v1/traveler/get'
+        });
+    }
+
+    return travelerAPI;
+});
+Finally, the controllers.js:
+
+angular.module('TravelerApp.controllers', [])
+.controller('travelersController', function($scope, TravelerAPIService) {
+    $scope.travelersList = [];
+
+    TravelerAPIService.getTravelers()
+    .success(function(data) {
+        console.log('SUCCESS');
+        $scope.travelersList = data;
+    })
+    .error(function(data, status) {
+        console.log('ERROR');
+        $scope.data = data || "Request failed";
+        $scope.status = status;
+    });
+});
+
+
+var contentHeaders = [{ 'Content-Type': 'application/json' },
+            { 'Accept': 'application/json' },
+            { 'Content-Type': 'application/x-www-form-urlencoded' }
+            ]
+ 
+            var credentials = {
+                grant_type: 'password',
+                email: userlogin.username,
+                password: userlogin.password
+            };
+ 
+            var resp = $http({
+                url: appSettings.serverPath + "/api/auth/token",
+                method: "POST",
+                data: credentials,
+                headers: contentHeaders,
+            });
+
+
+$http({
+     method: 'GET',
+     url: 'http://api/v1/fund/get?major=true',
+     headers: {
+         'Content-Type': 'application/json',
+         'ApiKey': 'asdsd5369a7c19e34e9b205d6f916837sds90927esdsd80556b959e2ac8a8f3',
+         'UserAddress': '111.111.5.45'
+     }
+ }).success(function (response) {
+     $scope.data = response.data;
+     $scope.Temp = response.statusText;;
+ }).error(function (qwe) {
+     var temp = qwe.statusText;
+ });
+
+
+ <input type="text" name="username" ng-model="username" required/>
+<input type="password" name="password" ng-model="password" required/>
+<button type="button" ng-click=”login()”>Login</button>
+
+
+'use strict';
+angular.module('Authentication').
+controller('LoginController', ['$scope', '$location','AuthService',
+function($scope, $location, $authService) {
+$authService.ClearCredentials();
+$scope.login = function() {
+$authService.Login($scope.username, $scope.password, function(response) {
+if (response.success) {
+$authService.SetCredentials($scope.username, $scope.password);
+$location.path('/');
+} else {
+$scope.error = response.message;
+}
+});
+};
+}]);
+
+
+'use strict';
+angular.module('Authentication')
+.factory ('AutheService',
+
+['Base64', '$http', '$cookieStore', '$rootScope', '$timeout',
+
+function (Base64, $http, $cookieStore, $rootScope, $timeout) {
+var service = {};
+
+
+service.Login = function (username, password, callback) {
+$http.post('/api/authenticate', { username: username, password: password })
+.success(function (response) {
+callback(response);
+});
+};
+
+service.SetCredentials = function (username, password) {
+var authdata = 'Basic ' + Base64.encode(username + ':' + password);
+
+
+$rootScope.globals = {
+currentUser: {
+username: username,
+authdata: authdata
+}
+};
+
+$http.defaults.headers.common['Authorization'] = authdata;
+
+$cookieStore.put('globals', $rootScope.globals);
+};
+
+service.ClearCredentials = function () {
+$rootScope.globals = {};
+$cookieStore.remove('globals');
+$http.defaults.headers.common.Authorization = 'Basic ';
+};
+return service;
+}]);
+
+
+
+//link solution: http://stackoverflow.com/questions/17959563/how-do-i-get-basic-auth-working-in-angularjs
+
+var app = angular.module('BasicAuth', []);
+app.config(function($httpProvider) {    
+});
+
+app.factory('Base64', function() {
+    var keyStr = 'ABCDEFGHIJKLMNOP' +
+            'QRSTUVWXYZabcdef' +
+            'ghijklmnopqrstuv' +
+            'wxyz0123456789+/' +
+            '=';
+    return {
+        encode: function (input) {
+            var output = "";
+            var chr1, chr2, chr3 = "";
+            var enc1, enc2, enc3, enc4 = "";
+            var i = 0;
+
+            do {
+                chr1 = input.charCodeAt(i++);
+                chr2 = input.charCodeAt(i++);
+                chr3 = input.charCodeAt(i++);
+
+                enc1 = chr1 >> 2;
+                enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+                enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+                enc4 = chr3 & 63;
+
+                if (isNaN(chr2)) {
+                    enc3 = enc4 = 64;
+                } else if (isNaN(chr3)) {
+                    enc4 = 64;
+                }
+
+                output = output +
+                        keyStr.charAt(enc1) +
+                        keyStr.charAt(enc2) +
+                        keyStr.charAt(enc3) +
+                        keyStr.charAt(enc4);
+                chr1 = chr2 = chr3 = "";
+                enc1 = enc2 = enc3 = enc4 = "";
+            } while (i < input.length);
+
+            return output;
+        },
+
+        decode: function (input) {
+            var output = "";
+            var chr1, chr2, chr3 = "";
+            var enc1, enc2, enc3, enc4 = "";
+            var i = 0;
+
+            // remove all characters that are not A-Z, a-z, 0-9, +, /, or =
+            var base64test = /[^A-Za-z0-9\+\/\=]/g;
+            if (base64test.exec(input)) {
+                alert("There were invalid base64 characters in the input text.\n" +
+                        "Valid base64 characters are A-Z, a-z, 0-9, '+', '/',and '='\n" +
+                        "Expect errors in decoding.");
+            }
+            input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+
+            do {
+                enc1 = keyStr.indexOf(input.charAt(i++));
+                enc2 = keyStr.indexOf(input.charAt(i++));
+                enc3 = keyStr.indexOf(input.charAt(i++));
+                enc4 = keyStr.indexOf(input.charAt(i++));
+
+                chr1 = (enc1 << 2) | (enc2 >> 4);
+                chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+                chr3 = ((enc3 & 3) << 6) | enc4;
+
+                output = output + String.fromCharCode(chr1);
+
+                if (enc3 != 64) {
+                    output = output + String.fromCharCode(chr2);
+                }
+                if (enc4 != 64) {
+                    output = output + String.fromCharCode(chr3);
+                }
+
+                chr1 = chr2 = chr3 = "";
+                enc1 = enc2 = enc3 = enc4 = "";
+
+            } while (i < input.length);
+
+            return output;
+        }
+    };
+});
+
+
+
+var app = angular.module("starter");
+
+app.service("UserLoginAPI", function($http, AppConstants, Base64){
+	this.doLogin = function(){
+		return $http.post(AppConstants.webServiceUrl + "/users/testaWS.json", {
+			headers: { 
+					   'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+					   'Authorization' : 'Basic' + Base64.encode('user' + ':' + 'password'),
+					   'Access-Control-Allow-Origin': '*'
+					},			
+			
+		});
+	};
+});
+
+
+
+
+SOLVED
+
+
+
+var app = angular.module("starter");
+
+app.service("UserLoginAPI", function($http, AppConstants, Base64){
+    this.doLogin = function(){
+        var _url = AppConstants.webServiceUrl + "/users/testaWS.json?callback=JSON_CALLBACK";
+        var _authdata = Base64.encode('admin' + ':' + 'admin');
+
+        var _headers = {
+                'Authorization': 'Basic ' + _authdata,
+                'Accept': 'application/json; charset=utf-8',
+                'Content-Type': 'application/json; charset=utf-8'               
+            };
+
+        return $http({
+                method: 'jsonp',
+                url: _url,
+                responseType: "json",
+                headers: _headers
+                });
+    };
+});
+
+
+

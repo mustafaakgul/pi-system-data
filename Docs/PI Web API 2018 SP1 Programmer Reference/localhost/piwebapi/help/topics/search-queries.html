@@ -1,0 +1,749 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/search-queries by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:09 GMT -->
+<head>
+    <title>PI Web API</title>
+    <link rel="stylesheet" type="text/css" href="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/base.css" />
+    <script type ="application/javascript" src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/style.js"></script>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="https://rverhoeff7480.osisoft.int/piwebapi/help">
+            <img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/logo.png" />
+        </a>
+        <h2>
+            <a href="https://rverhoeff7480.osisoft.int/piwebapi/help" style="text-decoration: none">PI Web API Help</a>
+        </h2>
+        <h3>
+            <a href="../getting-started.html">Getting Started</a>
+        </h3>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Changelogs</h3>
+        <ul>
+                <li>
+                    <a href="../changelog/pi-web-api.html">
+                        PI Web API
+                    </a>
+                </li>
+                <li>
+                    <a href="../changelog/pi-web-api-indexed-search.html">
+                        PI Web API Indexed Search
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Controllers</h3>
+        <ul>
+                <li>
+                    <a href="../controllers/analysis.html">
+                        Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysiscategory.html">
+                        AnalysisCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisrule.html">
+                        AnalysisRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisruleplugin.html">
+                        AnalysisRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysistemplate.html">
+                        AnalysisTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetdatabase.html">
+                        AssetDatabase
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetserver.html">
+                        AssetServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attribute.html">
+                        Attribute
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributecategory.html">
+                        AttributeCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetemplate.html">
+                        AttributeTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetrait.html">
+                        AttributeTrait
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/batch.html">
+                        Batch
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/calculation.html">
+                        Calculation
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/channel.html">
+                        Channel
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/configuration.html">
+                        Configuration
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/dataserver.html">
+                        DataServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/element.html">
+                        Element
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementcategory.html">
+                        ElementCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementtemplate.html">
+                        ElementTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationset.html">
+                        EnumerationSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationvalue.html">
+                        EnumerationValue
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/eventframe.html">
+                        EventFrame
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationcontacttemplate.html">
+                        NotificationContactTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationplugin.html">
+                        NotificationPlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrule.html">
+                        NotificationRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrulesubscriber.html">
+                        NotificationRuleSubscriber
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationruletemplate.html">
+                        NotificationRuleTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/point.html">
+                        Point
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/search.html">
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securityidentity.html">
+                        SecurityIdentity
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securitymapping.html">
+                        SecurityMapping
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/stream.html">
+                        Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/streamset.html">
+                        StreamSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/system.html">
+                        System
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/table.html">
+                        Table
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/tablecategory.html">
+                        TableCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timerule.html">
+                        TimeRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timeruleplugin.html">
+                        TimeRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unit.html">
+                        Unit
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unitclass.html">
+                        UnitClass
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible " onclick="toggleCollapse(this)"><span></span>Topics</h3>
+        <ul>
+
+                <li>
+                    Core Services
+                    <ul>
+                            <li>
+                                <a href="associations.html">
+                                    Associations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attribute-trait.html">
+                                    Attribute Trait
+                                </a>
+                            </li>
+                            <li>
+                                <a href="boundary-type.html">
+                                    Boundary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="buffer-option.html">
+                                    Buffer Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calculation-basis.html">
+                                    Calculation Basis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="channels.html">
+                                    Channels
+                                </a>
+                            </li>
+                            <li>
+                                <a href="data-server-licenses.html">
+                                    Data Server Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="element-type.html">
+                                    Element Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="event-frame.html">
+                                    Event Frame
+                                </a>
+                            </li>
+                            <li>
+                                <a href="export-mode.html">
+                                    Export Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="import-mode.html">
+                                    Import Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="include-mode.html">
+                                    Include Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="path-syntax.html">
+                                    Path Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="performance-equations.html">
+                                    Performance Equations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reference-type.html">
+                                    Reference Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="retrieval-mode.html">
+                                    Retrieval Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sample-type.html">
+                                    Sample Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-field.html">
+                                    Search Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-mode.html">
+                                    Search Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-operator.html">
+                                    Search Operator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-query-syntax.html">
+                                    Search Query Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-item.html">
+                                    Security Item
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-rights.html">
+                                    Security Rights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="selected-fields.html">
+                                    Selected Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="severity.html">
+                                    Severity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-field.html">
+                                    Sort Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-order.html">
+                                    Sort Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream.html">
+                                    Stream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream-updates.html">
+                                    Stream Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-duration.html">
+                                    Summary Duration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-type.html">
+                                    Summary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="supported-attribute-data-types.html">
+                                    Supported Attribute Data Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sync-time.html">
+                                    Sync Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-strings.html">
+                                    Time Strings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-type.html">
+                                    Time Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-zone.html">
+                                    Time Zone
+                                </a>
+                            </li>
+                            <li>
+                                <a href="update-option.html">
+                                    Update Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user-identity.html">
+                                    User Identity
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    Global
+                    <ul>
+                            <li>
+                                <a href="bearer-authentication.html">
+                                    Bearer Authentication
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cross-origin-resource-sharing.html">
+                                    Cross-Origin Resource Sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dictionary-parameters.html">
+                                    Dictionary Parameters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="error-handling.html">
+                                    Error Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="impersonation-level.html">
+                                    Impersonation Level
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multipart-requests.html">
+                                    Multipart Requests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="query-string.html">
+                                    Query String
+                                </a>
+                            </li>
+                            <li>
+                                <a href="run-state.html">
+                                    Run State
+                                </a>
+                            </li>
+                            <li>
+                                <a href="url-encoding.html">
+                                    URL Encoding
+                                </a>
+                            </li>
+                            <li>
+                                <a href="value-types.html">
+                                    Value Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid.html">
+                                    WebID
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid-type.html">
+                                    WebID Type
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    PI Web API Indexed Search
+                    <ul>
+                            <li>
+                                <a href="common-error-codes.html">
+                                    Common Error Codes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-configuration.html">
+                                    Crawler Configuration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-finalizing-phases.html">
+                                    Crawler Finalizing Phases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="getting-started.html">
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-queries.html">
+                                    Search Queries
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <h3>
+            <a href="http://livelibrary.osisoft.com/">PI Live Library</a>
+        </h3>
+    </header>
+    <div id="content">
+        
+    <h2>Search Queries (PI Web API Indexed Search)</h2>
+<p>Query the crawled data by keyword(s).</p>
+<h4>Terminology</h4>
+<ul>
+<li><strong>field</strong> - a parameter to the q URL parameter that is set to a value. This 
+value is then used to search the indexed objects for scored results.</li>
+<li><strong>value</strong> - an alphanumeric set of characters used for setting the q URL 
+parameter fields as a means of modifying the query to the indexed objects.</li>
+<li><strong>scope</strong> - A URL parameter used to declare which source scored results 
+should be returned from to reduce the number of search results.</li>
+</ul>
+<p><em>Example:</em><br />
+In the following query, the field is <em>name</em>, the value is <em>Sinusoid</em>, and the 
+scope is set to a PI Server called <em>PiServer01</em>.<br />
+<code>https://MyServer/piwebapi/search/query?q=name:Sinusoid&amp;scope=pi:PiServer01</code>  </p>
+<h4>General Notes on Querying</h4>
+<ul> 
+<li>Note that the inclusion of additional URL parameters uses the ampersand 
+(\&)as a sperator between them. This should not be confused with the q URL 
+parameter that can use the AND operator for parsing search results.</li>
+
+<li> PI Web API Indexed Search uses the Lucene software library for storing, 
+parsing, and querying. For more information on query logic refer to their 
+online documentation.</li>
+
+<li>Quotation marks are not necessary for defining values when querying.</li>
+
+<li> You can either use spaces or the URL escape character %20. For example, 
+the following queries are sytactically identical to the PI Web API Indexed 
+Search plugin: <br />
+<code>
+https://MyServer/piwebapi/search/query?q=name:vibration OR name:pump
+</code><br />
+<code>
+https://MyServer/piwebapi/search/query?q=name:vibration%20OR%20name:pump
+</code></li>
+
+<li>Parenthesis are often useful for breaking down a complex conditional 
+statement into logical sequences.
+
+<li>The list of special characters are: <code>+ - && || ! ( ) { } [ ] ^ " ~ * ? : \</code>. 
+If you wish to use any of those characters in a query you will need to escape 
+it first with a backslash (\\). For instance the following query looks for 
+objects with the name "sine+cos":  
+https://MyServer/piwebapi/search/query?q=name:sine\+cos
+
+<p><em>Example</em><br />
+The following two queries would return drastically different results.  <br />
+This first query returns the union of objects named vibration* that are float32 
+or objects of AF Element Template type pump of any data type.<br />
+<code>
+https://MyServer/piwebapi/search/query?q=(name:vibration* AND datatype:float32) 
+OR afelementtemplate:pump
+</code>  
+</p><p>
+This next query returns the union of objects named vibration* or objects of AF 
+Element Template type pump all of which must be of data type float32. <br />
+<code>
+https://MyServer/piwebapi/search/query?q=name:vibration* AND datatype:float32 
+OR afelementtemplate:pump
+</code>  
+</li></ul>
+<h4>Querying Examples</h4>
+<p><strong>Basic Querying With the Name Field</strong><br />
+Using the <em>q</em> parameter you can specify a PI Point explicitly by name using the 
+form:<br />
+<code>https://MyServer/piwebapi/search/query?q=[*field*:*value*]</code></p>
+<p>Note that the query values are not case sensitive. Therefore the same results are 
+returned for both of the following queries:<br />
+<code>https://MyServer/piwebapi/search/query?q=name:sinusoid</code><br />
+<code>https://MyServer/piwebapi/search/query?q=name:SINUSOID</code>  </p>
+<p>Note: If you exclude the <em>name</em> field then the returned results will include 
+results from all default fields that contain the value specified. For example, the 
+following would return results that contain the word <em>sinusoid</em> in any field.<br />
+<code>https://MyServer/piwebapi/search/query?q=SINUSOID</code>  </p>
+<p><strong>Modifying the Number of Results Returned Per Page</strong><br />
+Results are broken down into groupings of 10 by default. This can be 
+modified by the count.  </p>
+<p>10 results per page:<br />
+<code>https://MyServer/piwebapi/search/query?q=SINUSOID*&amp;count=10</code> </p>
+<p>100 results per page.<br />
+<code>https://MyServer/piwebapi/search/query?q=SINUSOID*&amp;count=100</code></p>
+<p>Note: Lower counts will typically resolve faster and can be parsed using the 
+start field to jump to immediate pages of results.  </p>
+<p>You can also tell the query where to start your results by setting the URL 
+parameter <em>start</em> to a positive integer. For example the following query 
+returns with the default 10 results per page starting with the 90th result, or 
+on the 9th page of results.<br />
+<code>https://MyServer/piwebapi/search/query?q=SIN*&amp;start=90</code></p>
+<p><strong>Conditional Operators in Queries</strong><br />
+Queries can also be created using conditional operators <em>AND</em>, <em>OR</em>, and <em>NOT</em> 
+and must be capitalized. For example, the following query will only return results 
+that have the words <em>sinusoid</em> and <em>minutes</em> in their name seperated by spaces:<br />
+<code>https://MyServer/piwebapi/search/query?q=name:sinusoid\: AND name:minutes</code>    </p>
+<p>This example will return results that have either the word <em>sinusoid</em> or <em>minutes</em> 
+in their name seperated by spaces:<br />
+<code>https://MyServer/piwebapi/search/query?q=name:sinusoid OR name:CDT158</code></p>
+<p>You do not need to use the conditional operators only on matching fields. For 
+example, the following query will return results that have either the word 
+<em>sinusoid</em> in their name or <em>pressure</em> in their description.<br />
+<code>https://MyServer/piwebapi/search/query?q=name:sinusoid OR description:pressure</code></p>
+<p><strong>Wildcard Characters and Search Results</strong><br />
+Wildcards can be used for more generic responses. * will match any number of 
+characters in the pattern, including 0 while ? will match only one wild character.<br />
+The following example will return results for 3 PI Points: sin_15minutes, 
+sin_20minutes, and sin_30minutes.<br />
+<code>https://MyServer/piwebapi/search/query?q=name:sin_*minutes</code>  </p>
+<p>The following two queries will return the same results, the PI Point sin_20minutes.<br />
+<code>https://MyServer/piwebapi/search/query?q=name:sin_2*minutes</code><br />
+<code>https://MyServer/piwebapi/search/query?q=name:sin_2?minutes</code>  </p>
+<p>Similar techniques can be used for other fields. For example the following will 
+return results for all entries whose description contains the characters &quot;sin&quot;.
+<code>https://MyServer/piwebapi/search/query?q=description:\*sin\*</code>  </p>
+<p>Note that if you have a PI Point named &quot;sinusoid with spaces&quot; and query it using 
+&quot;q=name:sinusoid*test&quot; you will get results for both sinusoid* and *test as they 
+are seen as two sperate query conditions for the * operator.</p>
+<p><strong>Range Queries</strong></p>
+<p>Range Queries are used to obtain search results whose value falls between the lower 
+bound and upper bound of a provided range. Range queries can be inclusive or 
+exclusive of the boundaries. Inclusive range queries are denoted by square brackets '['. 
+Exclusive range queries are denoted by curly brackets '{'.</p>
+<p>The following example query will return results for names that lie within <em>sinusoid</em> and 
+<em>z</em>, and includes sinusoid.</p>
+<p><code>https://MyServer/piwebapi/search/query?q=name:[sinusoid TO z]</code></p>
+<p>The following example query, by using curly brackets, will not return sinusoid as the
+boundaries are exclusive (but will still return sinusoidu).</p>
+<p><code>https://MyServer/piwebapi/search/query?q=name:{sinusoid TO z}</code></p>
+<p>Wildcards are allowed for boundary values to create half-open ranges. For example, 
+the following example query will return results for anything after (i.e. greater than)
+<em>sinusoid</em>.</p>
+<p><code>https://MyServer/piwebapi/search/query?q=name:{sinusoid TO *}</code></p>
+<p>In these examples the query attempts to match documents within an exclusive range of 
+terms. Since the query is matching on a term to be within a range, the following query 
+matches on PI Point search results whose name value consists of multiple terms. 
+The indexed names of &quot;sinusoid 01&quot; and &quot;02 sinusoid&quot; both return as search results for
+this example query.</p>
+<p><code>https://MyServer/piwebapi/search/query?q=name:{sinusoid TO *}</code></p>
+<p><strong><em>Numeric Range Queries</em></strong></p>
+<p>The previous examples were Range Queries against string fields. Numeric values can also 
+be searched for with Range Queries.</p>
+<p>The only fields that are indexed as numeric fields are the <em>CreationDate</em> and <em>ChangeDate</em> 
+fields for the respective PI Point attributes. To index these fields add them to the list of 
+PI Point Attributes. This configuration may be viewed or modified on the 
+<a href="https://rverhoeff7480.osisoft.int/piwebapi/admin/search/settings.html"><strong>Settings</strong></a> page.</p>
+<p>These date time values are indexed as numeric values via a conversion: Dates are converted to
+milliseconds elapsed since 12:00:00 midnight, January 1, 0001 (0:00:00 UTC on Jan 1, 0001, in the Gregorian calendar).</p>
+<p>The following example query is a request for last changed date equal to or 
+greater than February 26th 2018, 22:16:50.000 (This is Universal Time).
+Using C#, the following code can be used to get the numeric value:</p>
+<p><code>DateTime.Parse(&quot;Feb-26-2018 22:16:50&quot;).Ticks / 10000</code></p>
+<p>If you have to work with Unix epoch time, i.e. seconds since 00:00:00 UTC Jan 1 1970,
+you can add 62135596800 to the value in seconds returned by, e.g. in the Bash shell</p>
+<p><code>date --utc --date &quot;Feb-26-2018 22:16:50.0&quot; +%s</code></p>
+<p>which is 1519683410 seconds Unix epoch time.
+Following either of the aforementioned conversions, our example time would be represented as numeric value: 
+<em>63655280210000</em>. Therefore the query submitted is:</p>
+<p><code>https://MyServer/piwebapi/search/query?q=changedate:[63655280210000 TO *]</code></p>
+<p><strong>Using Scope to Limit Search Results</strong><br />
+You can specify a specific source for your query by using the <em>scope</em> field. For 
+example the following example shows how to limit a query an object named 
+<em>attribute1</em> from a PI AF database called <em>\sadf1\test</em>.<br />
+<code>https://MyServer/piwebapi/search/query?q=name:attribute1&amp;scope=af:\\sdaf1\test</code>  </p>
+<p>You can also search an AF element in the same manner:<br />
+<code>https://MyServer/piwebapi/search/query?q=name:attribute1&amp;scope=af:\\sdaf1\test\TestElement</code>  </p>
+<p>A similiar query with a PI Server named <em>SiteServer01</em> would be represented as 
+follows:<br />
+<code>https://MyServer/piwebapi/search/query?q=name:attribute1&amp;scope=pi:SiteServer1</code>  </p>
+<p>Note that <em>scope</em> is an additional URL paramater and as such the syntax requires 
+that an <em>&amp;</em> needs to be appended to the scope parameter. </p>
+<p><strong>Result Rankings and Boosting</strong><br />
+Results from a query are typically heavily weighted toward name field matches 
+when multiple fields contain a match. When you want to prioritize other fields 
+over name in your search results you can boost other fields with the ^symbol 
+followed by a value. For example, the following query utilizes boosting to 
+increase the score for matches in the field description and decreases matches 
+for the field name:<br />
+<code>https://searchdemo2.osisoft.int/piwebapi/search/query?q=name:sinusoid^0 
+OR description:sinusoid^8</code>  </p>
+<p>Note that higher numbers imply a higher boost to ranking score than lower 
+numbers.</p>
+<p><strong>Example of Building a Query for Refining a Search</strong><br />
+Using the examples above we can build complex queries to refine a search for 
+a given indexed object.  </p>
+<p>For instance you might start with a search for an object for a tank that you 
+think is called <em>tank1</em> so you start with a query as follows:<br />
+<code>https://MyServer/piwebapi/search/query?q=name:tank1</code>  </p>
+<p>Reviewing the results you realize you aren't sure it was tank 1 anymore, so 
+you expand the search to include all tanks'<br />
+<code>https://MyServer/piwebapi/search/query?q=name:tank*</code>  </p>
+<p>This gives you a large number of results so you decide to try and refine based 
+on location as per the description:<br />
+<code>https://MyServer/piwebapi/search/query?q=name:tank* AND description:
+Philadelphia</code>  </p>
+<p>These results reminds you that you are certain the object you are looking for 
+is on the PI AF server so you add the scope value:<br />
+<code>https://MyServer/piwebapi/search/query?q=name:tank* AND 
+description:Philadelphia&amp;scope=af:\\PhlServer01\tanks</code>  </p>
+<p>Note how the search is refined by improving the query and once it is found you 
+can save the address for future quick reference.</p>
+
+        
+    </div>
+</body>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/search-queries by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:09 GMT -->
+</html>

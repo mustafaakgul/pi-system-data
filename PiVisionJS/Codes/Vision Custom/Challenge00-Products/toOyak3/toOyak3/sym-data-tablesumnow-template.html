@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="sweetalert2.css">
+<style>
+
+ 	@import: url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 100%;
+        background-color: black;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .container {
+        text-align: center;
+    }
+
+    .button {
+        width: 170px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .button-1 {
+        background-color: transparent;
+        border: 3px solid #ffffff;
+        border-radius: 50px;
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        color: #ffffff;
+    }
+    .button-1:hover {
+        box-shadow: 0 0 10px 0 #ffffff inset, 0 0 20px 2px #ffffff;
+        border: 3px solid #ffffff;
+    }
+
+
+    @font-face {
+        font-family: Lato-Regular;
+        /*src: url('../fonts/Lato/Lato-Regular.ttf');*/
+    }
+
+    @font-face {
+        font-family: Lato-Bold;
+        /*src: url('../fonts/Lato/Lato-Bold.ttf');*/
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        height: 100%;
+        font-family: sans-serif;
+    }
+
+    a {
+        margin: 0px;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+    }
+
+    a:focus {
+        outline: none !important;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    h1,h2,h3,h4,h5,h6 {margin: 0px;}
+
+    p {margin: 0px;}
+
+    ul, li {
+        margin: 0px;
+        list-style-type: none;
+    }
+
+    input {
+        display: block;
+        outline: none;
+        border: none !important;
+    }
+
+    textarea {
+        display: block;
+        outline: none;
+    }
+
+    textarea:focus, input:focus {
+        border-color: transparent !important;
+    }
+
+    button {
+        outline: none !important;
+        border: none;
+        background: transparent;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    iframe {
+        border: none !important;
+    }
+
+    .js-pscroll {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .table100 .ps__rail-y {
+        width: 9px;
+        background-color: transparent;
+        opacity: 1 !important;
+        right: 5px;
+    }
+
+    .table100 .ps__rail-y::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        border-radius: 5px;
+        width: 100%;
+        height: calc(100% - 30px);
+        left: 0;
+        top: 15px;
+    }
+
+    .table100 .ps__rail-y .ps__thumb-y {
+        width: 100%;
+        right: 0;
+        background-color: transparent;
+        opacity: 1 !important;
+    }
+
+    .table100 .ps__rail-y .ps__thumb-y::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        border-radius: 5px;
+        width: 100%;
+        height: calc(100% - 30px);
+        left: 0;
+        top: 15px;
+    }
+
+    .limiter {
+        width: 1366px;
+        margin: 0 auto;
+    }
+
+    .container-table100 {
+        width: 100%;
+        min-height: 0vh;
+        background: transparent;
+
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px 30px;
+    }
+
+    .wrap-table100 {
+        width: 1170px;
+    }
+
+    .table100 {
+        background-color: transparent;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-weight: unset;
+        padding-right: 10px;
+    }
+
+    .column1 {
+        width: 33%;
+        padding-left: 40px;
+    }
+
+    .column2 {
+        width: 13%;
+    }
+
+    .column3 {
+        width: 22%;
+    }
+
+    .column4 {
+        width: 19%;
+    }
+
+    .column5 {
+        width: 13%;
+    }
+
+    .table100-head th {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .table100-body td {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .table100 {
+        position: relative;
+        padding-top: 60px;
+    }
+
+    .table100-head {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .table100-body {
+        max-height: 585px;
+        overflow: auto;
+    }
+
+    .table100.ver1 th {
+        font-family: Lato-Bold;
+        font-size: 18px;
+        color: transparent;
+        line-height: 1.4;
+
+        background-color: transparent;
+    }
+
+    .table100.ver1 td {
+        font-family: Lato-Regular;
+        font-size: 15px;
+        color: transparent;
+        line-height: 1.4;
+    }
+
+    .table100.ver1 .table100-body tr:nth-child(even) {
+        background-color: transparent;
+    }
+
+    .table100.ver1 {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+        -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+        -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .table100.ver1 .ps__rail-y {
+        right: 5px;
+    }
+
+    .table100.ver1 .ps__rail-y::before {
+        background-color: transparent;
+    }
+
+    .table100.ver1 .ps__rail-y .ps__thumb-y::before {
+        background-color: transparent;
+    }     
+
+    .table100.ver3 {
+        background-color: #393939;
+    }
+
+    .table100.ver3 th {
+        font-family: Lato-Bold;
+        font-size: 15px;
+        color: #ffffff;
+        line-height: 1.4;
+        text-transform: uppercase;
+        background-color: #393939;
+    }
+
+    .table100.ver3 td {
+        font-family: Lato-Regular;
+        font-size: 15px;
+        color: #ffffff;
+        line-height: 1.4;
+        background-color: #222222;
+    }
+
+    .table100.ver3 {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+        -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+        -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .table100.ver3 .ps__rail-y {
+        right: 5px;
+    }
+
+    .table100.ver3 .ps__rail-y::before {
+        background-color: transparent;
+    }
+
+    .table100.ver3 .ps__rail-y .ps__thumb-y::before {
+        background-color: transparent;
+    }
+
+    .alignleft {
+        float: left;
+        width:33.33333%;
+        text-align:left;
+    }
+    .aligncenter {
+        float: left;
+        width:33.33333%;
+        text-align:center;
+    }
+    .alignright {
+        float: left;
+        width:33.33333%;
+        text-align:right;
+    }​
+
+</style>
+</head>
+<body>
+	<div class="container">
+
+        <div>
+
+		<div class="symbol-text button button-1" ng-click="sendValueAllData()">HEPSİ</div>
+
+		<div class="symbol-text button button-1" ng-click="sendValueDaily()">GÜNLÜK</div>
+
+		<div class="symbol-text button button-1" ng-click="sendValueWeekly()">HAFTALIK</div>
+
+		<div class="symbol-text button button-1" ng-click="sendValueMontly()">AYLIK</div>
+
+        <div class="symbol-text button button-1" ng-click="sendValueYearly()">YILLIK</div>
+
+		<div class="symbol-text button button-1" ng-click="specific()">SPESİFİK</div>
+
+        <div class="symbol-text button button-1" id="btPrint" onclick="createPDF()">PDF</div>
+
+        </div>
+
+        <div class="limiter">
+            <div class="container-table100">
+                <div class="wrap-table100">
+                    <div class="table100  ver3 m-b-110">
+
+                            <div class="table100-head">
+                                <table>
+                                    <thead>
+                                    <tr class="row100 head">
+                                        <th class="cell100 column1">
+                                                                    <div>
+                                                                    <p class="alignleft">{{sending2FrontDateinFront}}</p>
+                                                                    <p class="aligncenter">Zaman</p>
+                                                                    </div>
+                                                                    <div style="clear: both;"></div>
+                                        </th>
+                                        <th class="cell100 column2">Değer</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                            <div class="table100-body js-pscroll">
+                                <table>
+                                    <tbody>
+                                    <tr class="row100 body" ng-repeat="item in DataItems" ng-show="item.Value >= 0">
+                                        <td class="cell100 column1">{{item.Timestamp}}</td>
+                                        <td class="cell100 column2">{{item.Value | number:config.DisplayDigits}}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+    
+                </div>
+            </div>
+	    </div>
+      
+        <script type="text/javascript" src="sweetalert2.js"></script>
+
+                <div hidden>
+            <table id = "tab"> 
+                <tr>
+                    <th>{{sending2FrontDateinFront}} | Zaman</th>
+                    <th>Değer</th>
+                </tr>
+                <tr ng-repeat="item in DataItems" ng-show="item.Value >= 0">
+                        <td>{{item.Timestamp}}</td>
+                        <td>{{item.Value | number:config.DisplayDigits}}</td>
+                </tr>           
+            </table>
+        </div>
+
+        <script>
+        function createPDF() {
+            var sTable = document.getElementById('tab').innerHTML;
+            console.log(sTable)
+
+            var style = "<style>";
+            var titlerapor = "Rapor";
+            style = style + "table {width: 100%;font: 17px Calibri;}";
+            style = style + "table, th, td {border: solid 1px #DDD; border-collapse: collapse;";
+            style = style + "padding: 2px 3px;text-align: center;}";
+            style = style + "</style>";
+
+            // CREATE A WINDOW OBJECT.
+            var win = window.open('', '', 'height=700,width=700');
+
+            win.document.write('<html><head>');
+            win.document.write('<title>');   // <title> FOR PDF HEADER.
+
+            win.document.write('</title>');   // <title> FOR PDF HEADER.
+            win.document.write("<center><h1>Rapor</h1></center>");
+            win.document.write(style);          // ADD STYLE INSIDE THE HEAD TAG.
+            win.document.write('</head>');
+            win.document.write('<body><table>');
+            win.document.write(sTable);         // THE TABLE CONTENTS INSIDE THE BODY TAG.
+            win.document.write('</table></body></html>');
+
+            win.document.close();   // CLOSE THE CURRENT WINDOW.
+
+            win.print();    // PRINT THE CONTENTS.
+        }
+        </script>
+
+</div>
+</body>
+</html>

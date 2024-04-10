@@ -1,0 +1,6 @@
+https://www.epias.com.tr/api-portal/
+epias göt pdf api   
+https://seffaflik.epias.com.tr/transparency/piyasalar/gop/ptf.xhtml
+https://rapor.epias.com.tr/rapor/xhtml/ptfSmfListeleme.xhtml
+
+API : http://apiportal.epias.com.tr/exchange

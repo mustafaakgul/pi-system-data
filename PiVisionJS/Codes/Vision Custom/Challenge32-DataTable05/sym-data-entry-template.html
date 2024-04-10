@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width:100%;
+  background-color: red
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+	<div class="symbol-text">
+	
+		<button ng-click="sendValueAllData()" style="background-color: red">All Data</button>
+
+	</div>
+
+	<div class="symbol-text">
+	
+		<button ng-click="sendValueDaily()" style="background-color: red">Daily</button>
+
+	</div>
+
+	<div class="symbol-text">
+	
+		<button ng-click="sendValueWeekly()" style="background-color: red">Weekly</button>
+
+	</div>
+
+	<div class="symbol-text">
+	
+		<button ng-click="sendValueMontly()" style="background-color: red">Montly</button>
+
+	</div>
+
+
+	<div class="symbol-text">
+	
+		<button ng-click="stringWrite(1)" style="background-color: red">Specific Day Before Today</button>
+
+	</div>
+
+
+	<table>
+
+	  <tr>
+	    <th>Timestamp</th>
+	    <th>Value</th>
+	  </tr>
+
+	  <tr ng-repeat="item in DataItems" ng-show="item.Value > 0">
+	    <td>{{item.Timestamp}}</td>
+	    <td>{{item.Value | number:config.DisplayDigits}}</td>
+	  </tr>
+
+	</table>
+
+
+</body>
+</html>
+
+

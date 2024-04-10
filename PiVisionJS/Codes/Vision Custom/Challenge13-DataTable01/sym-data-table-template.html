@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head> </head>
+<body>
+
+	<div class="symbol-text">
+	
+		mst manual entrty
+		<button ng-click="sendValue()">Submit</button>
+
+	</div>
+
+	<h1 style="color: red">Historical data: </h1>
+	<div ng-repeat="item in DataItems"  style="color: red">
+		{{item.Timestamp}} {{item.Value}}
+	</div>
+
+</body>
+</html>
+
+

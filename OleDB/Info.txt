@@ -1,0 +1,7 @@
+INFO
+https://pisquare.osisoft.com/thread/39809-pi-oledb-and-power-bi-connection-string
+
+INFO
+Kurulum için HQ içindeki PI System Access (PSA) altýndaki “PI OLEDB Provider 2017 R2 SP1” programýný install ettikten sonra OLEDB connection string olarak geldi kurulum aþamalarý bu þekilde fakat buradaki hata bizim PI Serverlar üzerinde OLEDB baðlantýsý sýrasýnda aldýðýmýz Authentication method ile ilgili bir eksiðimiz var. Sunucu üzerindeki var ise ayarlamalarla ilgili bir eksiðimiz olduðunu düþünüyorum. 
+Gönderdiðiniz dokümanlarýn çoðunluðu PI Integrator for Bussiness Analittics modülü ile ilgili ve bizim bu lisansýmýz henüz yok ve bu durum OLEDB baðlantýsý için engel deðil.
+

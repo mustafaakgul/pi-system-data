@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>OSIsoft Release Notes</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script></head>
+<body>
+
+    <h1 id="osisoft-release-notes">OSIsoft Release Notes</h1>
+<h2 id="pi-web-api-2018-sp1-1.11.1.5474">PI Web API 2018 SP1 1.11.1.5474</h2>
+<h3 id="osisoft-llc.all-rights-reserved">©2019 OSIsoft, LLC. All rights reserved</h3>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#fixes-and-enhancements">Fixes and Enhancements</a>
+<ul>
+<li><a href="#fixes">Fixes</a></li>
+<li><a href="#enhancements">Enhancements</a></li>
+</ul>
+</li>
+<li><a href="#known-issues">Known Issues</a></li>
+<li><a href="#setup">Setup</a>
+<ul>
+<li><a href="#operating-systems">Operating Systems</a></li>
+<li><a href="#server-platforms">Server Platforms</a></li>
+<li><a href="#distribution-kit-files">Distribution Kit Files</a></li>
+<li><a href="#installation-and-upgrade">Installation and Upgrade</a></li>
+<li><a href="#uninstalling-pi-web-api">Uninstalling PI Web API</a></li>
+</ul>
+</li>
+<li><a href="#security-information-and-guidance">Security Information and Guidance</a>
+<ul>
+<li><a href="#osisofts-commitment">OSIsoft's Commitment</a></li>
+<li><a href="#vulnerability-communication">Vulnerability Communication</a></li>
+</ul>
+</li>
+<li><a href="#documentation-overview">Documentation Overview</a></li>
+<li><a href="#technical-support-and-resources">Technical Support and Resources</a></li>
+</ul>
+<h2 id="overview">Overview</h2>
+<p>The PI Web API is a RESTful service in the Developer Technologies suite, designed to provide cross-platform web and
+mobile programmatic interfaces to the PI System. The PI Web API presently contains basic functionality needed to
+retrieve and manipulate time series data from the PI Data Archive, Asset and Event Frame data from the PI Asset
+Framework, and to index and search on objects within the PI System.</p>
+<p>The PI Web API belongs to the OSIsoft Developer Technologies family of products, which is designed to support the
+implementation of custom applications on top of the PI System, as well as the integration of PI System data with other
+applications and business systems such as Microsoft Office or SQL Server, Enterprise Resource Planning systems (ERPs),
+reporting and analytics platforms, web portals, geospatial and maintenance systems, just to name a few. The Developer
+Technologies cover a wide range of use cases in various environments, programming languages, operating systems, and
+infrastructures.</p>
+<h2 id="fixes-and-enhancements">Fixes and Enhancements</h2>
+<h3 id="fixes">Fixes</h3>
+<p>This section lists items that were resolved or added in this release of PI Web API.</p>
+<table>
+<thead>
+<tr>
+<th>Work Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>93750</td>
+<td>Indexed Search: An error is now logged and presented to the user when another database is renamed to match a previous database's name.</td>
+</tr>
+<tr>
+<td>179894</td>
+<td>Indexed Search: Renaming a search source no longer allows another search source with a duplicate name to be added.</td>
+</tr>
+<tr>
+<td>232172</td>
+<td>Core Services: The /streamsets/interpolated endpoint will no longer omit the WebID field in the response when using the syncTime parameter and a small time range.</td>
+</tr>
+<tr>
+<td>210800</td>
+<td>Core Services: The expiration interval for the cached OpenID Configuration of a Claims-based authentication identity provider can now be configured using the &quot;BearerOpenIdConfigurationRefreshInterval&quot; configuration value. Previously this interval was fixed at five days.</td>
+</tr>
+<tr>
+<td>210764</td>
+<td>Core Services: A correct &quot;WWW-Authenticate&quot; header will now be included in 401 challenge responses when Bearer is enabled.</td>
+</tr>
+<tr>
+<td>195873</td>
+<td>Admin Utility: Automatically generated certificates now work in timezones with a positive offset</td>
+</tr>
+<tr>
+<td>190492</td>
+<td>Core Services: Endpoints that accept multiple WebIDs as query parameters will now return individual errors for each invalid WebID, rather than returning a failure status code for the entire response.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="enhancements">Enhancements</h3>
+<p>PI Web API 2018 SP1 introduces the following enhancements:</p>
+<ul>
+<li>Notifications
+<ul>
+<li>Read for child NotificationContactTemplates</li>
+<li>Read for NotificationPlugIn</li>
+<li>Read, create, update, and delete for SecurityEntries on NotificationRules, NotificationRuleTemplates and NotificationContactTemplates</li>
+<li>Create, update and delete for NotificationRules, NotificationRulesTemplates, NotificationContactTemplates and NotificationRuleSubscribers</li>
+<li>GetByPath endpoints for NotificationContactTemplates, NotificationRules, and NotificationRuleTemplates</li>
+<li>Search endpoint for NotificationContactTemplates</li>
+</ul>
+</li>
+<li>Stream Sets GetJoined Endpoint
+<ul>
+<li>Returns a set of recorded values (x-axis) with another set of data for any number of streams (Y, Y', Y''... axis) that are interpolated based on the points returned for the x-axis</li>
+</ul>
+</li>
+<li>Stream Updates (CTP)
+<ul>
+<li>Client code will be notified of changes in AF metadata through an Exception item in the response payload.
+<ul>
+<li>If this occurs, client code should re-register for Stream Updates.</li>
+<li>The exact change is not reported. Changes in PI Point attributes do not generate this response.</li>
+</ul>
+</li>
+<li>The selectedFields parameter is now honored in both registration and poll for updates.</li>
+<li>Responses now include PreviousEventAction information with each data value.</li>
+<li>Error messages are returned for markers that are no longer valid with every poll using that marker. Previously, the error message would be returned only once.</li>
+</ul>
+</li>
+<li>Expose 'Paths' and 'DataReference' properties on objects of attribute</li>
+<li>Expose 'Paths' property on objects of element</li>
+<li>The version of Web ID returned by PI Web API can be configured
+<ul>
+<li>PI Web API instances that run 2018 SP1 can now work together with older versions behind a load balancer since they can be configured to return the same version of Web ID</li>
+</ul>
+</li>
+</ul>
+<h3 id="known-issues">Known Issues</h3>
+<p>This section lists problems and enhancements that have been deferred until a future release.</p>
+<table>
+<thead>
+<tr>
+<th>Work Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N/A</td>
+<td>Channel service doesn’t work on Windows Server 2008 R2 or earlier platform. This is a known issue since .NET implementation of Web Sockets is only available on Windows 8 or Windows Server 2012 and above. No work item is assigned to address this issue. OSIsoft recommends upgrading to Windows Server 2012 R2 or 2016.</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>Security settings of “Basic” or “Anonymous” prevent crawler execution. There is a known issue with any security setting other than “Kerberos” creating problems with the PI Web API Indexed Search crawler from executing. Workaround is to use “Kerberos” security settings. No work item is assigned to address this issue.</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>In a Remote Desktop Session to a Windows Server 2016 machine, the PI Web API Admin Utility can become unresponsive upon enumerating available SSL certificates. As a workaround, cause the Remote Desktop Session to lose focus (such as clicking outside the Remote Desktop Connection window), and then restore focus to the PI Web API Admin Utility.</td>
+</tr>
+<tr>
+<td>53055</td>
+<td>Identity mapping changes on a PI System triggers a full crawl of all the databases on that PI System. If a security mapping on a PI System changes, a full crawl is triggered on all the databases on that PI System. This behavior may be disabled by doing the following: In the InstallationConfig.json file located inside the installation folder, set the property “AutoCrawlRebuild” value to false.</td>
+</tr>
+<tr>
+<td>91225</td>
+<td>Error stating, &quot;When getting match info for AF attribute: Index was outside the bounds of the array&quot; seen when querying in PI Web API Indexed Search and search index is in finalizing step. Workaround is to resubmit query after index is finalized.</td>
+</tr>
+<tr>
+<td>182144</td>
+<td>Finalizing phases do not display properly on the PI Web API Indexed Search Service Administration database page on secondary instance (if using Shared Index CTP).</td>
+</tr>
+<tr>
+<td>26947</td>
+<td>PI AF Server and database security is not factored into element level security. When security is calculated, only element security is considered. This is only a problem if a user is given explicit “DENY-READ” on a PI AF Server or database but has “ALLOW-READ” on an AF element, or if the user is an Administrator but has no explicit read privileges on an AF element.</td>
+</tr>
+<tr>
+<td>42700</td>
+<td>Numerous PI Mappings may prevent access controls from being respected. If several hundred PI Mappings exist for a single PI System, the Indexed Search service may not be able to calculate the correct access controls. A straightforward workaround is to map to an Active Directory group rather than to individual accounts.</td>
+</tr>
+<tr>
+<td>250123</td>
+<td>In PI Web API Indexed Search, in a Shared Index CTP deployment, the secondary server may not detect changes made by the primary to the data sources (databases) configured for indexing. E.g., newly added sources do not show up, or queries scoped to such sources do not return results for those sources.</td>
+</tr>
+<tr>
+<td>257418</td>
+<td>In PI Web API Indexed Search, in a Shared Index CTP deployment, if the primary node runs on Windows 10 LTSC environment, then the PI Web API Admin Utility when run on the secondary node encounters an error when configuring the shared data folder exposed by the primary. The 'Application Data Folder Setup Job' fails. As a workaround, on the primary node on Windows 10 LTSC, in the Windows go to Control Panel -&gt; System and Security -&gt; Windows Defender Firewall -&gt; Allowed Apps. Scroll down to 'Windows Management Instrumentation (WMI)' and allow it on appropriate network. Then re-run the PI Web API Admin Utility on the secondary machine.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setup">Setup</h2>
+<h3 id="operating-systems">Operating Systems</h3>
+<p>The preferred, supported deployment platforms are Windows Server 2019, Windows Server 2016 or Windows Server 2012 R2.</p>
+<p>Windows Server 2012 (Full Desktop Installation only) may also be used;
+however, use of Windows Server 2012 is discouraged, as planned
+enhancements to PI Web API will require functionality that is only available in later versions of
+Windows.</p>
+<p>Microsoft's client operating systems, Windows 10 (64-bit only) may be used in a limited capacity
+for development and testing purposes only. Please make sure that two entries &quot;RegisteredOwner&quot;
+and &quot;RegisteredOrganization&quot; exist under the Registry Key
+<code>HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\WindowsNT\CurrentVersion</code>. If not, add those two
+entries with empty string values.</p>
+<p>Earlier versions of Windows and non-x64 versions of Windows are not supported.</p>
+<h3 id="server-platforms">Server Platforms</h3>
+<ul>
+<li>PI Data Archive 3.4.380 (released in 2009) or later. PI Data Archive 3.4 or later is recommended.</li>
+<li>PI Asset Framework 2.4 or later. PI AF Server 2018 SP2 (2.10.5) is recommended.</li>
+</ul>
+<p>Not all features, bug fixes, and performance enhancements may be available with older PI Data Archive
+or PI AF Servers.</p>
+<h3 id="distribution-kit-files">Distribution Kit Files</h3>
+<p>The installer is released as a self-extracting distribution kit that contains:</p>
+<ul>
+<li>Installation files for .NET Framework 4.6.</li>
+<li>Installation files for PI AF Client 2018 SP2 (x64), which includes the AF Client installer, and installers for its prerequisites:
+<ul>
+<li>Microsoft Visual C++ 2008 Redistributable (x86 and x64)</li>
+<li>Microsoft Visual C++ 2017 Redistributable Update 2 (x86 and x64)</li>
+<li>PI Network Subsystem 3.4.425.1432</li>
+<li>PI Buffer Subsystem 4.8.0.18</li>
+</ul>
+</li>
+<li>The PI Web API Windows Installer Database (MSI) file that is signed by OSIsoft</li>
+</ul>
+<h3 id="installation-and-upgrade">Installation and Upgrade</h3>
+<h4 id="before-you-install">Before You Install</h4>
+<ol>
+<li>Verify that the system you plan to use is running a supported operating system.</li>
+<li>Verify that you can run the installer as an Administrator.</li>
+</ol>
+<h4 id="installation-and-upgrades">Installation and Upgrades</h4>
+<p>The PI Web API installer has a graphical user interface, which allows you to perform an installation or upgrade of PI Web API. At the end of an installation or upgrade, the PI Web API Admin
+Utility is automatically launched. Go through all the steps in the PI Web API Admin Utility
+to complete the installation or upgrade. Detailed information and a walk-through of installation is
+available in the <em>PI Web API User Guide</em>.</p>
+<p>The PI Web API installer supports silent installations. Please refer to the <em>PI Web API User Guide</em> for detailed information.</p>
+<h3 id="uninstalling-pi-web-api">Uninstalling PI Web API</h3>
+<p>Remove the product using <strong>Uninstall a program</strong> in the Windows Control Panel, or alternatively, re-run
+the Installation Kit and follow the prompts to remove the product.</p>
+<p>Uninstalling the product will not remove:</p>
+<ul>
+<li>Any SSL certificates that were created during the installation process</li>
+<li>The binding of the selected SSL certificate to the port used by PI Web API in the Windows HTTP service's
+configuration</li>
+<li>The URL reservation for PI Web API in the Windows Kernel routing table</li>
+<li>The locally stored indexes for Indexed Search functionality</li>
+</ul>
+<p>The above items may be removed manually if desired.</p>
+<h2 id="security-information-and-guidance">Security Information and Guidance</h2>
+<h3 id="osisofts-commitment">OSIsoft's Commitment</h3>
+<p>Because the PI System often serves as a barrier protecting control systems and mission-critical infrastructure
+assets, OSIsoft is committed to (1) delivering a high-quality product and (2) communicating clearly what security
+issues have been addressed. This release of PI Web API is the highest-quality and most secure version of the
+PI Web API released to date. OSIsoft's commitment to improving the PI System is ongoing, and each future version
+should raise the quality and security bar even further.</p>
+<h3 id="vulnerability-communication">Vulnerability Communication</h3>
+<p>The practice of publicly disclosing internally discovered vulnerabilities is consistent with the
+<a href="https://ics-cert.us-cert.gov/sites/default/files/ICSJWG-Archive/ICSJWG_Vulnerability_Disclosure_Framework_Final_1.pdf">Common Industrial Control System Vulnerability Disclosure Framework</a>
+developed by the <a href="https://ics-cert.us-cert.gov/Industrial-Control-Systems-Joint-Working-Group-ICSJWG">Industrial Control Systems Joint Working Group (ICSJWG)</a>.
+Despite the increased risk posed by greater transparency, OSIsoft is sharing this information to
+help you make an informed decision about when to upgrade to ensure your PI System has the best
+available protection.</p>
+<p>For more information, refer to OSIsoft's Ethical Disclosure policy:</p>
+<p><a href="https://techsupport.osisoft.com/Troubleshooting/Ethical-Disclosure-Policy">https://techsupport.osisoft.com/Troubleshooting/Ethical-Disclosure-Policy.</a></p>
+<h3 id="vulnerability-scoring">Vulnerability Scoring</h3>
+<p>OSIsoft has selected the <a href="https://www.first.org/cvss/v2/guide">Common Vulnerability Scoring System (CVSS)</a> to
+quantify the severity of security vulnerabilities for disclosure. To calculate the CVSS scores, OSIsoft uses
+the <a href="https://nvd.nist.gov/vuln-metrics/cvss/v2-calculator?calculator&amp;version=2">National Vulnerability Database (NVD) calculator</a>
+maintained by the National Institute of Standards and Technology (NIST). OSIsoft uses High, Medium, and
+Low categories to aggregate the CVSS Base scores. This removes some of the opinion related errors of CVSS
+scoring. As noted in the <a href="https://www.first.org/cvss/specification-document">CVSS specification</a>, Base scores
+range from 0 for the lowest severity to 10 for the highest severity.</p>
+<h3 id="overview-of-new-vulnerabilities-found-or-fixed">Overview of New Vulnerabilities Found or Fixed</h3>
+<p>For this release of the PI Web API, two security vulnerabilities have been identified and fixed.</p>
+<p>The first vulnerability allowed for a possible misconfiguration of the &quot;EnableCSRFDefense&quot; configuration setting in PI Web API,
+where the configuration setting would not take effect until PI Web API was restarted. Based on the CVSS scoring system this issue
+has been categorized as a High (7.0 – 9.0). This issue was self-identified as part of OSIsoft's Security Development Lifecycle (SDL)
+process. This security issue has been resolved in the PI Web API 2018 SP1 release.</p>
+<p>The second vulnerability allowed for a possible leakage of user credentials in the Windows Event Viewer, specifically under the
+&quot;Debug&quot; log for PI Web API. Based on the CVSS scoring system this issue has been categorized as a High (7.0 – 9.0). This issue was
+self-identified as part of OSIsoft's Security Development Lifecycle (SDL) process. This security issue has been resolved in the
+PI Web API 2018 SP1 release. After upgrading, previously leaked information may still be present in the Event Viewer. To mitigate
+this information leakage, clear all Event Viewer logs and disable the &quot;Debug&quot; log for PI Web API.</p>
+<h2 id="documentation-overview">Documentation Overview</h2>
+<p>These release notes comprise a part of the following documentation set that supports PI Web API:</p>
+<p><strong>PI Web API 2018 SP1 Programmer Reference</strong>: This reference is included in the product. It is an online
+API reference meant for developers who wish to program against the services provided in the product.
+It is accessible as HTML from the link <em><a href="https://servername/piwebapi/help">https://servername/piwebapi/help</a></em>, where <em>servername</em> is the
+hostname of the server on which this product has been installed.</p>
+<p><strong>PI Web API 2018 SP1 User Guide</strong>: This user guide provides information relevant to the configuration,
+settings, and administration of the product, and contains steps and helpful information for resolving
+problems with the product.</p>
+<p><strong>PI Square and PI Developers Club</strong>: The OSIsoft <a href="https://pisquare.osisoft.com/">PI Square</a> Community
+website has free resources to help you with the programming and integration of OSIsoft products. Additional
+benefits are available on a paid subscription basis to members of <a href="https://pisquare.osisoft.com/community/developers-club">PI Developers Club</a>.</p>
+<p>Additional information about Developer Technologies, PI Data Archive, PI Asset Framework, and other topics
+of interest can be found in respective books available on the <a href="https://my.osisoft.com/">OSIsoft Technical Support and Resources Web site</a>.</p>
+<h2 id="technical-support-and-resources">Technical Support and Resources</h2>
+<p>For technical assistance, contact OSIsoft Technical Support at +1 510-297-5828 or techsupport@osisoft.com.
+This software and related content are available from the Product section of the OSIsoft customer portal at <a href="https://my.osisoft.com">https://my.osisoft.com</a>.</p>
+<p>When you contact OSIsoft Technical Support, be prepared to provide this information:</p>
+<ul>
+<li>Product name, version, and build numbers</li>
+<li>Computer platform (CPU type, operating system, and version number)</li>
+<li>Time that the difficulty started</li>
+<li>Log files at that time</li>
+<li>Details of any environment changes prior to the start of the issue</li>
+<li>Summary of the issue, including any relevant log files during the time the issue occurred</li>
+</ul>
+<p>The <a href="https://pisquare.osisoft.com/">PI Square</a> community has resources to help you with your technical questions.
+<a href="https://pisquare.osisoft.com/community/developers-club">PI Developers Club</a> program offers specific services
+to developers and system integrators.</p>
+<h2 id="other-information">Other Information</h2>
+<p><sup>OSIsoft, LLC</sup></p>
+<p><sup>1600 Alvarado Street</sup></p>
+<p><sup>San Leandro, CA 94577 USA</sup></p>
+<p><sup>Tel: (01) 510-297-5800</sup></p>
+<p><sup>Fax: (01) 510-357-8136</sup></p>
+<p><sup>Web: <a href="https://www.osisoft.com/">http://www.osisoft.com</a></sup></p>
+<p><sup>PI Web API</sup></p>
+<p><sup>© 2013-2019 by OSIsoft, LLC. All rights reserved.</sup></p>
+<p><sup>No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or
+by any means, mechanical, photocopying, recording, or otherwise, without the prior written permission
+of OSIsoft, LLC.</sup></p>
+<p><sup>OSIsoft, the OSIsoft logo and logotype, Managed PI, OSIsoft Advanced Services, OSIsoft Cloud Services, OSIsoft Connected
+Services, PI ACE, PI Advanced Computing Engine, PI AF SDK, PI API, PI Asset Framework, PI Audit Viewer, PI Builder, PI
+Cloud Connect, PI Connectors, PI Data Archive, PI DataLink, PI DataLink Server, PI Developers Club, PI Integrator for
+Business Analytics, PI Interfaces, PI JDBC Driver, PI Manual Logger, PI Notifications, PI ODBC, PI OLEDB Enterprise, PI OLEDB
+Provider, PI OPC DA Server, PI OPC HDA Server, PI ProcessBook, PI SDK, PI Server, PI Square, PI System, PI System Access, PI
+Vision, PI Visualization Suite, PI Web API, PI WebParts, PI Web Services, RLINK and RtReports are all trademarks of OSIsoft,
+LLC.</sup></p>
+<p><sup>All other trademarks or trade names used herein are the property of their respective owners.</sup></p>
+<p><sup>U.S. GOVERNMENT RIGHTS</sup></p>
+<p><sup>Use, duplication or disclosure by the U.S. Government is subject to restrictions set forth in the OSIsoft, LLC license agreement
+and as provided in DFARS 227.7202, DFARS 252.227-7013, FAR 12.212, FAR 52.227, as applicable. OSIsoft, LLC.</sup></p>
+<p><sup>Version: 1.11.1.5474</sup></p>
+<p><sup>Published: 05/15/2019</sup></p>
+
+
+</body>
+</html>

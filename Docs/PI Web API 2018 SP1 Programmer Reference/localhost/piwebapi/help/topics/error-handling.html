@@ -1,0 +1,629 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/error-handling by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:09 GMT -->
+<head>
+    <title>PI Web API</title>
+    <link rel="stylesheet" type="text/css" href="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/base.css" />
+    <script type ="application/javascript" src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/style.js"></script>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="https://rverhoeff7480.osisoft.int/piwebapi/help">
+            <img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/logo.png" />
+        </a>
+        <h2>
+            <a href="https://rverhoeff7480.osisoft.int/piwebapi/help" style="text-decoration: none">PI Web API Help</a>
+        </h2>
+        <h3>
+            <a href="../getting-started.html">Getting Started</a>
+        </h3>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Changelogs</h3>
+        <ul>
+                <li>
+                    <a href="../changelog/pi-web-api.html">
+                        PI Web API
+                    </a>
+                </li>
+                <li>
+                    <a href="../changelog/pi-web-api-indexed-search.html">
+                        PI Web API Indexed Search
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Controllers</h3>
+        <ul>
+                <li>
+                    <a href="../controllers/analysis.html">
+                        Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysiscategory.html">
+                        AnalysisCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisrule.html">
+                        AnalysisRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisruleplugin.html">
+                        AnalysisRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysistemplate.html">
+                        AnalysisTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetdatabase.html">
+                        AssetDatabase
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetserver.html">
+                        AssetServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attribute.html">
+                        Attribute
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributecategory.html">
+                        AttributeCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetemplate.html">
+                        AttributeTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetrait.html">
+                        AttributeTrait
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/batch.html">
+                        Batch
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/calculation.html">
+                        Calculation
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/channel.html">
+                        Channel
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/configuration.html">
+                        Configuration
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/dataserver.html">
+                        DataServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/element.html">
+                        Element
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementcategory.html">
+                        ElementCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementtemplate.html">
+                        ElementTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationset.html">
+                        EnumerationSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationvalue.html">
+                        EnumerationValue
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/eventframe.html">
+                        EventFrame
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationcontacttemplate.html">
+                        NotificationContactTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationplugin.html">
+                        NotificationPlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrule.html">
+                        NotificationRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrulesubscriber.html">
+                        NotificationRuleSubscriber
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationruletemplate.html">
+                        NotificationRuleTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/point.html">
+                        Point
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/search.html">
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securityidentity.html">
+                        SecurityIdentity
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securitymapping.html">
+                        SecurityMapping
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/stream.html">
+                        Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/streamset.html">
+                        StreamSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/system.html">
+                        System
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/table.html">
+                        Table
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/tablecategory.html">
+                        TableCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timerule.html">
+                        TimeRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timeruleplugin.html">
+                        TimeRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unit.html">
+                        Unit
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unitclass.html">
+                        UnitClass
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible " onclick="toggleCollapse(this)"><span></span>Topics</h3>
+        <ul>
+
+                <li>
+                    Core Services
+                    <ul>
+                            <li>
+                                <a href="associations.html">
+                                    Associations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attribute-trait.html">
+                                    Attribute Trait
+                                </a>
+                            </li>
+                            <li>
+                                <a href="boundary-type.html">
+                                    Boundary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="buffer-option.html">
+                                    Buffer Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calculation-basis.html">
+                                    Calculation Basis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="channels.html">
+                                    Channels
+                                </a>
+                            </li>
+                            <li>
+                                <a href="data-server-licenses.html">
+                                    Data Server Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="element-type.html">
+                                    Element Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="event-frame.html">
+                                    Event Frame
+                                </a>
+                            </li>
+                            <li>
+                                <a href="export-mode.html">
+                                    Export Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="import-mode.html">
+                                    Import Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="include-mode.html">
+                                    Include Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="path-syntax.html">
+                                    Path Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="performance-equations.html">
+                                    Performance Equations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reference-type.html">
+                                    Reference Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="retrieval-mode.html">
+                                    Retrieval Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sample-type.html">
+                                    Sample Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-field.html">
+                                    Search Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-mode.html">
+                                    Search Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-operator.html">
+                                    Search Operator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-query-syntax.html">
+                                    Search Query Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-item.html">
+                                    Security Item
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-rights.html">
+                                    Security Rights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="selected-fields.html">
+                                    Selected Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="severity.html">
+                                    Severity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-field.html">
+                                    Sort Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-order.html">
+                                    Sort Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream.html">
+                                    Stream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream-updates.html">
+                                    Stream Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-duration.html">
+                                    Summary Duration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-type.html">
+                                    Summary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="supported-attribute-data-types.html">
+                                    Supported Attribute Data Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sync-time.html">
+                                    Sync Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-strings.html">
+                                    Time Strings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-type.html">
+                                    Time Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-zone.html">
+                                    Time Zone
+                                </a>
+                            </li>
+                            <li>
+                                <a href="update-option.html">
+                                    Update Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user-identity.html">
+                                    User Identity
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    Global
+                    <ul>
+                            <li>
+                                <a href="bearer-authentication.html">
+                                    Bearer Authentication
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cross-origin-resource-sharing.html">
+                                    Cross-Origin Resource Sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dictionary-parameters.html">
+                                    Dictionary Parameters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="error-handling.html">
+                                    Error Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="impersonation-level.html">
+                                    Impersonation Level
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multipart-requests.html">
+                                    Multipart Requests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="query-string.html">
+                                    Query String
+                                </a>
+                            </li>
+                            <li>
+                                <a href="run-state.html">
+                                    Run State
+                                </a>
+                            </li>
+                            <li>
+                                <a href="url-encoding.html">
+                                    URL Encoding
+                                </a>
+                            </li>
+                            <li>
+                                <a href="value-types.html">
+                                    Value Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid.html">
+                                    WebID
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid-type.html">
+                                    WebID Type
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    PI Web API Indexed Search
+                    <ul>
+                            <li>
+                                <a href="common-error-codes.html">
+                                    Common Error Codes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-configuration.html">
+                                    Crawler Configuration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-finalizing-phases.html">
+                                    Crawler Finalizing Phases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="getting-started.html">
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-queries.html">
+                                    Search Queries
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <h3>
+            <a href="http://livelibrary.osisoft.com/">PI Live Library</a>
+        </h3>
+    </header>
+    <div id="content">
+        
+    <h2>Error Handling</h2>
+<p>When handling PI Web API responses in your client application, it is recommended to apply error handling logic in order
+to verify the integrity of your data. This topic will highlight the different types of errors PI Web API may return,
+and how a client should interpret them.</p>
+<h4>Status Code</h4>
+<p>The best indicator for determining the integrity of the response is the response HTTP Status Code. Any HTTP Status Code
+in the 200-300 range can be considered a successful PI Web API response. Any status code in the 400-500 range
+indicates a user or server error occurred. These are generally accompanied by a response body providing a friendly error
+message to assist with debugging. For more information on interpreting the Status Code returned by PI Web API,
+see the 'Status Code' section of our <a href="../getting-started.html">'Getting Started'</a> guide.</p>
+<p>Example Response Body:</p>
+<pre><code>{
+    &quot;Errors&quot;: [
+        &quot;The version of the AF Server does not support the feature SecurityIdentity.&quot;
+    ]
+}
+</code></pre>
+
+<h4>Web Exception</h4>
+<p>Introduced in PI Web API 2017 R2, PI Web API now exposes a 'WebException' property on <strong>all</strong> controller responses.</p>
+<p>Any PI Web API response containing a 'WebException' property which is non-null indicates that PI Web API encountered an <strong>unhandled</strong> 
+error during the transfer of the response stream. These errors can occur despite PI Web API responding with
+a successful HTTP status code. Responses will not contain a 'WebException' if no error occurred. When
+present, the 'WebException' property will be present at the top level of all response objects. A 'WebException' contains
+a 'StatusCode' field, which indicates the correct error HTTP Status Code the client should interpret the response as returning with.</p>
+<p>Example Response Body:</p>
+<pre><code>{
+    &quot;WebException&quot;: {
+        &quot;Errors&quot;: [
+            &quot;Error occurred during writing of the output stream.&quot;
+        ],
+        &quot;StatusCode&quot;: 500
+    }
+}
+</code></pre>
+
+<h4>Stream and Stream Set Controller Responses: Errors</h4>
+<p>The Stream and Stream Set controller responses may contain an additional field called 'Errors' in the response. The
+purpose of the 'Errors' field is to indicate that an error occurred for a particular value while streaming the response.
+For example, if there are 100 values returned and one of them has an associated error, the remaining 99 values do not
+need to be discarded. Values will not contain an 'Errors' property if no error occurred. Each object in the list of
+'Errors' contains which field name caused an error, as well as the exception message.</p>
+<p>Unlike 'WebException', which is a single property found at the top level of the response object, an 'Errors'
+property may be present on any stream value. If a stream value contains an 'Errors' property then its value will be
+'null'. If any stream values in the response contain an 'Errors' field, that does not mean the entire value collection
+returned is invalid. </p>
+<p>Example Response Body:</p>
+<pre><code>{
+    &quot;Timestamp&quot;: &quot;2014-07-22T14:00:00Z&quot;,
+    &quot;UnitsAbbreviation&quot;: null,
+    &quot;Good&quot;: true,
+    &quot;Questionable&quot;: false,
+    &quot;Substituted&quot;: false,
+    &quot;Value&quot;: null,
+    &quot;Errors&quot;: [
+        {
+            &quot;FieldName&quot;: &quot;UnitsAbbreviation&quot;,
+            &quot;Message&quot;: [
+                &quot;PI Point not found.&quot;
+            ]
+        },
+        {
+            &quot;FieldName&quot;: &quot;Value&quot;,
+            &quot;Message&quot;: [
+                &quot;PI Point not found.&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<p><em>Notes:</em> There are a couple of things that the user must be aware of when using the Stream or Stream Set controllers.</p>
+<ul>
+<li>Be careful not to confuse the 'Errors' property from the Stream and Stream Set controllers with the 'Errors'
+  field that appears in the body of a response that has a 400- or 500-level status code.</li>
+<li>The Stream and Stream Set controllers do not always handle errors identically. For example, trying to obtain the
+  value of a missing PI Point that results in a 410 response code on the Stream Controller could result in an
+  'Errors' field appearing on the Stream Set controller.</li>
+</ul>
+
+        
+    </div>
+</body>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/error-handling by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:09 GMT -->
+</html>

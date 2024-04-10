@@ -1,0 +1,37 @@
+INFO VISION
+https://techsupport.osisoft.com/Products/Visualization/PI-Vision/Overview
+https://livelibrary.osisoft.com/LiveLibrary/content/en/vision4-v1/GUID-5C0C6660-85DA-4996-A055-34C5C6CBC105
+https://osisoft-ext.jiveon.com/community/developers-club/pi-visualization-development/content?start=40&itemView=thumbnail
+https://www.youtube.com/watch?v=8eEUMebIk4s&list=PLMcG1Hs2JbcvWPkSbIbQEJqsTX9Sa1nty
+https://pisquare.osisoft.com/community/Learn-PI/visualizing-pi-system-data-with-pi-vision/activity
+https://pisquare.osisoft.com/community/developers-club/pi-visualization-development/activity
+https://pisquare.osisoft.com/community/developers-club/pi-visualization-development
+
+GENERAL
+JavaScript : https://www.w3schools.com/js/js_object_definition.asp
+Angular : https://www.w3schools.com/angular/default.asp, https://angularjs.org/, https://docs.angularjs.org/api/ng/service/$http#$http-arguments,https://angular.io/cli,https://angular.io/guide/http#http-headers
+Ajax : https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js
+AngularJs Interceptor : https://tusharghate.com/http-basic-authentication-in-angular
+Header Authentication : https://www.blitter.se/utils/basic-authentication-header-generator/
+Feedback : https://feedback.osisoft.com/forums/320517-pi-vision/category/137466-manual-data-entry
+PISquare : https://pisquare.osisoft.com/community/developers-club/pi-visualization-development/content?start=140&itemView=thumbnail
+
+CORS
+https://stackoverflow.com/questions/44029498/how-to-make-this-angular-http-get-request-with-basic-authentication-work
+http://devnot.com/2019/cors-nedir/
+https://stackoverflow.com/questions/40134558/cors-error-with-javascript-but-not-with-python-php
+https://techsupport.osisoft.com/Documentation/PI-Web-API/help/topics/cross-origin-resource-sharing.html
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Requests_with_credentials
+
+KERBEROS
+https://pisquare.osisoft.com/groups/security/blog/2016/08/01/coresight-squared-what-s-next-kerberos-and-more
+https://livelibrary.osisoft.com/LiveLibrary/content/en/vision-v1/GUID-0CA88969-D6C4-43CA-862F-802F42E6F102#addHistory=true&filename=GUID-4B33BAFA-A923-4550-B3DC-CAD83E3C0587.xml&docid=GUID-0CA88969-D6C4-43CA-862F-802F42E6F102&inner_id=&tid=&query=&scope=&resource=&toc=false&eventType=lcContent.loadDocGUID-0CA88969-D6C4-43CA-862F-802F42E6F102
+
+GITHUB
++https://github.com/osipmartin
++https://github.com/kenji0711/PICoresight2016R2-CustomSymbol-PutValue/
++https://github.com/leniel/Customizing-PI-Vision-with-Extensibility
++https://github.com/AnnaPerry/PI-Vision-Workshop-Solution-Files
+
+TAGS
+pi datalink basics pdf,pi vision github,pi viison custom pi  vision tool adding,angular http get example with authorization header google chrome delete session data

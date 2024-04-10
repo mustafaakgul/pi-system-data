@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width:100%;
+  background-color: red
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+
+</head>
+<body>
+
+<div ng-style="{'background-color':config.BackgroundColor,'border-radius':config.BorderRadius + 'px'}">
+	<h3>{{Label}}, {{UOM}} </h3>
+	<div>Total number of values: {{Values.length}}</div>
+	<div ng-repeat="item in Values" ng-show="item.Value > 0">
+		{{item.Time}} {{item.Value | number:config.DisplayDigits}}
+	</div>
+</div>
+
+<table>
+
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Timestamp</th>
+    <th>Value</th>
+  </tr>
+
+  <tr ng-repeat="item in Values" ng-show="item.Value > 0">
+    <td>{{item.Time}}</td>
+    <td>{{item.Value | number:config.DisplayDigits}}</td>
+  </tr>
+
+</table>
+
+</body>
+</html>

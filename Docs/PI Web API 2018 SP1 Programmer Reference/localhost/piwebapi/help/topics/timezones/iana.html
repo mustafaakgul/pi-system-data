@@ -1,0 +1,4645 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/timezones/iana by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:15 GMT -->
+<head>
+    <title>PI Web API</title>
+    <link rel="stylesheet" type="text/css" href="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/base.css" />
+    <script type ="application/javascript" src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/style.js"></script>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="https://rverhoeff7480.osisoft.int/piwebapi/help">
+            <img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/logo.png" />
+        </a>
+        <h2>
+            <a href="https://rverhoeff7480.osisoft.int/piwebapi/help" style="text-decoration: none">PI Web API Help</a>
+        </h2>
+        <h3>
+            <a href="../../getting-started.html">Getting Started</a>
+        </h3>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Changelogs</h3>
+        <ul>
+                <li>
+                    <a href="../../changelog/pi-web-api.html">
+                        PI Web API
+                    </a>
+                </li>
+                <li>
+                    <a href="../../changelog/pi-web-api-indexed-search.html">
+                        PI Web API Indexed Search
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Controllers</h3>
+        <ul>
+                <li>
+                    <a href="../../controllers/analysis.html">
+                        Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/analysiscategory.html">
+                        AnalysisCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/analysisrule.html">
+                        AnalysisRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/analysisruleplugin.html">
+                        AnalysisRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/analysistemplate.html">
+                        AnalysisTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/assetdatabase.html">
+                        AssetDatabase
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/assetserver.html">
+                        AssetServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/attribute.html">
+                        Attribute
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/attributecategory.html">
+                        AttributeCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/attributetemplate.html">
+                        AttributeTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/attributetrait.html">
+                        AttributeTrait
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/batch.html">
+                        Batch
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/calculation.html">
+                        Calculation
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/channel.html">
+                        Channel
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/configuration.html">
+                        Configuration
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/dataserver.html">
+                        DataServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/element.html">
+                        Element
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/elementcategory.html">
+                        ElementCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/elementtemplate.html">
+                        ElementTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/enumerationset.html">
+                        EnumerationSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/enumerationvalue.html">
+                        EnumerationValue
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/eventframe.html">
+                        EventFrame
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/notificationcontacttemplate.html">
+                        NotificationContactTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/notificationplugin.html">
+                        NotificationPlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/notificationrule.html">
+                        NotificationRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/notificationrulesubscriber.html">
+                        NotificationRuleSubscriber
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/notificationruletemplate.html">
+                        NotificationRuleTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/point.html">
+                        Point
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/search.html">
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/securityidentity.html">
+                        SecurityIdentity
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/securitymapping.html">
+                        SecurityMapping
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/stream.html">
+                        Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/streamset.html">
+                        StreamSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/system.html">
+                        System
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/table.html">
+                        Table
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/tablecategory.html">
+                        TableCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/timerule.html">
+                        TimeRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/timeruleplugin.html">
+                        TimeRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/unit.html">
+                        Unit
+                    </a>
+                </li>
+                <li>
+                    <a href="../../controllers/unitclass.html">
+                        UnitClass
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible " onclick="toggleCollapse(this)"><span></span>Topics</h3>
+        <ul>
+
+                <li>
+                    Core Services
+                    <ul>
+                            <li>
+                                <a href="../associations.html">
+                                    Associations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../attribute-trait.html">
+                                    Attribute Trait
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../boundary-type.html">
+                                    Boundary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../buffer-option.html">
+                                    Buffer Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../calculation-basis.html">
+                                    Calculation Basis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../channels.html">
+                                    Channels
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../data-server-licenses.html">
+                                    Data Server Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../element-type.html">
+                                    Element Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../event-frame.html">
+                                    Event Frame
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../export-mode.html">
+                                    Export Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../import-mode.html">
+                                    Import Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../include-mode.html">
+                                    Include Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../path-syntax.html">
+                                    Path Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../performance-equations.html">
+                                    Performance Equations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reference-type.html">
+                                    Reference Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../retrieval-mode.html">
+                                    Retrieval Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../sample-type.html">
+                                    Sample Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../search-field.html">
+                                    Search Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../search-mode.html">
+                                    Search Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../search-operator.html">
+                                    Search Operator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../search-query-syntax.html">
+                                    Search Query Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../security-item.html">
+                                    Security Item
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../security-rights.html">
+                                    Security Rights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../selected-fields.html">
+                                    Selected Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../severity.html">
+                                    Severity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../sort-field.html">
+                                    Sort Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../sort-order.html">
+                                    Sort Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../stream.html">
+                                    Stream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../stream-updates.html">
+                                    Stream Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../summary-duration.html">
+                                    Summary Duration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../summary-type.html">
+                                    Summary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../supported-attribute-data-types.html">
+                                    Supported Attribute Data Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../sync-time.html">
+                                    Sync Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../time-strings.html">
+                                    Time Strings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../time-type.html">
+                                    Time Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../time-zone.html">
+                                    Time Zone
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../update-option.html">
+                                    Update Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../user-identity.html">
+                                    User Identity
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    Global
+                    <ul>
+                            <li>
+                                <a href="../bearer-authentication.html">
+                                    Bearer Authentication
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../cross-origin-resource-sharing.html">
+                                    Cross-Origin Resource Sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../dictionary-parameters.html">
+                                    Dictionary Parameters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../error-handling.html">
+                                    Error Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../impersonation-level.html">
+                                    Impersonation Level
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../multipart-requests.html">
+                                    Multipart Requests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../query-string.html">
+                                    Query String
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../run-state.html">
+                                    Run State
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../url-encoding.html">
+                                    URL Encoding
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../value-types.html">
+                                    Value Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webid.html">
+                                    WebID
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../webid-type.html">
+                                    WebID Type
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    PI Web API Indexed Search
+                    <ul>
+                            <li>
+                                <a href="../common-error-codes.html">
+                                    Common Error Codes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../crawler-configuration.html">
+                                    Crawler Configuration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../crawler-finalizing-phases.html">
+                                    Crawler Finalizing Phases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../getting-started.html">
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../search-queries.html">
+                                    Search Queries
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <h3>
+            <a href="http://livelibrary.osisoft.com/">PI Live Library</a>
+        </h3>
+    </header>
+    <div id="content">
+        
+    <h2>Supported IANA Time Zones</h2>
+    
+            <p>
+                The following IANA time zones are mapped to Windows time zones according to the
+                <a href="http://unicode.org/repos/cldr/trunk/common/supplemental/windowsZones.xml">
+                    Unicode Common Locale Data Repository.
+                </a>
+            </p>
+            <table>
+                <tr>
+                    <th>IANA Time Zone Id</th>
+                    <th>Windows Time Zone Id</th>
+                    <th>Base UTC Offset</th>
+                </tr>
+                    <tr>
+                        <td>Africa/Abidjan</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Accra</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Addis_Ababa</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Algiers</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Asmara</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Asmera</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Bamako</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Bangui</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Banjul</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Bissau</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Blantyre</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Brazzaville</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Bujumbura</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Cairo</td>
+                        <td>Egypt Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Casablanca</td>
+                        <td>Morocco Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Ceuta</td>
+                        <td>Romance Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Conakry</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Dakar</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Dar_es_Salaam</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Djibouti</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Douala</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/El_Aaiun</td>
+                        <td>Morocco Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Freetown</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Gaborone</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Harare</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Johannesburg</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Juba</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Kampala</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Khartoum</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Kigali</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Kinshasa</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Lagos</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Libreville</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Lome</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Luanda</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Lubumbashi</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Lusaka</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Malabo</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Maputo</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Maseru</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Mbabane</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Mogadishu</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Monrovia</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Nairobi</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Ndjamena</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Niamey</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Nouakchott</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Ouagadougou</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Porto-Novo</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Sao_Tome</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Timbuktu</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Tripoli</td>
+                        <td>Libya Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Tunis</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Africa/Windhoek</td>
+                        <td>Namibia Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Adak</td>
+                        <td>Aleutian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Anchorage</td>
+                        <td>Alaskan Standard Time</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Anguilla</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Antigua</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Araguaina</td>
+                        <td>Tocantins Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Buenos_Aires</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Catamarca</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/ComodRivadavia</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Cordoba</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Jujuy</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/La_Rioja</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Mendoza</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Rio_Gallegos</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Salta</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/San_Juan</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/San_Luis</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Tucuman</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Argentina/Ushuaia</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Aruba</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Asuncion</td>
+                        <td>Paraguay Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Atikokan</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Atka</td>
+                        <td>Aleutian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Bahia</td>
+                        <td>Bahia Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Bahia_Banderas</td>
+                        <td>Central Standard Time (Mexico)</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Barbados</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Belem</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Belize</td>
+                        <td>Central America Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Blanc-Sablon</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Boa_Vista</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Bogota</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Boise</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Buenos_Aires</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Cambridge_Bay</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Campo_Grande</td>
+                        <td>Central Brazilian Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Cancun</td>
+                        <td>Eastern Standard Time (Mexico)</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Caracas</td>
+                        <td>Venezuela Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Catamarca</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Cayenne</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Cayman</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Chicago</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Chihuahua</td>
+                        <td>Mountain Standard Time (Mexico)</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Coral_Harbour</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Cordoba</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Costa_Rica</td>
+                        <td>Central America Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Creston</td>
+                        <td>US Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Cuiaba</td>
+                        <td>Central Brazilian Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Curacao</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Danmarkshavn</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Dawson</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Dawson_Creek</td>
+                        <td>US Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Denver</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Detroit</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Dominica</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Edmonton</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Eirunepe</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/El_Salvador</td>
+                        <td>Central America Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Ensenada</td>
+                        <td>Pacific Standard Time (Mexico)</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Fortaleza</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Fort_Nelson</td>
+                        <td>US Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Fort_Wayne</td>
+                        <td>US Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Glace_Bay</td>
+                        <td>Atlantic Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Godthab</td>
+                        <td>Greenland Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Goose_Bay</td>
+                        <td>Atlantic Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Grand_Turk</td>
+                        <td>Turks And Caicos Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Grenada</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Guadeloupe</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Guatemala</td>
+                        <td>Central America Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Guayaquil</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Guyana</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Halifax</td>
+                        <td>Atlantic Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Havana</td>
+                        <td>Cuba Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Hermosillo</td>
+                        <td>US Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indiana/Indianapolis</td>
+                        <td>US Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indiana/Knox</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indiana/Marengo</td>
+                        <td>US Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indiana/Petersburg</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indiana/Tell_City</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indiana/Vevay</td>
+                        <td>US Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indiana/Vincennes</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indiana/Winamac</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Indianapolis</td>
+                        <td>US Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Inuvik</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Iqaluit</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Jamaica</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Jujuy</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Juneau</td>
+                        <td>Alaskan Standard Time</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Kentucky/Louisville</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Kentucky/Monticello</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Knox_IN</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Kralendijk</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/La_Paz</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Lima</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Los_Angeles</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Louisville</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Lower_Princes</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Maceio</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Managua</td>
+                        <td>Central America Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Manaus</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Marigot</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Martinique</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Matamoros</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Mazatlan</td>
+                        <td>Mountain Standard Time (Mexico)</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Mendoza</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Menominee</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Merida</td>
+                        <td>Central Standard Time (Mexico)</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Metlakatla</td>
+                        <td>Alaskan Standard Time</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Mexico_City</td>
+                        <td>Central Standard Time (Mexico)</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Miquelon</td>
+                        <td>Saint Pierre Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Moncton</td>
+                        <td>Atlantic Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Monterrey</td>
+                        <td>Central Standard Time (Mexico)</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Montevideo</td>
+                        <td>Montevideo Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Montreal</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Montserrat</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Nassau</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/New_York</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Nipigon</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Nome</td>
+                        <td>Alaskan Standard Time</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Noronha</td>
+                        <td>UTC-02</td>
+                        <td>
+                            -02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/North_Dakota/Beulah</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/North_Dakota/Center</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/North_Dakota/New_Salem</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Ojinaga</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Panama</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Pangnirtung</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Paramaribo</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Phoenix</td>
+                        <td>US Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Port-au-Prince</td>
+                        <td>Haiti Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Porto_Acre</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Porto_Velho</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Port_of_Spain</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Puerto_Rico</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Rainy_River</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Rankin_Inlet</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Recife</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Regina</td>
+                        <td>Canada Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Resolute</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Rio_Branco</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Rosario</td>
+                        <td>Argentina Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Santarem</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Santa_Isabel</td>
+                        <td>Pacific Standard Time (Mexico)</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Santiago</td>
+                        <td>Pacific SA Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Santo_Domingo</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Sao_Paulo</td>
+                        <td>E. South America Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Scoresbysund</td>
+                        <td>Azores Standard Time</td>
+                        <td>
+                            -01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Shiprock</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Sitka</td>
+                        <td>Alaskan Standard Time</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/St_Barthelemy</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/St_Johns</td>
+                        <td>Newfoundland Standard Time</td>
+                        <td>
+                            -03:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/St_Kitts</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/St_Lucia</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/St_Thomas</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/St_Vincent</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Swift_Current</td>
+                        <td>Canada Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Tegucigalpa</td>
+                        <td>Central America Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Thule</td>
+                        <td>Atlantic Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Thunder_Bay</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Tijuana</td>
+                        <td>Pacific Standard Time (Mexico)</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Toronto</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Tortola</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Vancouver</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Virgin</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Whitehorse</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Winnipeg</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Yakutat</td>
+                        <td>Alaskan Standard Time</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>America/Yellowknife</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/Casey</td>
+                        <td>W. Australia Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/Davis</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/DumontDUrville</td>
+                        <td>West Pacific Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/Macquarie</td>
+                        <td>Central Pacific Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/Mawson</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/McMurdo</td>
+                        <td>New Zealand Standard Time</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/Palmer</td>
+                        <td>Pacific SA Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/Rothera</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/South_Pole</td>
+                        <td>New Zealand Standard Time</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/Syowa</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Antarctica/Vostok</td>
+                        <td>Central Asia Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Arctic/Longyearbyen</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Aden</td>
+                        <td>Arab Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Almaty</td>
+                        <td>Central Asia Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Amman</td>
+                        <td>Jordan Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Anadyr</td>
+                        <td>Russia Time Zone 11</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Aqtau</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Aqtobe</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Ashgabat</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Ashkhabad</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Baghdad</td>
+                        <td>Arabic Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Bahrain</td>
+                        <td>Arab Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Baku</td>
+                        <td>Azerbaijan Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Bangkok</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Barnaul</td>
+                        <td>Altai Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Beirut</td>
+                        <td>Middle East Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Bishkek</td>
+                        <td>Central Asia Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Brunei</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Calcutta</td>
+                        <td>India Standard Time</td>
+                        <td>
+                            +05:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Chita</td>
+                        <td>Transbaikal Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Choibalsan</td>
+                        <td>Ulaanbaatar Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Chongqing</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Chungking</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Colombo</td>
+                        <td>Sri Lanka Standard Time</td>
+                        <td>
+                            +05:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Dacca</td>
+                        <td>Bangladesh Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Damascus</td>
+                        <td>Syria Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Dhaka</td>
+                        <td>Bangladesh Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Dili</td>
+                        <td>Tokyo Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Dubai</td>
+                        <td>Arabian Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Dushanbe</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Gaza</td>
+                        <td>West Bank Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Harbin</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Hebron</td>
+                        <td>West Bank Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Hong_Kong</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Hovd</td>
+                        <td>W. Mongolia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Ho_Chi_Minh</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Irkutsk</td>
+                        <td>North Asia East Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Istanbul</td>
+                        <td>Turkey Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Jakarta</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Jayapura</td>
+                        <td>Tokyo Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Jerusalem</td>
+                        <td>Israel Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Kabul</td>
+                        <td>Afghanistan Standard Time</td>
+                        <td>
+                            +04:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Kamchatka</td>
+                        <td>Russia Time Zone 11</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Karachi</td>
+                        <td>Pakistan Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Kashgar</td>
+                        <td>Central Asia Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Kathmandu</td>
+                        <td>Nepal Standard Time</td>
+                        <td>
+                            +05:45
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Katmandu</td>
+                        <td>Nepal Standard Time</td>
+                        <td>
+                            +05:45
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Khandyga</td>
+                        <td>Yakutsk Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Kolkata</td>
+                        <td>India Standard Time</td>
+                        <td>
+                            +05:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Krasnoyarsk</td>
+                        <td>North Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Kuala_Lumpur</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Kuching</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Kuwait</td>
+                        <td>Arab Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Macao</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Macau</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Magadan</td>
+                        <td>Magadan Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Makassar</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Manila</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Muscat</td>
+                        <td>Arabian Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Nicosia</td>
+                        <td>GTB Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Novokuznetsk</td>
+                        <td>North Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Novosibirsk</td>
+                        <td>N. Central Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Omsk</td>
+                        <td>N. Central Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Oral</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Phnom_Penh</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Pontianak</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Pyongyang</td>
+                        <td>North Korea Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Qatar</td>
+                        <td>Arab Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Qyzylorda</td>
+                        <td>Central Asia Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Rangoon</td>
+                        <td>Myanmar Standard Time</td>
+                        <td>
+                            +06:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Riyadh</td>
+                        <td>Arab Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Saigon</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Sakhalin</td>
+                        <td>Sakhalin Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Samarkand</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Seoul</td>
+                        <td>Korea Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Shanghai</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Singapore</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Srednekolymsk</td>
+                        <td>Russia Time Zone 10</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Taipei</td>
+                        <td>Taipei Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Tashkent</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Tbilisi</td>
+                        <td>Georgian Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Tehran</td>
+                        <td>Iran Standard Time</td>
+                        <td>
+                            +03:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Tel_Aviv</td>
+                        <td>Israel Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Thimbu</td>
+                        <td>Bangladesh Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Thimphu</td>
+                        <td>Bangladesh Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Tokyo</td>
+                        <td>Tokyo Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Tomsk</td>
+                        <td>Tomsk Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Ujung_Pandang</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Ulaanbaatar</td>
+                        <td>Ulaanbaatar Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Ulan_Bator</td>
+                        <td>Ulaanbaatar Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Urumqi</td>
+                        <td>Central Asia Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Ust-Nera</td>
+                        <td>Vladivostok Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Vientiane</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Vladivostok</td>
+                        <td>Vladivostok Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Yakutsk</td>
+                        <td>Yakutsk Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Yekaterinburg</td>
+                        <td>Ekaterinburg Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asia/Yerevan</td>
+                        <td>Caucasus Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Azores</td>
+                        <td>Azores Standard Time</td>
+                        <td>
+                            -01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Bermuda</td>
+                        <td>Atlantic Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Canary</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Cape_Verde</td>
+                        <td>Cape Verde Standard Time</td>
+                        <td>
+                            -01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Faeroe</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Faroe</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Jan_Mayen</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Madeira</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Reykjavik</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/South_Georgia</td>
+                        <td>UTC-02</td>
+                        <td>
+                            -02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/Stanley</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Atlantic/St_Helena</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/ACT</td>
+                        <td>AUS Eastern Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Adelaide</td>
+                        <td>Cen. Australia Standard Time</td>
+                        <td>
+                            +09:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Brisbane</td>
+                        <td>E. Australia Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Broken_Hill</td>
+                        <td>Cen. Australia Standard Time</td>
+                        <td>
+                            +09:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Canberra</td>
+                        <td>AUS Eastern Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Currie</td>
+                        <td>Tasmania Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Darwin</td>
+                        <td>AUS Central Standard Time</td>
+                        <td>
+                            +09:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Eucla</td>
+                        <td>Aus Central W. Standard Time</td>
+                        <td>
+                            +08:45
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Hobart</td>
+                        <td>Tasmania Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/LHI</td>
+                        <td>Lord Howe Standard Time</td>
+                        <td>
+                            +10:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Lindeman</td>
+                        <td>E. Australia Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Lord_Howe</td>
+                        <td>Lord Howe Standard Time</td>
+                        <td>
+                            +10:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Melbourne</td>
+                        <td>AUS Eastern Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/North</td>
+                        <td>AUS Central Standard Time</td>
+                        <td>
+                            +09:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/NSW</td>
+                        <td>AUS Eastern Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Perth</td>
+                        <td>W. Australia Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Queensland</td>
+                        <td>E. Australia Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/South</td>
+                        <td>Cen. Australia Standard Time</td>
+                        <td>
+                            +09:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Sydney</td>
+                        <td>AUS Eastern Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Tasmania</td>
+                        <td>Tasmania Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Victoria</td>
+                        <td>AUS Eastern Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/West</td>
+                        <td>W. Australia Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Australia/Yancowinna</td>
+                        <td>Cen. Australia Standard Time</td>
+                        <td>
+                            +09:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brazil/Acre</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brazil/DeNoronha</td>
+                        <td>UTC-02</td>
+                        <td>
+                            -02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brazil/East</td>
+                        <td>E. South America Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Brazil/West</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/Atlantic</td>
+                        <td>Atlantic Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/Central</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/East-Saskatchewan</td>
+                        <td>Canada Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/Eastern</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/Mountain</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/Newfoundland</td>
+                        <td>Newfoundland Standard Time</td>
+                        <td>
+                            -03:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/Pacific</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/Saskatchewan</td>
+                        <td>Canada Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canada/Yukon</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chile/Continental</td>
+                        <td>Pacific SA Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chile/EasterIsland</td>
+                        <td>Easter Island Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CST6CDT</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cuba</td>
+                        <td>Cuba Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Egypt</td>
+                        <td>Egypt Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eire</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EST</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>EST5EDT</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+0</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+1</td>
+                        <td>Cape Verde Standard Time</td>
+                        <td>
+                            -01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+10</td>
+                        <td>Hawaiian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+11</td>
+                        <td>UTC-11</td>
+                        <td>
+                            -11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+12</td>
+                        <td>Dateline Standard Time</td>
+                        <td>
+                            -12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+2</td>
+                        <td>UTC-02</td>
+                        <td>
+                            -02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+3</td>
+                        <td>SA Eastern Standard Time</td>
+                        <td>
+                            -03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+4</td>
+                        <td>SA Western Standard Time</td>
+                        <td>
+                            -04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+5</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+6</td>
+                        <td>Central America Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+7</td>
+                        <td>US Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+8</td>
+                        <td>UTC-08</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT+9</td>
+                        <td>UTC-09</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-0</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-1</td>
+                        <td>W. Central Africa Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-10</td>
+                        <td>West Pacific Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-11</td>
+                        <td>Central Pacific Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-12</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-13</td>
+                        <td>Tonga Standard Time</td>
+                        <td>
+                            +13:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-14</td>
+                        <td>Line Islands Standard Time</td>
+                        <td>
+                            +14:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-2</td>
+                        <td>South Africa Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-3</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-4</td>
+                        <td>Arabian Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-5</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-6</td>
+                        <td>Central Asia Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-7</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-8</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT-9</td>
+                        <td>Tokyo Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/GMT0</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/Greenwich</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/UCT</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/Universal</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/UTC</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Etc/Zulu</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Amsterdam</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Andorra</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Astrakhan</td>
+                        <td>Astrakhan Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Athens</td>
+                        <td>GTB Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Belfast</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Belgrade</td>
+                        <td>Central Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Berlin</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Bratislava</td>
+                        <td>Central Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Brussels</td>
+                        <td>Romance Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Bucharest</td>
+                        <td>GTB Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Budapest</td>
+                        <td>Central Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Busingen</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Chisinau</td>
+                        <td>E. Europe Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Copenhagen</td>
+                        <td>Romance Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Dublin</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Gibraltar</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Guernsey</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Helsinki</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Isle_of_Man</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Istanbul</td>
+                        <td>Turkey Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Jersey</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Kaliningrad</td>
+                        <td>Kaliningrad Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Kiev</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Kirov</td>
+                        <td>Russian Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Lisbon</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Ljubljana</td>
+                        <td>Central Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/London</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Luxembourg</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Madrid</td>
+                        <td>Romance Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Malta</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Mariehamn</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Minsk</td>
+                        <td>Belarus Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Monaco</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Moscow</td>
+                        <td>Russian Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Nicosia</td>
+                        <td>GTB Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Oslo</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Paris</td>
+                        <td>Romance Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Podgorica</td>
+                        <td>Central Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Prague</td>
+                        <td>Central Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Riga</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Rome</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Samara</td>
+                        <td>Russia Time Zone 3</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/San_Marino</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Sarajevo</td>
+                        <td>Central European Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Simferopol</td>
+                        <td>Russian Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Skopje</td>
+                        <td>Central European Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Sofia</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Stockholm</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Tallinn</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Tirane</td>
+                        <td>Central Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Tiraspol</td>
+                        <td>E. Europe Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Ulyanovsk</td>
+                        <td>Astrakhan Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Uzhgorod</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Vaduz</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Vatican</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Vienna</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Vilnius</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Volgograd</td>
+                        <td>Russian Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Warsaw</td>
+                        <td>Central European Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Zagreb</td>
+                        <td>Central European Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Zaporozhye</td>
+                        <td>FLE Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Europe/Zurich</td>
+                        <td>W. Europe Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GB</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GB-Eire</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GMT</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GMT+0</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GMT-0</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GMT0</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenwich</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hongkong</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HST</td>
+                        <td>Hawaiian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Iceland</td>
+                        <td>Greenwich Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Antananarivo</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Chagos</td>
+                        <td>Central Asia Standard Time</td>
+                        <td>
+                            +06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Christmas</td>
+                        <td>SE Asia Standard Time</td>
+                        <td>
+                            +07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Cocos</td>
+                        <td>Myanmar Standard Time</td>
+                        <td>
+                            +06:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Comoro</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Kerguelen</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Mahe</td>
+                        <td>Mauritius Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Maldives</td>
+                        <td>West Asia Standard Time</td>
+                        <td>
+                            +05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Mauritius</td>
+                        <td>Mauritius Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Mayotte</td>
+                        <td>E. Africa Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indian/Reunion</td>
+                        <td>Mauritius Standard Time</td>
+                        <td>
+                            +04:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Iran</td>
+                        <td>Iran Standard Time</td>
+                        <td>
+                            +03:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Israel</td>
+                        <td>Israel Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jamaica</td>
+                        <td>SA Pacific Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Japan</td>
+                        <td>Tokyo Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kwajalein</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Libya</td>
+                        <td>Libya Standard Time</td>
+                        <td>
+                            +02:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mexico/BajaNorte</td>
+                        <td>Pacific Standard Time (Mexico)</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mexico/BajaSur</td>
+                        <td>Mountain Standard Time (Mexico)</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mexico/General</td>
+                        <td>Central Standard Time (Mexico)</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MST</td>
+                        <td>US Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MST7MDT</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Navajo</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>NZ</td>
+                        <td>New Zealand Standard Time</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>NZ-CHAT</td>
+                        <td>Chatham Islands Standard Time</td>
+                        <td>
+                            +12:45
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Apia</td>
+                        <td>Samoa Standard Time</td>
+                        <td>
+                            +13:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Auckland</td>
+                        <td>New Zealand Standard Time</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Bougainville</td>
+                        <td>Bougainville Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Chatham</td>
+                        <td>Chatham Islands Standard Time</td>
+                        <td>
+                            +12:45
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Chuuk</td>
+                        <td>West Pacific Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Easter</td>
+                        <td>Easter Island Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Efate</td>
+                        <td>Central Pacific Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Enderbury</td>
+                        <td>Tonga Standard Time</td>
+                        <td>
+                            +13:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Fakaofo</td>
+                        <td>Tonga Standard Time</td>
+                        <td>
+                            +13:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Fiji</td>
+                        <td>Fiji Standard Time</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Funafuti</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Galapagos</td>
+                        <td>Central America Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Gambier</td>
+                        <td>UTC-09</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Guadalcanal</td>
+                        <td>Central Pacific Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Guam</td>
+                        <td>West Pacific Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Honolulu</td>
+                        <td>Hawaiian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Johnston</td>
+                        <td>Hawaiian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Kiritimati</td>
+                        <td>Line Islands Standard Time</td>
+                        <td>
+                            +14:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Kosrae</td>
+                        <td>Central Pacific Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Kwajalein</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Majuro</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Marquesas</td>
+                        <td>Marquesas Standard Time</td>
+                        <td>
+                            -09:30
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Midway</td>
+                        <td>UTC-11</td>
+                        <td>
+                            -11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Nauru</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Niue</td>
+                        <td>UTC-11</td>
+                        <td>
+                            -11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Norfolk</td>
+                        <td>Norfolk Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Noumea</td>
+                        <td>Central Pacific Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Pago_Pago</td>
+                        <td>UTC-11</td>
+                        <td>
+                            -11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Palau</td>
+                        <td>Tokyo Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Pitcairn</td>
+                        <td>UTC-08</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Pohnpei</td>
+                        <td>Central Pacific Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Ponape</td>
+                        <td>Central Pacific Standard Time</td>
+                        <td>
+                            +11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Port_Moresby</td>
+                        <td>West Pacific Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Rarotonga</td>
+                        <td>Hawaiian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Saipan</td>
+                        <td>West Pacific Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Samoa</td>
+                        <td>UTC-11</td>
+                        <td>
+                            -11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Tahiti</td>
+                        <td>Hawaiian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Tarawa</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Tongatapu</td>
+                        <td>Tonga Standard Time</td>
+                        <td>
+                            +13:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Truk</td>
+                        <td>West Pacific Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Wake</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Wallis</td>
+                        <td>UTC+12</td>
+                        <td>
+                            +12:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pacific/Yap</td>
+                        <td>West Pacific Standard Time</td>
+                        <td>
+                            +10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Poland</td>
+                        <td>Central European Standard Time</td>
+                        <td>
+                            +01:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Portugal</td>
+                        <td>GMT Standard Time</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PRC</td>
+                        <td>China Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PST8PDT</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ROC</td>
+                        <td>Taipei Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ROK</td>
+                        <td>Korea Standard Time</td>
+                        <td>
+                            +09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Singapore</td>
+                        <td>Singapore Standard Time</td>
+                        <td>
+                            +08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Turkey</td>
+                        <td>Turkey Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UCT</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Universal</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Alaska</td>
+                        <td>Alaskan Standard Time</td>
+                        <td>
+                            -09:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Aleutian</td>
+                        <td>Aleutian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Arizona</td>
+                        <td>US Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Central</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/East-Indiana</td>
+                        <td>US Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Eastern</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Hawaii</td>
+                        <td>Hawaiian Standard Time</td>
+                        <td>
+                            -10:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Indiana-Starke</td>
+                        <td>Central Standard Time</td>
+                        <td>
+                            -06:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Michigan</td>
+                        <td>Eastern Standard Time</td>
+                        <td>
+                            -05:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Mountain</td>
+                        <td>Mountain Standard Time</td>
+                        <td>
+                            -07:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Pacific</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Pacific-New</td>
+                        <td>Pacific Standard Time</td>
+                        <td>
+                            -08:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>US/Samoa</td>
+                        <td>UTC-11</td>
+                        <td>
+                            -11:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>UTC</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>W-SU</td>
+                        <td>Russian Standard Time</td>
+                        <td>
+                            +03:00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zulu</td>
+                        <td>UTC</td>
+                        <td>
+                            +00:00
+                        </td>
+                    </tr>
+            </table>
+        
+    </div>
+</body>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/timezones/iana by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:15 GMT -->
+</html>

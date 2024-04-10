@@ -1,0 +1,36 @@
+LINKS
+https://www.youtube.com/watch?v=oSF0KVWY7FY
+https://www.youtube.com/watch?v=Y-8pP_GWnao
+https://www.youtube.com/watch?v=cIBazCfmbWE
+https://www.wallstreetmojo.com/vba-last-row/
+https://www.excelcampus.com/vba/find-last-row-column-cell/
+https://www.youtube.com/watch?v=qGZQIl9JJk4
+https://www.youtube.com/watch?v=cIBazCfmbWE
+https://www.launchexcel.com/excel-vba-understanding-difference-range-vs-cells/
+https://software-solutions-online.com/excel-vba-find-find-value-range-cells-vba/
+https://excelmacromastery.com/excel-vba-find/
+https://www.excel-easy.com/vba/range-object.html
+https://www.spreadsheetsmadeeasy.com/how-to-tell-if-a-cell-changed-with-vba/
+
+FUNCTIONS
+PIPutVal() and PIPutValX()
+PIArcVal Time Stamp
+
+TAGS
+excel visual basic find text in cell
+first empty column find last row cloumn
+excel visual basic find string in single row
+excel visual basic find last empty column with data
+excel visual basic find text in cell
+
+RULES
+saat sutunu saat formatnda olmali, yeni sayfa ac gizle connection diye, serverlari basic icine gom
+hepsi buyuk harfle olsn, hepsý buyuk harfle olsn ilk satir
+cell changing interrupt button ile
+gnluk sayfalarý salla  saatlk olcak hep
+taglar atýlcak 1. satir satirda ilk 00 00 dan baslýcak sutunuda blmiyoruz
+ilk satýr empty ise atlýcak
+1. satýr referans
+1. satýr tagname
+ne zaman bosluksa bitirilcek
+en alt 23 00 oolcak bitir buradailk buton snra degisimde yaz degiismde degisenleri yazýlcak

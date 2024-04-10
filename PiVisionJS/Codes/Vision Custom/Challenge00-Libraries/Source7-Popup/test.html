@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Prompt</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+	  var startTime4Specific = prompt("Başlama Zamanı", "1");
+	  var stopTime4Specific = prompt("Bitiş Zamanı", "2");
+	  var period4Specific = prompt("Periyod", "3");
+	  var type4Specific = prompt("Tip", "4");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?" + person2;
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+then(function (response) {
+    
+          var txt;
+          var startTime4Specific = prompt("Başlama Zamanı", "1");
+          var stopTime4Specific = prompt("Bitiş Zamanı", "2");
+          var period4Specific = prompt("Periyod", "3");
+          var type4Specific = prompt("Tip", "4");
+
+          if (person == null || person == "") {
+            txt = "User cancelled the prompt.";
+          } else {
+            txt = "Hello " + person + "! How are you today?";
+          }
+          
+      });
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Confirm Box</h2>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the buttons to show and/or close the dialog window.</p>
+
+<button onclick="showDialog()">Show dialog</button>
+<button onclick="closeDialog()">Close dialog</button>
+
+<p><b>Note:</b> The dialog element is only supported in Chrome 37+, Safari 6+ and Opera 24+.</p>
+
+<dialog id="myDialog">
+<form action="/action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="datetime-local" name="bdaytime">
+<br><br>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+  <br><br>
+<input type="submit" value="Submit">
+
+<input type="reset">
+</form> 
+</dialog>
+
+<script>
+var x = document.getElementById("myDialog"); 
+
+function showDialog() { 
+  x.show(); 
+} 
+
+function closeDialog() { 
+  x.close(); 
+} 
+</script>
+
+</body>
+</html>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dialogo</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<script>
+    function abrete(){
+        $("#dialog" ).dialog();
+    }
+</script>
+<div id="dialog" title="Create new user" style="display:none;">
+    <p class="validateTips">All form fields are required.</p>
+    <form action='tuscript.php'>
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="text">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="" class="text">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" value="" class="text">
+        </fieldset>
+    </form>
+</div>
+<button onclick='abrete()'>Create new user</button>
+</body>
+</html>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Dialog - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog();
+        } );
+    </script>
+</head>
+<body>
+
+<div id="dialog" title="Basic dialog">
+    <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+
+
+</body>
+</html>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script>
+    function abrete(){
+        $("#dialog" ).dialog();
+    }
+</script>
+<div id="dialog" title="Create new user" style="display:none;">
+    <p class="validateTips">All form fields are required.</p>
+    <form action='tuscript.php'>
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="text">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="" class="text">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" value="" class="text">
+        </fieldset>
+    </form>
+    <form action="/action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="datetime-local" name="bdaytime">
+<br><br>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+  <br><br>
+<input type="submit" value="Submit">
+
+<input type="reset">
+</form> 
+</div>
+<button onclick='abrete()'>Create new user</button>

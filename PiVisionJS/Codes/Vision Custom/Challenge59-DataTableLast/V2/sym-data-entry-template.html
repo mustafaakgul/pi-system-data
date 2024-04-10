@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+<style>
+
+	table, th, td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	  width:100%;
+	  background-color: red
+	}
+	th, td {
+	  padding: 5px;
+	  text-align: left;
+	}
+
+
+
+ 	@import: url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 100%;
+        background-color: black;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .container {
+        text-align: center;
+    }
+
+    .button {
+        width: 170px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .button-1 {
+        background-color: transparent;
+        border: 3px solid #00d7c3;
+        border-radius: 50px;
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        color: #00d7c3;
+    }
+    .button-1:hover {
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+        border: 3px solid #00d7c3;
+    }
+
+
+</style>
+</head>
+<body>
+	<div class="container">
+
+		<div class="symbol-text button button-1" ng-click="sendValueAllData()">All Data</div>
+
+		<div class="symbol-text button button-1" ng-click="sendValueDaily()">Daily</div>
+
+		<div class="symbol-text button button-1" ng-click="sendValueWeekly()">Weekly</div>
+
+		<div class="symbol-text button button-1" ng-click="sendValueDailyEdit()">Montly</div>
+
+		<div class="symbol-text button button-1" ng-click="stringWrite(1)">Specific</div>
+
+		<div>
+			<table>
+
+			  <tr>
+			    <th>Timestamp</th>
+			    <th>Value</th>
+			  </tr>
+
+			  <tr ng-repeat="item in DataItems" ng-show="item.Value > 0">
+			    <td>{{item.Timestamp}}</td>
+			    <td>{{item.Value | number:config.DisplayDigits}}</td>
+			  </tr>
+
+			</table>
+		</div>
+
+	</div>
+
+
+	
+
+
+</body>
+</html>
+
+

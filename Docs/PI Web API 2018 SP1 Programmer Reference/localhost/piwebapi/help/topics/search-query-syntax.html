@@ -1,0 +1,1012 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/search-query-syntax by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:08 GMT -->
+<head>
+    <title>PI Web API</title>
+    <link rel="stylesheet" type="text/css" href="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/base.css" />
+    <script type ="application/javascript" src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/style.js"></script>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="https://rverhoeff7480.osisoft.int/piwebapi/help">
+            <img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/logo.png" />
+        </a>
+        <h2>
+            <a href="https://rverhoeff7480.osisoft.int/piwebapi/help" style="text-decoration: none">PI Web API Help</a>
+        </h2>
+        <h3>
+            <a href="../getting-started.html">Getting Started</a>
+        </h3>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Changelogs</h3>
+        <ul>
+                <li>
+                    <a href="../changelog/pi-web-api.html">
+                        PI Web API
+                    </a>
+                </li>
+                <li>
+                    <a href="../changelog/pi-web-api-indexed-search.html">
+                        PI Web API Indexed Search
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Controllers</h3>
+        <ul>
+                <li>
+                    <a href="../controllers/analysis.html">
+                        Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysiscategory.html">
+                        AnalysisCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisrule.html">
+                        AnalysisRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisruleplugin.html">
+                        AnalysisRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysistemplate.html">
+                        AnalysisTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetdatabase.html">
+                        AssetDatabase
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetserver.html">
+                        AssetServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attribute.html">
+                        Attribute
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributecategory.html">
+                        AttributeCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetemplate.html">
+                        AttributeTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetrait.html">
+                        AttributeTrait
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/batch.html">
+                        Batch
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/calculation.html">
+                        Calculation
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/channel.html">
+                        Channel
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/configuration.html">
+                        Configuration
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/dataserver.html">
+                        DataServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/element.html">
+                        Element
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementcategory.html">
+                        ElementCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementtemplate.html">
+                        ElementTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationset.html">
+                        EnumerationSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationvalue.html">
+                        EnumerationValue
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/eventframe.html">
+                        EventFrame
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationcontacttemplate.html">
+                        NotificationContactTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationplugin.html">
+                        NotificationPlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrule.html">
+                        NotificationRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrulesubscriber.html">
+                        NotificationRuleSubscriber
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationruletemplate.html">
+                        NotificationRuleTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/point.html">
+                        Point
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/search.html">
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securityidentity.html">
+                        SecurityIdentity
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securitymapping.html">
+                        SecurityMapping
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/stream.html">
+                        Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/streamset.html">
+                        StreamSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/system.html">
+                        System
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/table.html">
+                        Table
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/tablecategory.html">
+                        TableCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timerule.html">
+                        TimeRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timeruleplugin.html">
+                        TimeRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unit.html">
+                        Unit
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unitclass.html">
+                        UnitClass
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible " onclick="toggleCollapse(this)"><span></span>Topics</h3>
+        <ul>
+
+                <li>
+                    Core Services
+                    <ul>
+                            <li>
+                                <a href="associations.html">
+                                    Associations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attribute-trait.html">
+                                    Attribute Trait
+                                </a>
+                            </li>
+                            <li>
+                                <a href="boundary-type.html">
+                                    Boundary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="buffer-option.html">
+                                    Buffer Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calculation-basis.html">
+                                    Calculation Basis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="channels.html">
+                                    Channels
+                                </a>
+                            </li>
+                            <li>
+                                <a href="data-server-licenses.html">
+                                    Data Server Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="element-type.html">
+                                    Element Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="event-frame.html">
+                                    Event Frame
+                                </a>
+                            </li>
+                            <li>
+                                <a href="export-mode.html">
+                                    Export Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="import-mode.html">
+                                    Import Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="include-mode.html">
+                                    Include Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="path-syntax.html">
+                                    Path Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="performance-equations.html">
+                                    Performance Equations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reference-type.html">
+                                    Reference Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="retrieval-mode.html">
+                                    Retrieval Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sample-type.html">
+                                    Sample Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-field.html">
+                                    Search Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-mode.html">
+                                    Search Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-operator.html">
+                                    Search Operator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-query-syntax.html">
+                                    Search Query Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-item.html">
+                                    Security Item
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-rights.html">
+                                    Security Rights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="selected-fields.html">
+                                    Selected Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="severity.html">
+                                    Severity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-field.html">
+                                    Sort Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-order.html">
+                                    Sort Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream.html">
+                                    Stream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream-updates.html">
+                                    Stream Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-duration.html">
+                                    Summary Duration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-type.html">
+                                    Summary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="supported-attribute-data-types.html">
+                                    Supported Attribute Data Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sync-time.html">
+                                    Sync Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-strings.html">
+                                    Time Strings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-type.html">
+                                    Time Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-zone.html">
+                                    Time Zone
+                                </a>
+                            </li>
+                            <li>
+                                <a href="update-option.html">
+                                    Update Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user-identity.html">
+                                    User Identity
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    Global
+                    <ul>
+                            <li>
+                                <a href="bearer-authentication.html">
+                                    Bearer Authentication
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cross-origin-resource-sharing.html">
+                                    Cross-Origin Resource Sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dictionary-parameters.html">
+                                    Dictionary Parameters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="error-handling.html">
+                                    Error Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="impersonation-level.html">
+                                    Impersonation Level
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multipart-requests.html">
+                                    Multipart Requests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="query-string.html">
+                                    Query String
+                                </a>
+                            </li>
+                            <li>
+                                <a href="run-state.html">
+                                    Run State
+                                </a>
+                            </li>
+                            <li>
+                                <a href="url-encoding.html">
+                                    URL Encoding
+                                </a>
+                            </li>
+                            <li>
+                                <a href="value-types.html">
+                                    Value Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid.html">
+                                    WebID
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid-type.html">
+                                    WebID Type
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    PI Web API Indexed Search
+                    <ul>
+                            <li>
+                                <a href="common-error-codes.html">
+                                    Common Error Codes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-configuration.html">
+                                    Crawler Configuration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-finalizing-phases.html">
+                                    Crawler Finalizing Phases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="getting-started.html">
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-queries.html">
+                                    Search Queries
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <h3>
+            <a href="http://livelibrary.osisoft.com/">PI Live Library</a>
+        </h3>
+    </header>
+    <div id="content">
+        
+    <h2>Search Query Syntax (Core Services)</h2>
+<p>The AFSearch based searches within the AF SDK use a query string to define the objects that will be returned by the search. This provides a flexible way to define the criteria used for the search. The syntax used for this query string is described in the Search Query Syntax section below.</p>
+<h4>Query Syntax</h4>
+<p>This is the definition of the syntax used when specifying the search criteria. Search Query syntax described in Extended Backus-Naur Form (EBNF)</p>
+<pre><code>Query             = QueryFilter { QueryFilter } ;
+
+QueryFilter       = StringValue   (* Defaults to 'Name:=' ⁽¹⁾ *)
+                  | &quot;AllDescendants&quot; EqualOperator BooleanValue
+                  | &quot;Analysis&quot; EqualOperator StringValue
+                  | &quot;AnalysisName&quot; EqualOperator StringValue
+                  | &quot;CanBeAcknowledged&quot; EqualOperator BooleanValue
+                  | &quot;Category&quot; EqualOperator StringValue
+                  | &quot;CategoryName&quot; EqualOperator StringValue
+                  | &quot;Contact&quot; EqualOperator StringValue
+                  | &quot;ContactName&quot; EqualOperator StringValue
+                  | &quot;CreationDate&quot; Operator TimeValue
+                  | &quot;Description&quot; EqualOperator StringValue
+                  | &quot;Destination&quot; EqualOperator StringValue
+                  | &quot;Duration&quot; Operator TimeSpanValue
+                  | &quot;Element&quot; OptionalNestedOrInOperator
+                  | &quot;ElementName&quot; EqualOperator StringValue
+                  | &quot;ElementReferenceTemplate&quot; EqualOperator StringValue
+                  | &quot;End&quot; Operator TimeValue
+                  | &quot;EventFrame&quot; NestedQuery
+                  | &quot;GroupID&quot; EqualOperator IntegerValue
+                  | &quot;ID&quot; EqualOrInOperator
+                  | &quot;InProgress&quot; EqualOperator BooleanValue
+                  | &quot;IsAcknowledged&quot; EqualOperator BooleanValue
+                  | &quot;IsAnnotated&quot; EqualOperator BooleanValue
+                  | &quot;IsInternal&quot; EqualOperator BooleanValue
+                  | &quot;ModifyDate&quot; Operator TimeValue
+                  | &quot;Name&quot; EqualOperator StringValue
+                  | &quot;Parent&quot; OptionalNestedQuery
+                  | &quot;PlugIn&quot; EqualOperator StringValue
+                  | &quot;PlugInName&quot; EqualOperator StringValue
+                  | &quot;ReferenceType&quot; EqualOperator StringValue
+                  | &quot;Root&quot; EqualOperator StringValue
+                  | &quot;Sandbox&quot; EqualOperator BooleanValue
+                  | &quot;Severity&quot; Operator SeverityValue
+                  | &quot;SortField&quot; Operator SortFieldValue
+                  | &quot;SortOrder&quot; Operator SortOrderValue
+                  | &quot;Source&quot; EqualOperator StringValue
+                  | &quot;Start&quot; Operator TimeValue
+                  | &quot;Status&quot; Operator StatusValue
+                  | &quot;Target&quot; EqualOperator StringValue
+                  | &quot;TargetName&quot; EqualOperator StringValue
+                  | &quot;Template&quot; EqualOperator StringValue
+                  | &quot;TemplateName&quot; EqualOperator StringValue
+                  | &quot;TimeContext&quot; EqualOperator TimeValue
+                  | &quot;TimeContextEnd&quot; EqualOperator TimeValue
+                  | &quot;Type&quot; EqualOperator StringValue
+                  | &quot;Value&quot; EqualOperator AttrValueFilter
+                  | AttrValueFilter
+                  ;
+
+NestedQuery       = EqualOperator &quot;{&quot; Query &quot;}&quot; ;
+
+OptionalNestedQuery
+                  = EqualOperator StringValue
+                  | NestedQuery
+                  ;
+
+OptionalNestedOrInOperator
+                  = OptionalNestedQuery
+                  | InOperator
+                  ;
+
+AttrValueFilter   = AttrPath Operator StringValue
+                  | AttrPath InOperator
+                  | AttrPath Operator StringValue AttrValueType
+                  ;
+
+AttrPath          = &quot;'|&quot; { QuotedEscapedChar | &quot;''&quot; } &quot;'&quot;
+                  | &quot;&quot;|&quot; { QuotedEscapedChar | &quot;&quot;&quot;&quot; } &quot;&quot;&quot;
+                  | &quot;|&quot; { EscapedChar }
+                  ;
+
+AttrValueType     = As Numeric
+                  | As String
+                  | As Guid
+                  | As AFEnumerationSetName
+                  ;
+
+Operator          = EqualOperator | &quot;:&lt;&gt;&quot; | &quot;:&lt;&quot; | &quot;:&lt;=&quot; | &quot;:&gt;&quot; | &quot;:&gt;=&quot; ;
+
+EqualOperator     = &quot;:&quot; | &quot;:=&quot; ;
+
+InOperator        = &quot;:IN(&quot; StringValues &quot;)&quot;
+
+EqualOrInOperator = EqualOperator StringValue | InOperator
+
+SeverityValue     = &quot;None&quot;
+                  | &quot;Information&quot;
+                  | &quot;Warning&quot;
+                  | &quot;Minor&quot;
+                  | &quot;Major&quot;
+                  | &quot;Critical&quot;
+                  ;
+
+SortFieldValue    = &quot;ID&quot;
+                  | &quot;Name&quot;
+                  | &quot;Type&quot;
+                  | &quot;StartTime&quot;
+                  | &quot;EndTime&quot;
+                  ;
+
+SortOrderValue    = &quot;Ascending&quot;
+                  | &quot;Asc&quot;
+                  | &quot;Descending&quot;
+                  | &quot;Desc&quot;
+                  ;
+
+StatusValue       = &quot;None&quot;
+                  | &quot;NotReady&quot;
+                  | &quot;Disabled&quot;
+                  | &quot;Enabled&quot;
+                  | &quot;Error&quot;
+                  ;
+
+TimeValue         = &quot;'&quot; AFTimeString &quot;'&quot;
+                  | &quot;&quot;&quot; AFTimeString &quot;&quot;&quot;
+                  | AFTimeString
+                  ;
+
+TimeSpanValue     = &quot;'&quot; AFTimeSpanString &quot;'&quot;
+                  | &quot;&quot;&quot; AFTimeSpanString &quot;&quot;&quot;
+                  | AFTimeSpanString
+                  ;
+
+BooleanValue      = &quot;'&quot; Boolean &quot;'&quot;
+                  | &quot;&quot;&quot; Boolean &quot;&quot;&quot;
+                  | Boolean
+                  ;
+
+IntegerValue      = &quot;'&quot; Integer &quot;'&quot;
+                  | &quot;&quot;&quot; Integer &quot;&quot;&quot;
+                  | Integer
+                  ;
+
+StringValues      = StringValue { &quot;;&quot; StringValue } ;
+
+StringValue       = &quot;'&quot; { QuotedEscapedChar | &quot;''&quot; } &quot;'&quot;
+                  | &quot;&quot;&quot; { QuotedEscapedChar | &quot;&quot;&quot;&quot; } &quot;&quot;&quot;
+                  | { EscapedChar }
+                  ;
+
+QuotedEscapedChar = Char
+                  | &quot;\&quot;&quot;      (* Escaped &quot; character *)
+                  | &quot;\'&quot;      (* Escaped ' character *)
+                  | &quot;\*&quot;      (* Escaped * character *)
+                  | &quot;\?&quot;      (* Escaped ? character *)
+                  ;
+
+EscapedChar       = NoWhiteSpaceChar
+                  | &quot;\&quot; Char  (* The character is escaped *)
+                  ;
+
+Boolean           = &quot;True&quot; | &quot;False&quot; | &quot;1&quot; | &quot;0&quot; ;
+
+Integer           = Digit { Digit } ;
+
+Digit             = &quot;0&quot; | &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot; ;
+
+AFEnumSetName     = ? Any string that matches the name of an AFEnumerationSet ?
+
+AFTimeString      = ? Any string that can be parsed by AFTime.Parse ?
+
+AFTimeSpanString  = ? Any string that can be parsed by AFTimeSpan.Parse ?
+
+NoWhiteSpaceChar  = ? Any printable character except whitespace characters ?
+
+Char              = ? Any printable character ?
+
+⁽¹⁾ If a specific filter name is not specified, then the filter will default to
+     &quot;Name&quot; and the operator will be &quot;=&quot;. When a filter name is specified, no whitespace
+     is allowed between the filter name, the &quot;:&quot; separator, and the optional operator.
+     If the operator is not specified, the default operator is &quot;=&quot;.
+</code></pre>
+
+<p>String values for name filters can contain wildcard characters that are described in the Wildcard Characters section below. The Filters section below describes the filters that can be used in the query and the Operators table below describes the operators that can be used in the filter conditions. The Attribute Value Query section provides more information about searching by attribute values.</p>
+<p>Time strings are evaluated in the client's local time unless qualified with time zone information. The time string will be parsed using the current culture. If parsing with the current culture fails, then it will attempt to resolve the time string using the invariant culture.</p>
+<p>An empty string value should be used when searching for objects with a null value for the specified filter. For example, to find all objects without a template defined use Template:'' in the query.</p>
+<h4>Wildcard Characters</h4>
+<p>The string value of a filter can be enclosed in single quotes ('), double quotes (&quot;), or without quotes. The filter string value can include regular characters and wildcard characters. Regular characters must match exactly the characters specified in the filter value. Wildcard characters can be matched with arbitrary fragments of the filter value. Wildcard characters can be escaped using the single backslash (\) character.</p>
+<p>When the filter value is specified within either single or double quotes, the single backslash (\) character is treated as a literal character unless followed by a wildcard character, a single quote ('), or a double quote (&quot;). When specified within quotes, two quote characters that match the starting quote character are treated as a single quote character (e.g. '' is treated as a one single quote character ' if the filter value starts with a single quote). When the filter value is specified without quotes, the backslash character is always used to escape the next character. Therefore you must use a double backslash (\\) to match a single backslash when not using quotes around the filter value.</p>
+<p>The wildcard characters used in the string value of a filter have the following rules:</p>
+<p>If an empty string is specified as part of a Name filter, then everything will be matched. Otherwise, an exact match on empty string or default value for the filter is performed if an empty string is specified.</p>
+<p>If no wildcards, then an exact match on the filter string is performed.</p>
+<p>Wildcard * can be placed anywhere in the filter string and matches zero or more characters.</p>
+<p>Wildcard ? can be placed anywhere in the filter string and matches exactly one character.</p>
+<p>One character in a set of characters are matched by placing them within [ ]. For example, a[bc] would match 'ab' or 'ac', but it would not match 'ad' or 'abd'.</p>
+<p>One character in a set of characters are not matched by placing them within [! ]. For example, a[!bc] would match 'ad', but it would not match 'ab', 'ac', or 'abd'.</p>
+<p>A character in a range of characters from first to last are matched using the following syntax: [first - last]. For example, a[a-c] would match 'aa', 'ab', or 'ac', but it would not match 'ad' or 'abc'.</p>
+<h4>Filters</h4>
+<p>Each filter condition is separated by whitespace and will be ANDed together to perform an AFSearch based search query that can be used to search for objects from the AF Server. For more information about the query filters, see the AFSearchFilter topic.</p>
+<p>The following chart shows which filters are supported by each search class.</p>
+<p><img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/searchfilters.gif" alt="Search class filters" /></p>
+<p>The Sandbox filter is not supported by the AFEventFrameSearch if specified with any of the following filters: Analysis, Element, ElementName, or ElementReferenceTemplate. For an AFElementSearch, the Sandbox filter is not supported if the AllDescendants filter is also enabled. The following table describes the dependencies between search filters.</p>
+<table>
+    <thead align="left">
+      <tr>
+    <th>Filter</th>
+    <th>Notes</th>
+    <th>Example</th>
+      </tr>
+    </thead>
+
+  <tbody>
+  <tr>
+    <td>AllDescendants</td>
+    <td>If this filter is enabled and the Root filter is also specified, then the search will be slower because more than one level of the hierarchy must be checked. This filter is enabled by default, so it is recommended to disable this filter if the Root filter is also specified and you do not need to search the full hierarchy under the specified root object.</td>
+    <td>Root:Tank101 ReferenceType:TankReference</td>
+  </tr>
+  <tr>
+    <td>ReferenceType</td>
+    <td>Finds objects with the specified reference type between the Root object and the found object. If the Root filter is not specified, then finds objects with the specified reference type between the found object and any parent object including the AFDatabase.</td>
+    <td>Root:Tank101 ReferenceType:TankReference</td>
+  </tr>
+  <tr>
+    <td>Value</td>
+    <td>A value filter requires that a Template filter must first be specified that can be used to find the AFAttributeTemplate specified in the value filter.</td>
+    <td>Template:MyTemplate#1 |Attr#1|Child#2:<=50</td>
+  </tr>
+  </tbody>
+</table>
+<h4>Operators</h4>
+<p>Search operators specify how the filter value is to be compared with the object's value for the filter. For more information about the search operators, see the AFSearchOperator topic.</p>
+<p>The following table lists the operators used in the filter condition.</p>
+<table>
+    <thead align="left">
+      <tr>
+    <th>Operator</th>
+    <th>Description</th>
+    <th>Example</th>
+      </tr>
+    </thead>
+
+  <tbody>
+  <tr>
+    <td>=</td>
+    <td>The Equal operator.</td>
+    <td>Name:Tank* or Name:=Tank*</td>
+  </tr>
+  <tr>
+    <td><></td>
+    <td>The NotEqual operator.</td>
+    <td>"|Attr#1":<>50</td>
+  </tr>
+  <tr>
+    <td><</td>
+    <td>The LessThan operator.</td>
+    <td>"|Attr#1":<50</td>
+  </tr>
+  <tr>
+    <td><=</td>
+    <td>The LessThanOrEqual operator.</td>
+    <td>"|Attr#1":<=50</td>
+  </tr>
+  <tr>
+    <td>></td>
+    <td>The GreaterThan operator.</td>
+    <td>"|Attr#1":>50</td>
+  </tr>
+  <tr>
+    <td>>=</td>
+    <td>The GreaterThanOrEqual operator.</td>
+    <td>"|Attr#1":>=50</td>
+  </tr>
+  <tr>
+    <td>IN()</td>
+    <td>The In operator.</td>
+    <td>"|Attr#1":IN(50;100;150) or Element:IN('Meter'; 'Tank')</td>
+  </tr>
+  </tbody>
+</table>
+<h4>Attribute Value Query</h4>
+<p>An attribute value query requires that a Template filter must first be specified that can be used to find the AFAttributeTemplate specified in the value filter. When using attribute value queries, search performance can be improved by marking the AFAttributeTemplate as being indexed by setting the IsIndexed property. The Type property of the attribute template determines the type of value to be queried, therefore the type must be defined and not set to a type of object. Any AFAttributeTemplate with a DefaultUOM specified must be of type Single or Double. If a DefaultUOM is not specified in the template for one of these types, then the search will be performed using the specified attribute value as being in the canonical units-of-measure which could cause unexpected results to be returned. The following table shows which AFSearchOperator is supported for each type of value being queried:</p>
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Equal</th>
+    <th>NotEqual</th>
+    <th>LessThan</th>
+    <th>LessThanOrEqual</th>
+    <th>GreaterThan</th>
+    <th>GreaterThanOrEqual</th>
+    <th>In</th>
+  </tr>
+  <tr>
+    <td>Boolean</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>UInt64</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>String</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Guid</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Single</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Double</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>All Others</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+</table>
+<p>When the Type property of the AFAttributeTemplate is String, then the following restrictions are placed on the string length of the attribute value used in the query:</p>
+<table>
+    <tr>
+        <th>IsIndexed</th>
+        <th>Operator</th>
+        <th>Length Limit</th>
+    </tr>
+    <tr>
+        <td>True</td>
+        <td>Equal or NotEqual</td>
+        <td>40 characters</td>
+    </tr>
+    <tr>
+        <td>True</td>
+        <td>In</td>
+        <td>40 characters</td>
+    </tr>
+    <tr>
+        <td>False</td>
+        <td>Equal or NotEqual</td>
+        <td>No limit</td>
+    </tr>
+    <tr>
+        <td>False</td>
+        <td>In</td>
+        <td>4096 characters when using PI AF Server 2.6 or greater; otherwise 40 characters</td>
+    </tr>
+</table>
+<h4>Query Syntax Examples</h4>
+<p>Below are some example queries: </p>
+<p><b><i>Get all Event Frames with the name that begins with Tank.</i></b></p>
+<pre><code>query=Tank*
+
+query=name:Tank*
+
+query=Name:=Tank*
+</code></pre>
+
+<p><b><i>Get all Event Frames with the name that do not begin with Tank and have the Template name of MyTemplate#1. Note URL encoding.</i></b></p>
+<pre><code>query=Name:&lt;&gt;Tank* Template:MyTemplate%231
+</code></pre>
+
+<p><b><i>Get all Event Frames with the name that do not begin with Tank and no Template.</i></b></p>
+<pre><code>query=Name:&lt;&gt;Tank* Template:&quot;&quot;
+</code></pre>
+
+<p><b><i>Get all Event Frames with the name that do not begin with Tank and have a start time less than 1 week ago and have an end time that is greater or equal to now.</i></b></p>
+<pre><code>query=Name:&lt;&gt;Tank* End:&gt;=* Start:&lt;*-1w 
+</code></pre>
+
+<p><b><i>Get all Event Frames with the name that have Tank in the name and have a start time greater than or equal to three days ago and that are in progress.</i></b></p>
+<pre><code>query=Name:=&quot;*Tank*&quot; Start:&gt;*-3Days InProgress:True
+</code></pre>
+
+<h4>Search Modes</h4>
+<p>The various <a href="search-mode.html">Search Modes</a> can be recreated with the search query syntax as follows:</p>
+<p><b><i>StartInclusive</i></b></p>
+<pre><code>query=Start:&gt;=*-1w Start:&lt;*
+</code></pre>
+
+<p><b><i>EndInclusive</i></b></p>
+<pre><code>query=End:&gt;*-1w End:&lt;=*
+</code></pre>
+
+<p><b><i>Inclusive</i></b></p>
+<pre><code>query=Start:&gt;=*-1w End:&lt;=*
+</code></pre>
+
+<p><b><i>Overlapped</i></b></p>
+<pre><code>query=Start:&lt;* End:&gt;*-1w
+</code></pre>
+
+<p><b><i>InProgress</i></b></p>
+<pre><code>query=Start:&gt;=*-1w Start:&lt;* InProgress:true
+</code></pre>
+
+<p>The following search modes apply only to event frame searches:</p>
+<p><b><i>BackwardFromStartTime</i></b></p>
+<pre><code>query=Start:&lt;*-1w SortField:StartTime SortOrder:DESC
+</code></pre>
+
+<p><b><i>ForwardFromStartTime</i></b></p>
+<pre><code>query=Start:&gt;=*-1w SortField:StartTime SortOrder:ASC
+</code></pre>
+
+<p><b><i>BackwardFromEndTime</i></b></p>
+<pre><code>query=End:&lt;=*-1w SortField:EndTime SortOrder:DESC
+</code></pre>
+
+<p><b><i>ForwardFromEndTime</i></b></p>
+<pre><code>query=End:&gt;=*-1w SortField:EndTime SortOrder:ASC
+</code></pre>
+
+<p><b><i>BackwardInProgress</i></b></p>
+<pre><code>query=Start:&lt;*-1w InProgress:true SortField:StartTime SortOrder:DESC
+</code></pre>
+
+<p><b><i>ForwardInProgress</i></b></p>
+<pre><code>query=Start:&gt;=*-1w InProgress:true SortField:StartTime SortOrder:ASC
+</code></pre>
+
+<h4>For More Information</h4>
+<p>For more information, see the <a href="https://techsupport.osisoft.com/Documentation/PI-AF-SDK/html/33f7ca86-dbca-4aea-951a-1fd72f8fb468.htm">AF SDK Tech Support article on Search Query Syntax</a></p>
+
+        
+    </div>
+</body>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/search-query-syntax by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:08 GMT -->
+</html>

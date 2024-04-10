@@ -1,0 +1,626 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/controllers/search/actions/query by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:13 GMT -->
+<head>
+    <title>PI Web API</title>
+    <link rel="stylesheet" type="text/css" href="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/base.css" />
+    <script type ="application/javascript" src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/style.js"></script>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="https://rverhoeff7480.osisoft.int/piwebapi/help">
+            <img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/logo.png" />
+        </a>
+        <h2>
+            <a href="https://rverhoeff7480.osisoft.int/piwebapi/help" style="text-decoration: none">PI Web API Help</a>
+        </h2>
+        <h3>
+            <a href="../../../getting-started.html">Getting Started</a>
+        </h3>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Changelogs</h3>
+        <ul>
+                <li>
+                    <a href="../../../changelog/pi-web-api.html">
+                        PI Web API
+                    </a>
+                </li>
+                <li>
+                    <a href="../../../changelog/pi-web-api-indexed-search.html">
+                        PI Web API Indexed Search
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible " onclick="toggleCollapse(this)"><span></span>Controllers</h3>
+        <ul>
+                <li>
+                    <a href="../../analysis.html">
+                        Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="../../analysiscategory.html">
+                        AnalysisCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../../analysisrule.html">
+                        AnalysisRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../../analysisruleplugin.html">
+                        AnalysisRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../../analysistemplate.html">
+                        AnalysisTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../assetdatabase.html">
+                        AssetDatabase
+                    </a>
+                </li>
+                <li>
+                    <a href="../../assetserver.html">
+                        AssetServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../../attribute.html">
+                        Attribute
+                    </a>
+                </li>
+                <li>
+                    <a href="../../attributecategory.html">
+                        AttributeCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../../attributetemplate.html">
+                        AttributeTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../attributetrait.html">
+                        AttributeTrait
+                    </a>
+                </li>
+                <li>
+                    <a href="../../batch.html">
+                        Batch
+                    </a>
+                </li>
+                <li>
+                    <a href="../../calculation.html">
+                        Calculation
+                    </a>
+                </li>
+                <li>
+                    <a href="../../channel.html">
+                        Channel
+                    </a>
+                </li>
+                <li>
+                    <a href="../../configuration.html">
+                        Configuration
+                    </a>
+                </li>
+                <li>
+                    <a href="../../dataserver.html">
+                        DataServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../../element.html">
+                        Element
+                    </a>
+                </li>
+                <li>
+                    <a href="../../elementcategory.html">
+                        ElementCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../../elementtemplate.html">
+                        ElementTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../enumerationset.html">
+                        EnumerationSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../../enumerationvalue.html">
+                        EnumerationValue
+                    </a>
+                </li>
+                <li>
+                    <a href="../../eventframe.html">
+                        EventFrame
+                    </a>
+                </li>
+                <li>
+                    <a href="../../home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../../notificationcontacttemplate.html">
+                        NotificationContactTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../notificationplugin.html">
+                        NotificationPlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../../notificationrule.html">
+                        NotificationRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../../notificationrulesubscriber.html">
+                        NotificationRuleSubscriber
+                    </a>
+                </li>
+                <li>
+                    <a href="../../notificationruletemplate.html">
+                        NotificationRuleTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../../point.html">
+                        Point
+                    </a>
+                </li>
+                <li>
+                    <a href="../../search.html">
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="../../securityidentity.html">
+                        SecurityIdentity
+                    </a>
+                </li>
+                <li>
+                    <a href="../../securitymapping.html">
+                        SecurityMapping
+                    </a>
+                </li>
+                <li>
+                    <a href="../../stream.html">
+                        Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="../../streamset.html">
+                        StreamSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../../system.html">
+                        System
+                    </a>
+                </li>
+                <li>
+                    <a href="../../table.html">
+                        Table
+                    </a>
+                </li>
+                <li>
+                    <a href="../../tablecategory.html">
+                        TableCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../../timerule.html">
+                        TimeRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../../timeruleplugin.html">
+                        TimeRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../../unit.html">
+                        Unit
+                    </a>
+                </li>
+                <li>
+                    <a href="../../unitclass.html">
+                        UnitClass
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Topics</h3>
+        <ul>
+
+                <li>
+                    Core Services
+                    <ul>
+                            <li>
+                                <a href="../../../topics/associations.html">
+                                    Associations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/attribute-trait.html">
+                                    Attribute Trait
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/boundary-type.html">
+                                    Boundary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/buffer-option.html">
+                                    Buffer Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/calculation-basis.html">
+                                    Calculation Basis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/channels.html">
+                                    Channels
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/data-server-licenses.html">
+                                    Data Server Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/element-type.html">
+                                    Element Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/event-frame.html">
+                                    Event Frame
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/export-mode.html">
+                                    Export Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/import-mode.html">
+                                    Import Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/include-mode.html">
+                                    Include Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/path-syntax.html">
+                                    Path Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/performance-equations.html">
+                                    Performance Equations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/reference-type.html">
+                                    Reference Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/retrieval-mode.html">
+                                    Retrieval Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/sample-type.html">
+                                    Sample Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/search-field.html">
+                                    Search Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/search-mode.html">
+                                    Search Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/search-operator.html">
+                                    Search Operator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/search-query-syntax.html">
+                                    Search Query Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/security-item.html">
+                                    Security Item
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/security-rights.html">
+                                    Security Rights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/selected-fields.html">
+                                    Selected Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/severity.html">
+                                    Severity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/sort-field.html">
+                                    Sort Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/sort-order.html">
+                                    Sort Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/stream.html">
+                                    Stream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/stream-updates.html">
+                                    Stream Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/summary-duration.html">
+                                    Summary Duration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/summary-type.html">
+                                    Summary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/supported-attribute-data-types.html">
+                                    Supported Attribute Data Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/sync-time.html">
+                                    Sync Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/time-strings.html">
+                                    Time Strings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/time-type.html">
+                                    Time Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/time-zone.html">
+                                    Time Zone
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/update-option.html">
+                                    Update Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/user-identity.html">
+                                    User Identity
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    Global
+                    <ul>
+                            <li>
+                                <a href="../../../topics/bearer-authentication.html">
+                                    Bearer Authentication
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/cross-origin-resource-sharing.html">
+                                    Cross-Origin Resource Sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/dictionary-parameters.html">
+                                    Dictionary Parameters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/error-handling.html">
+                                    Error Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/impersonation-level.html">
+                                    Impersonation Level
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/multipart-requests.html">
+                                    Multipart Requests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/query-string.html">
+                                    Query String
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/run-state.html">
+                                    Run State
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/url-encoding.html">
+                                    URL Encoding
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/value-types.html">
+                                    Value Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/webid.html">
+                                    WebID
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/webid-type.html">
+                                    WebID Type
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    PI Web API Indexed Search
+                    <ul>
+                            <li>
+                                <a href="../../../topics/common-error-codes.html">
+                                    Common Error Codes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/crawler-configuration.html">
+                                    Crawler Configuration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/crawler-finalizing-phases.html">
+                                    Crawler Finalizing Phases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/getting-started.html">
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../../topics/search-queries.html">
+                                    Search Queries
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <h3>
+            <a href="http://livelibrary.osisoft.com/">PI Live Library</a>
+        </h3>
+    </header>
+    <div id="content">
+        
+    <h2>
+        <span>Query</span><br />
+        <span>GET search/query</span>
+    </h2>
+        <p>Query the crawled data by keyword(s).</p>
+                <h3>URL Parameters</h3>
+        <ul>
+                <li>
+                    <h4>q</h4>
+                    <p>One or many terms, in the form of field:value, like "name:pump". 
+            If no field is specfied, like "pump", then the following fields will all be used: 
+            <strong>name, description, afcategories, afelementtemplate, attributename, attributedescription.</strong> <br><br>
+            The star and question mark wildcards are supported, for example: boil* or boi?er. 
+            To perform a fuzzy search, append a tilde to the end of a keyword, like "boilr~" will match "boiler". <br><br>
+            If multiple terms are entered, they are assumed to be <strong>OR</strong>ed together. 
+            If that's not appropriate, you can specify <strong>AND</strong>, <strong>OR</strong>, and 
+            <strong>NOT</strong> operators, along with parenthesis to create a complex query. 
+            For example "(vibration* AND datatype:float32) OR afelementtemplate:pump"  <br><br>
+            Special characters are used through the keyword syntax, so those characters must be escaped if they are in a literal search term. 
+            The following characters must be escaped with a backslash:<br><strong> + - && || ! ( ) { } [ ] ^ " ~ * ? : \ </strong> <br>
+            For example, to find a PI point named SI:NUSO.ID specify "q=name:SI\:USO.ID"</p>
+                </li>
+                <li>
+                    <h4>scope</h4>
+                    <p>List of sources to execute the query against. Specify the sources in 
+            string format (e.g. pi:mypidataarchive) or in webId format. Multiple scopes 
+            (and with different formats) can be specified, separated by semicolons (;).</p>
+                </li>
+                <li>
+                    <h4>fields</h4>
+                    <p>List of fields to include in each Search Result. If no fields are specified, then the following fields are returned: 
+            <strong>afcategory; attributes; datatype; description; endtime; haschildren; itemtype; links; matchedfields; name; plottable; 
+            starttime; template; uniqueid; uom; webid </strong> <br>
+            The following fields are not returned by default: <strong> paths; parents; explain </strong> (must be paired with the links field)</p>
+                </li>
+                <li>
+                    <h4>count</h4>
+                    <p>Max number of results to return. The default is 10 per page.</p>
+                </li>
+                <li>
+                    <h4>start</h4>
+                    <p>Index of search result to begin with. The default is to start at index 0.</p>
+                </li>
+        </ul>
+                <h3>Status Codes</h3>
+            <p>200: A SearchResults object, which has an array of SearchResult and an array of SearchError</p>
+            <h3>Sample Response</h3>
+            <pre><code>{
+  &quot;TotalHits&quot;: 5,
+  &quot;Links&quot;: {
+    &quot;Next&quot;: &quot;https://myserver/piwebapi/search/query?q=name%3ASINUSOID%26count=10%26start=10&quot;,
+    &quot;First&quot;: &quot;https://myserver/piwebapi/search/query?q=name%3ASINUSOID%26count=10&quot;,
+    &quot;Last&quot;: &quot;https://myserver/piwebapi/search/query?q=name%3ASINUSOID%26count=10%26start=0&quot;
+  },
+  &quot;Errors&quot;: [],
+  &quot;Items&quot;: [
+    {
+      &quot;Name&quot;: &quot;Sinusoid&quot;,
+      &quot;Description&quot;: &quot;12 Hour Sine Wave&quot;,
+      &quot;MatchedFields&quot;: [
+        {
+          &quot;Field&quot;: &quot;name&quot;
+        }
+      ],
+      &quot;ItemType&quot;: &quot;pipoint&quot;,
+      &quot;AFCategories&quot;: [],
+      &quot;UniqueID&quot;: &quot;\\\\{00000000-0000-0000-0000-000000009261}\\?1&quot;,
+      &quot;WebId&quot;: &quot;F1DPAAAAAAAAAAAAAAAAAACSYQAQAAAAUEhJTExZXFNJTlVTT0lE&quot;,
+      &quot;UoM&quot;: &quot;degree&quot;,
+      &quot;DataType&quot;: &quot;float32&quot;,
+      &quot;Links&quot;: {
+        &quot;Self&quot;: &quot;https://myserver/piwebapi/points/F1DPAAAAAAAAAAAAAAAAAACSYQAQAAAAUEhJTExZXFNJTlVTT0lE&quot;
+      },
+      &quot;Score&quot;: 11.9991493
+    }
+  ]
+}</code></pre>
+        
+    </div>
+</body>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/controllers/search/actions/query by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:13 GMT -->
+</html>

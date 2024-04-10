@@ -1,0 +1,771 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/cross-origin-resource-sharing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:09 GMT -->
+<head>
+    <title>PI Web API</title>
+    <link rel="stylesheet" type="text/css" href="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/base.css" />
+    <script type ="application/javascript" src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/style.js"></script>
+    
+</head>
+<body>
+    <header id="header">
+        <a href="https://rverhoeff7480.osisoft.int/piwebapi/help">
+            <img src="https://rverhoeff7480.osisoft.int/piwebapi/admin/help/logo.png" />
+        </a>
+        <h2>
+            <a href="https://rverhoeff7480.osisoft.int/piwebapi/help" style="text-decoration: none">PI Web API Help</a>
+        </h2>
+        <h3>
+            <a href="../getting-started.html">Getting Started</a>
+        </h3>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Changelogs</h3>
+        <ul>
+                <li>
+                    <a href="../changelog/pi-web-api.html">
+                        PI Web API
+                    </a>
+                </li>
+                <li>
+                    <a href="../changelog/pi-web-api-indexed-search.html">
+                        PI Web API Indexed Search
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible collapsed" onclick="toggleCollapse(this)"><span></span>Controllers</h3>
+        <ul>
+                <li>
+                    <a href="../controllers/analysis.html">
+                        Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysiscategory.html">
+                        AnalysisCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisrule.html">
+                        AnalysisRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysisruleplugin.html">
+                        AnalysisRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/analysistemplate.html">
+                        AnalysisTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetdatabase.html">
+                        AssetDatabase
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/assetserver.html">
+                        AssetServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attribute.html">
+                        Attribute
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributecategory.html">
+                        AttributeCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetemplate.html">
+                        AttributeTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/attributetrait.html">
+                        AttributeTrait
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/batch.html">
+                        Batch
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/calculation.html">
+                        Calculation
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/channel.html">
+                        Channel
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/configuration.html">
+                        Configuration
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/dataserver.html">
+                        DataServer
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/element.html">
+                        Element
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementcategory.html">
+                        ElementCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/elementtemplate.html">
+                        ElementTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationset.html">
+                        EnumerationSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/enumerationvalue.html">
+                        EnumerationValue
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/eventframe.html">
+                        EventFrame
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationcontacttemplate.html">
+                        NotificationContactTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationplugin.html">
+                        NotificationPlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrule.html">
+                        NotificationRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationrulesubscriber.html">
+                        NotificationRuleSubscriber
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/notificationruletemplate.html">
+                        NotificationRuleTemplate
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/point.html">
+                        Point
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/search.html">
+                        Search
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securityidentity.html">
+                        SecurityIdentity
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/securitymapping.html">
+                        SecurityMapping
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/stream.html">
+                        Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/streamset.html">
+                        StreamSet
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/system.html">
+                        System
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/table.html">
+                        Table
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/tablecategory.html">
+                        TableCategory
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timerule.html">
+                        TimeRule
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/timeruleplugin.html">
+                        TimeRulePlugIn
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unit.html">
+                        Unit
+                    </a>
+                </li>
+                <li>
+                    <a href="../controllers/unitclass.html">
+                        UnitClass
+                    </a>
+                </li>
+        </ul>
+        <h3 class="collapsible " onclick="toggleCollapse(this)"><span></span>Topics</h3>
+        <ul>
+
+                <li>
+                    Core Services
+                    <ul>
+                            <li>
+                                <a href="associations.html">
+                                    Associations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attribute-trait.html">
+                                    Attribute Trait
+                                </a>
+                            </li>
+                            <li>
+                                <a href="boundary-type.html">
+                                    Boundary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="buffer-option.html">
+                                    Buffer Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calculation-basis.html">
+                                    Calculation Basis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="channels.html">
+                                    Channels
+                                </a>
+                            </li>
+                            <li>
+                                <a href="data-server-licenses.html">
+                                    Data Server Licenses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="element-type.html">
+                                    Element Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="event-frame.html">
+                                    Event Frame
+                                </a>
+                            </li>
+                            <li>
+                                <a href="export-mode.html">
+                                    Export Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="import-mode.html">
+                                    Import Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="include-mode.html">
+                                    Include Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="path-syntax.html">
+                                    Path Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="performance-equations.html">
+                                    Performance Equations
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reference-type.html">
+                                    Reference Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="retrieval-mode.html">
+                                    Retrieval Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sample-type.html">
+                                    Sample Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-field.html">
+                                    Search Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-mode.html">
+                                    Search Mode
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-operator.html">
+                                    Search Operator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-query-syntax.html">
+                                    Search Query Syntax
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-item.html">
+                                    Security Item
+                                </a>
+                            </li>
+                            <li>
+                                <a href="security-rights.html">
+                                    Security Rights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="selected-fields.html">
+                                    Selected Fields
+                                </a>
+                            </li>
+                            <li>
+                                <a href="severity.html">
+                                    Severity
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-field.html">
+                                    Sort Field
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sort-order.html">
+                                    Sort Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream.html">
+                                    Stream
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stream-updates.html">
+                                    Stream Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-duration.html">
+                                    Summary Duration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="summary-type.html">
+                                    Summary Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="supported-attribute-data-types.html">
+                                    Supported Attribute Data Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sync-time.html">
+                                    Sync Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-strings.html">
+                                    Time Strings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-type.html">
+                                    Time Type
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-zone.html">
+                                    Time Zone
+                                </a>
+                            </li>
+                            <li>
+                                <a href="update-option.html">
+                                    Update Option
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user-identity.html">
+                                    User Identity
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    Global
+                    <ul>
+                            <li>
+                                <a href="bearer-authentication.html">
+                                    Bearer Authentication
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cross-origin-resource-sharing.html">
+                                    Cross-Origin Resource Sharing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dictionary-parameters.html">
+                                    Dictionary Parameters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="error-handling.html">
+                                    Error Handling
+                                </a>
+                            </li>
+                            <li>
+                                <a href="impersonation-level.html">
+                                    Impersonation Level
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multipart-requests.html">
+                                    Multipart Requests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="query-string.html">
+                                    Query String
+                                </a>
+                            </li>
+                            <li>
+                                <a href="run-state.html">
+                                    Run State
+                                </a>
+                            </li>
+                            <li>
+                                <a href="url-encoding.html">
+                                    URL Encoding
+                                </a>
+                            </li>
+                            <li>
+                                <a href="value-types.html">
+                                    Value Types
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid.html">
+                                    WebID
+                                </a>
+                            </li>
+                            <li>
+                                <a href="webid-type.html">
+                                    WebID Type
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+                <li>
+                    PI Web API Indexed Search
+                    <ul>
+                            <li>
+                                <a href="common-error-codes.html">
+                                    Common Error Codes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-configuration.html">
+                                    Crawler Configuration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="crawler-finalizing-phases.html">
+                                    Crawler Finalizing Phases
+                                </a>
+                            </li>
+                            <li>
+                                <a href="getting-started.html">
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search-queries.html">
+                                    Search Queries
+                                </a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <h3>
+            <a href="http://livelibrary.osisoft.com/">PI Live Library</a>
+        </h3>
+    </header>
+    <div id="content">
+        
+    <h2>Cross-Origin Resource Sharing</h2>
+<p>This topic explains CORS configuration in PI Web API, as well as instructions for setting up CORS correctly.</p>
+<h4>Background</h4>
+<p>Cross-Origin Resource Sharing (CORS) is a World Wide Web Consortium (W3C) specification for secure access to resources hosted in a remote domain. 
+This was introduced to overcome the same-origin policy restriction imposed by most modern web browsers. 
+The same-origin policy limits scripts running in one domain from accessing resources that are hosted in another for security purposes. 
+For example, your application that runs on http://my-internal-site.internal/mygreatapp will not be allowed to make AJAX calls to 
+PI Web API running at https://my-pisystem.internal/piwebapi since https://my-internal-site.internal and https://my-pisystem.internal have different origins.</p>
+<p>If you are writing an application against PI Web API with scripts running on the browser (e.g., making
+an AJAX call in your JavaScript application) and seeing error messages in the browser console related 
+to cross-origin requests, you need to enable CORS in the PI Web API configuration. Otherwise, 
+the browser will prevent your script from accessing resources provided by PI Web API.</p>
+<p>With CORS set up, the browser sends the request to the PI Web API server and determines whether the request is 
+allowed based on CORS settings in PI Web API. There are two different ways that the browser can ask for permissions. For simplicity:</p>
+<ul>
+<li>Simple cross-domain request: one HTTP request</li>
+<li>Complex cross-domain request: two HTTP requests (preflight request + actual request). 
+The preflight request is made automatically by the browser and uses the OPTIONS method. 
+The actual request is only sent if the permission check is successful for the preflight request.</li>
+</ul>
+<p>For more information about simple vs. complex requests, and about CORS in general, consult the following resources:</p>
+<ul>
+<li><a href="http://www.w3.org/TR/cors/">W3C recommendation of CORS</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">Firefox implementation of CORS</a> </li>
+<li><a href="http://msdn.microsoft.com/en-us/magazine/dn532203.aspx">CORS Support in ASP.NET Web API 2</a></li>
+<li>The PI Web API User's Guide also contains a section on CORS.</li>
+</ul>
+<h4>Configuration Settings</h4>
+<p>By default, CORS is disabled in PI Web API. To enable CORS or change CORS settings, choose one of the following actions:</p>
+<ul>
+<li>Change the CORS related attributes in the AF configuration database under the element OSIsoft &gt; 
+PI Web API &gt; (Your PI Web API Instance Name) &gt; System Configuration.</li>
+<li>Use the PUT action in the <a href="../controllers/configuration/actions/put.html">Configuration controller</a>.</li>
+</ul>
+<p>The following CORS configuration items are available in PI Web API:</p>
+<ul>
+<li>
+<h4>CorsOrigins (default: null)</h4>
+<p>The CorsOrigins attribute contains a comma-separated list of domains from which CORS requests may originate. In particular:</p>
+<ul>
+<li>To indicate cross-domain requests cannot be accepted from any origin, use an empty string. (Effectively disables CORS.)</li>
+<li>To indicate cross-domain requests are acceptable from any origins, use the asterisk (*) character for wildcard. (Not recommended.)</li>
+</ul>
+<p>Here is an example of a partial simple cross-domain request. The <code>Origin</code> header gives the domain of the site that is making the request.</p>
+<pre><code>GET http://my-pisystem.internal/piwebapi HTTP/1.1
+Origin: http://my-internal-site.internal
+</code></pre>
+
+<p>To allow this request, the CorsOrigins attribute in your PI Web API configuration needs to be set to the wildcard value *, 
+or contain <code>http://my-internal-site.internal</code> in the list. If set correctly, the server will allow the request and set the 
+<code>Access-Control-Allow-Origin</code> header. The value of this header either matches the <code>Origin</code> header, or is the wildcard value *. 
+Here is a sample response:</p>
+<pre><code>HTTP/1.1 200 OK
+Access-Control-Allow-Origin: http://my-internal-site.internal
+</code></pre>
+
+<p>If CorsOrigins attribute is not set correctly, the browser disallows the request and the response 
+does not include the <code>Access-Control-Allow-Origin header</code>.</p>
+<p>Tips:</p>
+<ul>
+<li>Check the <code>Origin</code> header in the request,and  make sure the value matches with the header specified in the CorsOrigins attribute.</li>
+<li>Make sure the origin is in correct URL format (e.g., &quot;my-internal-site&quot; is not a valid URL).</li>
+<li>Do not include a space between the comma-separated list of origins.</li>
+<li>Do not include a forward slash at the end of the origins URL. </li>
+<li>Example configuration: <code>http://my-internal-site.internal,http://my-internal-site2.internal:8080</code></li>
+</ul>
+</li>
+<li>
+<h4>CorsMethods (default: <code>GET,OPTIONS</code>)</h4>
+<p>The CorsMethods attribute contains a comma-separated list of HTTP methods (verbs) that are allowed in cross-domain requests. In particular:</p>
+<ul>
+<li>To indicate cross-domain requests cannot be accepted with any HTTP method, use an empty string. (Effectively disables CORS.)</li>
+<li>To indicate that cross-domain requests are acceptable using any HTTP method, use the asterisk (*) character for wildcard.</li>
+</ul>
+<p>This is only used in a preflight request. Here is an example of a partial preflight cross-domain request.</p>
+<pre><code>OPTIONS http://my-pisystem.internal/piwebapi/elements/I1EmDqD5loBNH0erqeqJodtALAaqQoQHk26BGgMQAVXYR0Ag HTTP/1.1
+Origin: http://my-internal-site.internal
+Access-Control-Request-Method: PUT
+Access-Control-Request-Headers: authorization,content-type
+</code></pre>
+
+<p>Note that it is an OPTION request (preflight). To allow this request, the CorsMethod attribute in your PI Web API 
+configuration needs to be set to the wildcard value *, or contain <code>PUT</code> in the comma-separated list. 
+(CorsHeader will be discussed in the next section.) If set correctly, the server will allow the request and 
+set the <code>Access-Control-Allow-Method</code> header. Here is a sample response:</p>
+<pre><code>HTTP/1.1 200 OK
+Access-Control-Allow-Origin: http://my-internal-site.internal
+Access-Control-Allow-Methods: PUT
+Access-Control-Allow-Headers: authorization,content-type
+</code></pre>
+
+<p>Following the preflight request, you will see the actual PUT request and response from the server, 
+similar to the request and response you saw in the simple CORS request in the CorsOrigins section.</p>
+<p>Tips:</p>
+<ul>
+<li>Check the <code>Access-Control-Request-Method</code> request header, and make sure the value matches with the method specified in the CorsMethods attribute.</li>
+<li>Method names need to be in all upper case.</li>
+<li>Do not include a space between the comma-separated list of methods.</li>
+<li>Example configuration: <code>GET,OPTIONS,POST</code></li>
+</ul>
+</li>
+<li>
+<h4>CorsHeaders (default: null)</h4>
+<p>The CorsHeaders attribute contains a comma-separated list of HTTP header keys that are allowed for cross-domain requests. In particular:</p>
+<ul>
+<li>To indicate cross-domain requests cannot be accepted with any HTTP headers, use a null or empty string. </li>
+<li>To indicate that cross-domain requests can include any HTTP headers, use the asterisk (*) character for wildcard.</li>
+</ul>
+<p>Similar to CorsMethods, this is only used in the preflight request. Look at the sample preflight 
+request in the CorsMethods section. To allow this request, the CorsHeader attribute in your PI Web API 
+configuration needs to be set to the wildcard value *, or contain <code>authorization</code> and <code>content-type</code> in 
+the comma-separated list. If set correctly, the server will allow the request and set the 
+<code>Access-Control-Allow-Headers</code> header, as shown in the sample response above.</p>
+<p>Tips:</p>
+<ul>
+<li>Check the <code>Access-Control-Request-Headers</code> value in the request, and make sure it matches with the headers specified in the CorsHeaders attribute.</li>
+<li>Do not include a space between the comma-separated list of headers.</li>
+<li>If you set CorsHeaders to anything other than <code>\*</code>, you should include at least add <code>accept</code>, <code>content-type</code>, 
+and <code>origin</code>, plus any custom headers that you want to support. This is because browsers are not consistent 
+in how they set <code>Access-Control-Request-Headers</code>. </li>
+<li>Example configuration: <code>accept,authorization,content-type,origin</code></li>
+</ul>
+</li>
+<li>
+<h4>CorsExposedHeaders (default: <code>Allow,Content-Encoding,Content-Length,Date,Location</code>)</h4>
+<p>The CorsExposedHeaders attribute contains a comma-separated list of HTTP response headers that browsers 
+are allowed to access in addition to the simple response headers exposed by the browser by default. 
+The response headers that are available by default are:</p>
+<ul>
+<li><code>Cache-Control</code></li>
+<li><code>Content-Language</code></li>
+<li><code>Content-Type</code></li>
+<li><code>Expires</code></li>
+<li><code>Last-Modified</code></li>
+<li><code>Pragma</code></li>
+</ul>
+<p>To make other headers available to the application, include them in the list of CorsExposedHeaders attribute. 
+For example, if you are creating an element using <a href="../controllers/element/actions/createelement.html">CreateElement</a> 
+and would like to get the url resource for the newly created element from the <code>Location</code> header, 
+the <code>Location</code> header needs to be explicitly specified in CorsExposedHeaders because it is not exposed by default.</p>
+<p>Tips:</p>
+<ul>
+<li>Do not confuse CorsExposedHeaders with CorsHeaders. The CorsHeaders attribute is used to specify 
+the HTTP headers that are allowed in the requests, while the CorsExposedHeaders attribute is used 
+to specify the HTTP headers that are exposed in the responses.</li>
+<li>Do not include a space between the comma-separated list of headers.</li>
+<li>Example configuration: <code>Allow,Content-Encoding,Content-Length,Date,Location</code></li>
+</ul>
+</li>
+<li>
+<h4>CorsSupportsCredentials (default: <code>false</code>)</h4>
+<p>The CorsSupportsCredentials attribute indicates whether the browser can send any user credentials with cross-domain requests.</p>
+<ul>
+<li>False: authentication information sent from the browser is not allowed in the request. </li>
+<li>True: authentication information sent from the browser is allowed in the request. </li>
+</ul>
+<p>An example response when the CorsSupportsCrendentials is set to true:</p>
+<pre><code>HTTP/1.1 200 OK
+Access-Control-Allow-Origin: http://my-internal-site.internal
+Access-Control-Allow-Methods: PUT
+Access-Control-Allow-Headers: authorization,content-type
+Access-Control-Allow-Credentials: true
+</code></pre>
+
+<p>Tips:</p>
+<ul>
+<li>CorsSupportsCredentials cannot be used in conjunction with a wildcard (*) value for CorsOrigins. </li>
+<li>Set this flag to <code>true</code> if you are using Basic or Kerberos Authentication.</li>
+<li>Example configuration: <code>true</code></li>
+</ul>
+</li>
+<li>
+<h4>PreflightMaxAge (default: <code>-1</code>)</h4>
+<p>PI Web API can indicate to client applications how long to cache the preflight request. Set to
+-1 to never send an Access-Control-Max-Age header in the preflight response. Set to 0 to
+instruct the client to never cache the preflight response.</p>
+</li>
+</ul>
+<h4>Troubleshooting Tips</h4>
+<p>If you are troubleshooting CORS errors, the browser developer tools (usually opened by pressing F12) 
+provide many useful ways to diagnose the error. Remember that the same-origin policy is a browser 
+implementation, so different browsers may exhibit slightly different behaviors.</p>
+<ol>
+<li>
+<p>Look at the error messages in the console. For example,</p>
+<ul>
+<li>Chrome: <code>XMLHttpRequest cannot load https://my-internal-site.internal/piwebapi. 
+Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' 
+header is present on the requested resource. Origin 'http://my-internal-site.internal' is therefore 
+not allowed access. The response had HTTP status code 400.</code></li>
+<li>Firefox: <code>Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource 
+at https:// my-internal-site.internal/piwebapi. (Reason: CORS header 'Access-Control-Allow-Origin' missing).</code></li>
+<li>Internet Explorer: <code>XMLHttpRequest: Network Error 0x80070005, Access is denied.</code></li>
+</ul>
+</li>
+<li>
+<p>The browser usually does not give us details on why the error occurs. Even though the browser 
+specifically says that the CORS header <code>Access-Control-Allow-Origin</code> is missing, this does not mean 
+that the CorsOrigins attribute is the culprit. This is because the server returns a generic response 
+without any CORS headers if any of the CORS check fails.</p>
+</li>
+<li>
+<p>To identify the misconfigured CORS setting, inspect the request headers.</p>
+<ul>
+<li>Make sure the value in the <code>Origin</code> header in the request matches with one of the origins 
+specified in the CorsOrigins attribute (unless a wildcard is used).</li>
+<li>Make sure the value in the <code>Access-Control-Request-Method</code> in the preflight request matches with 
+one of the methods specified in the CorsMethods attribute (unless a wildcard is used).</li>
+<li>Make sure the values in the <code>Access-Control-Request-Headers</code> in the preflight request match the 
+headers specified in the CorsHeaders attribute (unless a wildcard is used).</li>
+<li>If your client application is requesting for a specific header (e.g., <code>Location</code>), make sure it 
+is included in the CorsExposedHeaders list.</li>
+<li>Make sure CorsSupportsCredentials is <code>true</code> if you are using Basic or Kerberos authentication.</li>
+</ul>
+</li>
+<li>
+<p>Changing configuration setting does not require a restart of the PI Web API service since the 
+service will update its configuration every 15 seconds or so. To make sure the new configuration values 
+are accepted, check the admin logs in the event viewer for any errors and to verify the modified configuration values.</p>
+</li>
+</ol>
+
+        
+    </div>
+</body>
+
+<!-- Mirrored from rverhoeff7480.osisoft.int/piwebapi/help/topics/cross-origin-resource-sharing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Aug 2019 18:21:09 GMT -->
+</html>
